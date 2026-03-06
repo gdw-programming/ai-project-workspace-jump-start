@@ -1,0 +1,18 @@
+# package files
+*.tar.gz
+*.zip
+
+# binary files
+*.bin
+*.exe
+*.dll
+*.so
+
+# Miscellaneous temp and user storage - non-committed files
+/temp
+/.sandbox
+
+# local configuration files
+*.env
+*.local
+*.local.*

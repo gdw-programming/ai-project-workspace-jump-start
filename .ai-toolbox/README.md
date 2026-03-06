@@ -1,0 +1,142 @@
+# AI Project Context Management System
+
+A flexible, hierarchical context management system for AI agents that supports any type of project without assumptions or opinions.
+
+## Getting Started with Your Project
+
+**Quick Setup**: See [docs/Getting Started.md](docs/Getting%20Started.md) for the simple 3-step process.
+
+**What This System Provides**: Environment detection, preference collection, and hierarchical context management that works with any AI agent system.
+
+---
+
+## Context Loading Patterns
+
+### Project State (Current)
+```bash
+# Core context system ready
+context.global.md + context.local.md (auto-generated)
+
+# Project initialization ready
+context.global.md → commands/initialization.md 
+
+# Project status tracking ready
+context.global.md → context.state.md
+```
+
+*Additional context modules (domains/, patterns/, tools/, commands/) are under development and will be added as they are completed.*
+
+### For Specific Tasks
+```bash
+# (context.local.md automatically merged into context.global.md)
+# Project initialization 
+context.global.md → commands/initialization.md
+
+# Project status check
+context.global.md → context.state.md
+```
+
+*Additional context modules and loading paths will be available as they are developed and completed.*
+
+## System Features
+
+### Built-In Initialization
+- **Automatic Setup**: Local environment detection and context file creation
+- **User Preference Collection**: Guided configuration of development workflows  
+- **Zero Configuration**: Ready-to-use context system from first project use
+- **Cross-Platform**: Supports Windows, macOS, and Linux development environments
+
+See [docs/Getting Started.md](docs/Getting%20Started.md) for complete setup process.
+
+### Intelligent Maintenance
+- **Real-Time Updates**: Environment and capability changes automatically detected
+- **Preference Persistence**: User workflows maintained across updates
+- **Documentation Sync**: Project status automatically updated across all files
+
+See [docs/Local Context.md](docs/Local%20Context.md) for local environment management details.
+
+## Core Principles
+
+- **Hierarchical Loading**: Load only what you need
+- **Domain Agnostic**: No assumptions about project type  
+- **DRY Information**: Single source of truth
+- **Minimal Context**: Essential information only
+
+## Context System Structure
+
+**Project State** (current):
+```
+project-space/
+├── .ai-toolbox/         # AI context management system
+├── .sandbox/            # Work area for references (gitignored)
+├── README.md            # Project state documentation
+└── .gitignore           # Version control patterns
+```
+
+**Project State** (after initialization):
+```
+your-project/
+├── .ai-toolbox/         # AI context system (can be archived after setup)
+├── .sandbox/            # Work area for references (gitignored)
+├── */*                  # Your project structure defined by you
+├── README.md            # Your project documentation
+└── .gitignore           # Version control patterns
+```
+
+**AI Context System Structure**:
+```
+.ai-toolbox/
+├── docs/                # 📚 System documentation  
+│   ├── Getting Started.md # Simple 3-step user guide
+│   └── Local Context.md # Local environment guide
+├── context.local.md     # User environment basics (minimal personal preferences)
+├── context.global.md    # 🚀 START HERE - Central routing
+├── context.state.md     # Current project status
+├── commands/            # Available operations
+└── [domains/, patterns/, tools/, project/ - under development]
+```
+
+## Usage Examples
+
+*Note: context.local.md is automatically merged with context.global.md in all scenarios*
+
+### Current Project State
+```
+context.global.md → context.state.md (project status)
+context.global.md → commands/initialization.md (setup new project)
+```
+
+### After Context System Development
+*These examples will be available once additional context modules are developed and completed:*
+- Domain-specific contexts for specialized project types
+- Pattern libraries for common development approaches  
+- Tool-specific configurations and workflows
+- Extended command libraries for project operations
+
+## Growing the System
+
+Add contexts as needed following DRY principles and updating context.global.md routing.
+
+## AI Agent Integration
+
+### Example Integration
+```
+Your Agent Config → ai-toolbox/context.global.md → [context hierarchy]
+```
+
+### AI Agent Requirements
+- **Documentation Sync**: Automatically update documentation when modifying routing
+- **DRY Maintenance**: Eliminate redundancies across context files
+- **Rule Application**: Follow all maintenance rules automatically
+
+## Philosophy
+
+This system grows organically with your needs while maintaining:
+- ✅ Flexibility for any project type
+- ✅ Minimal context loading overhead
+- ✅ Information consistency (DRY)
+- ✅ Clear navigation paths
+- ✅ AI agent collaboration support
+
+---
+**AI context management system ready for any project type.**
