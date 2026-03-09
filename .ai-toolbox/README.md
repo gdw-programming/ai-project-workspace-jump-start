@@ -12,31 +12,18 @@ A flexible, hierarchical context management system for AI agents that supports a
 
 ## Context Loading Patterns
 
-### Project State (Current)
 ```bash
-# Core context system ready
-context.global.md + context.local.md (auto-generated)
+# Core context always loaded first
+context.global.md + context.local.md (auto-merged)
 
-# Project initialization ready
-context.global.md → commands/initialization.md 
-
-# Project status tracking ready
-context.global.md → context.state.md
-```
-
-*Additional context modules (domains/, patterns/, tools/, commands/) are under development and will be added as they are completed.*
-
-### For Specific Tasks
-```bash
-# (context.local.md automatically merged into context.global.md)
-# Project initialization 
+# Project initialization
 context.global.md → commands/initialization.md
 
 # Project status check
 context.global.md → context.state.md
 ```
 
-*Additional context modules and loading paths will be available as they are developed and completed.*
+*Additional loading paths available as extendable modules (domains/, patterns/, tools/) are configured.*
 
 ## System Features
 
@@ -55,16 +42,24 @@ See [docs/Getting Started.md](docs/Getting%20Started.md) for complete setup proc
 
 See [docs/Local Context.md](docs/Local%20Context.md) for local environment management details.
 
+### Project Backlog
+- **Cross-Session Tracking**: Upcoming work and recently completed items persist across sessions
+- **Collaboration Ready**: Dependency and parallel safety signals for team coordination
+- **AI-Maintained**: Completed items automatically mirrored to project state and aged out per configurable criteria
+- **Prompt-Driven**: Add items, suggest next steps, and mark completions via natural language
+
+See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog management guidance.
+
 ## Core Principles
 
-- **Hierarchical Loading**: Load only what you need
+- **Minimal Loading**: Load only what you need
 - **Domain Agnostic**: No assumptions about project type  
 - **DRY Information**: Single source of truth
 - **Minimal Context**: Essential information only
 
 ## Context System Structure
 
-**Project State** (current):
+**Before Initialization**:
 ```
 project-space/
 ├── .ai-toolbox/         # AI context management system
@@ -73,10 +68,10 @@ project-space/
 └── .gitignore           # Version control patterns
 ```
 
-**Project State** (after initialization):
+**After Initialization**:
 ```
 your-project/
-├── .ai-toolbox/         # AI context system (can be archived after setup)
+├── .ai-toolbox/         # AI context system
 ├── .sandbox/            # Work area for references (gitignored)
 ├── */*                  # Your project structure defined by you
 ├── README.md            # Your project documentation
@@ -88,26 +83,28 @@ your-project/
 .ai-toolbox/
 ├── docs/                # 📚 System documentation  
 │   ├── Getting Started.md # Simple 3-step user guide
-│   └── Local Context.md # Local environment guide
+│   ├── Local Context.md # Local environment guide
+│   └── Backlog.md       # Backlog usage guide
 ├── context.local.md     # User environment basics (minimal personal preferences)
 ├── context.global.md    # 🚀 START HERE - Central routing
 ├── context.state.md     # Current project status
+├── context.backlog.md   # Project backlog and recently completed work
 ├── commands/            # Available operations
-└── [domains/, patterns/, tools/, project/ - under development]
+└── domains/, patterns/, tools/, project/   # Extendable modules
 ```
 
 ## Usage Examples
 
 *Note: context.local.md is automatically merged with context.global.md in all scenarios*
 
-### Current Project State
+### Common Paths
 ```
 context.global.md → context.state.md (project status)
 context.global.md → commands/initialization.md (setup new project)
 ```
 
-### After Context System Development
-*These examples will be available once additional context modules are developed and completed:*
+### With Domain and Pattern Contexts
+*Available once domains/, patterns/, tools/, and project/ modules are configured:*
 - Domain-specific contexts for specialized project types
 - Pattern libraries for common development approaches  
 - Tool-specific configurations and workflows

@@ -13,8 +13,8 @@
 ## Hierarchy Levels
 1. **Core**: context.global.md + context.local.md (auto-merged, generated if missing)
 2. **Operational**: context.state.md + available commands/
-3. **Domain**: [domains/, patterns/, tools/ - under development]
-4. **Project**: [project/ - under development]
+3. **Domain**: [domains/, patterns/, tools/ - extendable]
+4. **Project**: [project/ - extendable]
 
 ## Standard Loading Paths
 *Organized by logical importance and application order*
@@ -23,21 +23,22 @@
 **Project Status**: context.global.md → context.state.md
 **Initialization**: context.global.md → commands/initialization.md
 
-### Hierarchical Loading
+### Loading Sequence
 1. **Core**: context.global.md + context.local.md (auto-merged)
 2. **Operational**: context.state.md + available commands/
-3. **Domain**: domains/, patterns/, tools/ (under development)
-4. **Project**: project/ modules (under development)
+3. **Domain**: domains/, patterns/, tools/ (extendable)
+4. **Project**: project/ modules (extendable)
 
-*Additional loading paths available as context modules are completed*
+*Additional loading paths available as modules are configured*
 
 ## Available Contexts
 
 ### Level 2 (Operational)
 - `context.state.md` - current project status
+- `context.backlog.md` - project backlog and recently completed work
 
 ### Level 3-4 (Domain & Project)
-*The following context modules are under development:*
+*Extendable modules — configure as your project needs them:*
 - `domains/` - domain-specific contexts
 - `patterns/` - reusable patterns
 - `tools/` - tool-specific contexts 
@@ -58,11 +59,12 @@
 - **Cross-Reference Validation**: Ensure all file paths and references work
 
 ### Content Management Rules
+- **Backlog Auto-Management**: Mirror all completed items to context.state.md; age out Recently Completed entries per criteria defined in context.backlog.md; completed items must exist in both files
 - **File Reference Standards**: Note to user when referencing uncommitted files to help prevent broken links
 - **Path Validation**: Ensure all context file paths work for end users
 - **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status
 - **State Consistency**: Sync status across README.md, context.state.md, and other contexts
-- **Current State Only**: context.state.md contains no historical references  
+- **Current State Only**: context.state.md reflects present state — no references to superseded decisions or outdated status; Recently Completed Work is an approved duplication (mirrored from context.backlog.md)
 - **Agent Agnostic**: No agent/user references in context files except context.local.md personalization file
 - **Passive Updates**: All context file and documentation updates automatically synchronized by processing agents
 

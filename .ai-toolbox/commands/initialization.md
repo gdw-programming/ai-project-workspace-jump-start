@@ -1,7 +1,7 @@
 # Project Initialization Command
 
 **Trigger**: When `context.local.md` is missing during context loading
-**Purpose**: Complete project setup from template to operational workspace
+**Purpose**: Complete workspace system setup to an operational project
 
 ## Detection Pattern
 
@@ -29,6 +29,14 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 - Review process preferences  
 - Documentation approach
 - Communication and collaboration style
+
+**Project backlog preferences**:
+- Completed item age-out criteria (default applied if not specified: 30 days OR 3 newest per contributor, whichever comes first)
+  - Option A: After N days
+  - Option B: Keep only N newest per contributor
+  - Option C: After N days OR keep only N newest per contributor, whichever comes first
+- Update the **Active criteria** line in context.backlog.md with the chosen or default criteria
+- Inform user they can change this at any time — see [docs/Backlog.md](../docs/Backlog.md)
 
 **Development environment preferences**:
 - Preferred editor/IDE setup
@@ -106,11 +114,6 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 - **Remove System Development Context**: Delete .ai-toolbox/context.development.md (not needed in project mode)
 - **AI Agent Setup**: Add prompt instruction: "Load context from './.ai-toolbox/context.global.md' and follow maintenance rules automatically"
 - Provide next steps
-
-## System Cleanup
-**Remove Development Files**: 
-- Delete context.development.md (system development context not needed for projects)
-- Verify no references to development-specific contexts remain
 
 ## User Configuration  
 **Essential Prompt**: `"Always start by loading context from './.ai-toolbox/context.global.md' and follow the established maintenance rules automatically."`
