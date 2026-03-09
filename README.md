@@ -28,12 +28,12 @@ Initialize this project [YOUR_PROJECT_NAME] for [YOUR_PROJECT_DESCRIPTION] maint
 **Context System**: System ready for project initialization  
 **Project Status**: Ready to initialize project, hierarchical context operational, user personalization ready  
 **Available Commands**: Project initialization with user preference collection  
-**Available Documentation**: Getting Started guide, Local Context customization guide, Backlog management guide  
+**Available Documentation**: Getting Started guide, Local Context customization guide, Backlog management guide, Project Context guide  
 
 ### Quick Start
-1. Review context system: `./.ai-toolbox/README.md`
-2. Start context loading: `./.ai-toolbox/context.global.md`
-3. Customize your preferences: `./.ai-toolbox/docs/Local Context.md`
+1. Review context system: [.ai-toolbox/README.md](.ai-toolbox/README.md)
+2. Start context loading: [.ai-toolbox/context.global.md](.ai-toolbox/context.global.md)
+3. Customize your preferences: [.ai-toolbox/docs/Local Context.md](.ai-toolbox/docs/Local%20Context.md)
 4. Add your project information to the user editable section above
 
 <!-- AUTO-SYNCHRONIZED SECTION END -->
@@ -44,4 +44,4 @@ Initialize this project [YOUR_PROJECT_NAME] for [YOUR_PROJECT_DESCRIPTION] maint
 
 **System Origin**: This project was created from the AI Project Workspace Jump-Starter system.
 
-**AI Context System**: See `./.ai-toolbox/README.md` for complete documentation and usage patterns.
+**AI Context System**: See [.ai-toolbox/README.md](.ai-toolbox/README.md) for complete documentation and usage patterns.

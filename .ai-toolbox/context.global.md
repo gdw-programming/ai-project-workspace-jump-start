@@ -14,7 +14,7 @@
 1. **Core**: context.global.md + context.local.md (auto-merged, generated if missing)
 2. **Operational**: context.state.md + available commands/
 3. **Domain**: [domains/, patterns/, tools/ - extendable]
-4. **Project**: [project/ - extendable]
+4. **Project**: project/ (pre-configured stubs — populate with your project details)
 
 ## Standard Loading Paths
 *Organized by logical importance and application order*
@@ -27,7 +27,7 @@
 1. **Core**: context.global.md + context.local.md (auto-merged)
 2. **Operational**: context.state.md + available commands/
 3. **Domain**: domains/, patterns/, tools/ (extendable)
-4. **Project**: project/ modules (extendable)
+4. **Project**: project/ (overview.md, standards.md — populate with your project details)
 
 *Additional loading paths available as modules are configured*
 
@@ -37,12 +37,14 @@
 - `context.state.md` - current project status
 - `context.backlog.md` - project backlog and recently completed work
 
-### Level 3-4 (Domain & Project)
+### Level 3 (Domain)
 *Extendable modules — configure as your project needs them:*
 - `domains/` - domain-specific contexts
 - `patterns/` - reusable patterns
-- `tools/` - tool-specific contexts 
-- `project/` - project essentials
+- `tools/` - tool-specific contexts
+
+### Level 4 (Project)
+- `project/` - project essentials (pre-configured stubs — populate with your project details)
 
 *Additional operational commands available in commands/ directory*
 
@@ -73,6 +75,7 @@
 - **Auto-Sync Documentation**: Update ../README.md project status section from context.state.md
 - **Project State Language**: Use "ready to initialize project" or current project state, not development language
 - **Technical Terms Exception**: Allow specific technical terms like GitHub's "Use this template" button, API names, and platform-specific features that have established meanings
+- **Markdown Links**: All file references in documentation (README files, docs/) must use proper Markdown link syntax with URL-encoded spaces — `[Display Text](path/to/file.md)` — bare path references like `` `./.ai-toolbox/file.md` `` do not create clickable links
 
 ### Operational Behavior
 - **Local Context Maintenance**: Auto-update environment basics and workspace structure in context.local.md

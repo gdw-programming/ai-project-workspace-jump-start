@@ -50,26 +50,28 @@ Any item added to the workspace system must satisfy at least one of these criter
 Items that exist solely to support this system's own development process do not qualify and must not be committed to the base system.
 
 ## Upcoming Work
-*Forward-looking only. No history.*
+*Forward-looking only. No history. Order reflects user setup journey: project → domains → patterns → tools → commands.*
 
-**Reference validation fixes (untracked files)**
-- `project/overview.md` — rewrite as user-fillable project overview (remove system mission language)
-- `commands/context.md` — remove/reframe context.task.md-specific language
-- `commands/project.md` — remove/reframe context.task.md-specific reference
-- `domains/README.md` — remove non-existent domain references; frame as example + extensible
-- `patterns/README.md` — same; reference only setup.md
-- `tools/README.md` — same; reference only git.md
+**domains/ — project type context**
+- `domains/README.md` — remove non-existent domain references; list only research.md; frame as extensible
+- `domains/research.md` — review; likely clean
 
-**Commit validated untracked files**
-- Update `commands/README.md` to reflect finalized command files
-- Second repo commit: all reviewed/fixed untracked files
+**patterns/ — how-you-work context**
+- `patterns/README.md` — remove non-existent pattern references; list only setup.md; frame as extensible
+- `patterns/setup.md` — review; likely clean
 
-**How-to documentation**
-- `docs/` guide: how to add a domain
-- `docs/` guide: how to add a pattern
-- `docs/` guide: how to add a tool context
+**tools/ — tool-specific context**
+- `tools/README.md` — remove non-existent tool references; list only git.md; frame as extensible
+- `tools/git.md` — review; likely clean
 
-**State accuracy (after commit)**
+**commands/ — operational layer (most dependent)**
+- `commands/README.md` — fix loading path (remove context.task.md reference)
+- `commands/context.md` — replace context.task.md references with context.backlog.md / context.state.md
+- `commands/project.md` — replace context.task.md reference with context.backlog.md
+- `commands/development.md` — review; likely clean
+
+**Commit and verify**
+- Commit all reviewed/fixed untracked files as second repo commit
 - Audit `context.state.md` Available Modules against what is actually committed
 
 ## System Development Lifecycle Management

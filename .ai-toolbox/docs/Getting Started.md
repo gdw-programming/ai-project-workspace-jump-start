@@ -33,6 +33,11 @@ Always start by loading context from './.ai-toolbox/context.global.md' and follo
 
 Just ask for what you need - the context system works in the background.
 
+**Further customization** (optional, after initialization):
+- Define your project: [Project Context.md](Project%20Context.md)
+- Manage your backlog: [Backlog.md](Backlog.md)
+- Customize your local preferences: [Local Context.md](Local%20Context.md)
+
 ---
 
 **That's it!** The AI context system handles environment detection, preference collection, and setup automatically.

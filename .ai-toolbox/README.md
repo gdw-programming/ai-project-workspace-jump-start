@@ -84,13 +84,15 @@ your-project/
 ├── docs/                # 📚 System documentation  
 │   ├── Getting Started.md # Simple 3-step user guide
 │   ├── Local Context.md # Local environment guide
-│   └── Backlog.md       # Backlog usage guide
+│   ├── Backlog.md       # Backlog usage guide
+│   └── Project Context.md # Project overview and standards guide
 ├── context.local.md     # User environment basics (minimal personal preferences)
 ├── context.global.md    # 🚀 START HERE - Central routing
 ├── context.state.md     # Current project status
 ├── context.backlog.md   # Project backlog and recently completed work
 ├── commands/            # Available operations
-└── domains/, patterns/, tools/, project/   # Extendable modules
+├── project/             # Project context (overview, standards)
+└── domains/, patterns/, tools/   # Extendable modules
 ```
 
 ## Usage Examples
@@ -104,7 +106,7 @@ context.global.md → commands/initialization.md (setup new project)
 ```
 
 ### With Domain and Pattern Contexts
-*Available once domains/, patterns/, tools/, and project/ modules are configured:*
+*Available once domains/, patterns/, and tools/ modules are configured:*
 - Domain-specific contexts for specialized project types
 - Pattern libraries for common development approaches  
 - Tool-specific configurations and workflows

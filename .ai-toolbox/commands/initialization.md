@@ -87,8 +87,8 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 
 **Documentation**:
 - Update root README with project info
-- Generate development guidelines
-- Create project standards based on preferences
+- Populate `project/overview.md` with project name, mission, goals, and scope gathered during setup
+- Populate `project/standards.md` with quality standards based on user's development preferences
 
 ### Version Control
 **If Git detected**:

@@ -21,10 +21,11 @@ Current operational status for AI agents. Machine-readable only.
 
 ## Available Modules
 - **Commands**: initialization.md (project setup)
-- **Documentation**: Getting Started.md, Local Context.md, Backlog.md
+- **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md
+- **Project Context**: overview.md, standards.md
 - **Core Context**: System README.md
 
-*Extendable*: domains/, patterns/, tools/, additional commands/, project/
+*Extendable*: domains/, patterns/, tools/, additional commands/
 
 ## Current Capabilities
 - System ready for project initialization
@@ -45,12 +46,17 @@ ai-project-workspace/            # Project root
 │   ├── docs/                   # User documentation
 │   │   ├── Getting Started.md  # User onboarding guide
 │   │   ├── Local Context.md    # User customization guide
-│   │   └── Backlog.md          # Backlog usage guide
+│   │   ├── Backlog.md          # Backlog usage guide
+│   │   └── Project Context.md  # Project overview and standards guide
+│   ├── project/                # Project context
+│   │   ├── overview.md         # Project mission and goals
+│   │   ├── standards.md        # Universal quality guidelines
+│   │   └── README.md           # Project directory guide
 │   └── README.md               # System overview
 ├── .gitignore                  # Version control patterns
 └── README.md                   # Project overview
 
-*Extendable*: domains/, patterns/, tools/, project/
+*Extendable*: domains/, patterns/, tools/, additional commands/
 ```
 
 ## System Architecture Status
