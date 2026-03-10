@@ -23,7 +23,7 @@ context.global.md → commands/initialization.md
 context.global.md → context.state.md
 ```
 
-*Additional loading paths available as extendable modules (domains/, patterns/, tools/) are configured.*
+*Additional loading paths available as patterns/ and tools/ extendable modules are configured.*
 
 ## System Features
 
@@ -85,14 +85,16 @@ your-project/
 │   ├── Getting Started.md # Simple 3-step user guide
 │   ├── Local Context.md # Local environment guide
 │   ├── Backlog.md       # Backlog usage guide
-│   └── Project Context.md # Project overview and standards guide
+│   ├── Project Context.md # Project overview and standards guide
+│   └── Domains.md       # Domain context guide
 ├── context.local.md     # User environment basics (minimal personal preferences)
 ├── context.global.md    # 🚀 START HERE - Central routing
 ├── context.state.md     # Current project status
 ├── context.backlog.md   # Project backlog and recently completed work
 ├── commands/            # Available operations
 ├── project/             # Project context (overview, standards)
-└── domains/, patterns/, tools/   # Extendable modules
+├── domains/             # Domain contexts (research.md example provided)
+└── patterns/, tools/   # Extendable modules
 ```
 
 ## Usage Examples
@@ -105,9 +107,12 @@ context.global.md → context.state.md (project status)
 context.global.md → commands/initialization.md (setup new project)
 ```
 
-### With Domain and Pattern Contexts
-*Available once domains/, patterns/, and tools/ modules are configured:*
-- Domain-specific contexts for specialized project types
+### With Domain Contexts
+- Domain-specific contexts for specialized project types (research.md example provided)
+
+See [docs/Domains.md](docs/Domains.md) for domain context patterns and how to add new domains.
+
+*Additional capabilities available once patterns/ and tools/ extendable modules are configured:*
 - Pattern libraries for common development approaches  
 - Tool-specific configurations and workflows
 - Extended command libraries for project operations

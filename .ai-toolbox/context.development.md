@@ -52,10 +52,6 @@ Items that exist solely to support this system's own development process do not 
 ## Upcoming Work
 *Forward-looking only. No history. Order reflects user setup journey: project → domains → patterns → tools → commands.*
 
-**domains/ — project type context**
-- `domains/README.md` — remove non-existent domain references; list only research.md; frame as extensible
-- `domains/research.md` — review; likely clean
-
 **patterns/ — how-you-work context**
 - `patterns/README.md` — remove non-existent pattern references; list only setup.md; frame as extensible
 - `patterns/setup.md` — review; likely clean

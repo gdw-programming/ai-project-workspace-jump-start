@@ -82,7 +82,7 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 ### Project Customization
 **Structure setup**:
 - Create directories based on project type
-- Initialize domain contexts if applicable
+- Initialize domain contexts if applicable — see [docs/Domains.md](../docs/Domains.md) for domain context patterns
 - Configure tool-specific settings
 
 **Documentation**:

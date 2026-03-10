@@ -21,11 +21,12 @@ Current operational status for AI agents. Machine-readable only.
 
 ## Available Modules
 - **Commands**: initialization.md (project setup)
-- **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md
+- **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md, Domains.md
 - **Project Context**: overview.md, standards.md
+- **Domain Contexts**: research.md (example — add more as needed)
 - **Core Context**: System README.md
 
-*Extendable*: domains/, patterns/, tools/, additional commands/
+*Extendable*: patterns/, tools/, additional commands/
 
 ## Current Capabilities
 - System ready for project initialization
@@ -47,16 +48,20 @@ ai-project-workspace/            # Project root
 │   │   ├── Getting Started.md  # User onboarding guide
 │   │   ├── Local Context.md    # User customization guide
 │   │   ├── Backlog.md          # Backlog usage guide
-│   │   └── Project Context.md  # Project overview and standards guide
+│   │   ├── Project Context.md  # Project overview and standards guide
+│   │   └── Domains.md          # Domain contexts guide
 │   ├── project/                # Project context
+│   │   ├── README.md           # Project directory guide
 │   │   ├── overview.md         # Project mission and goals
-│   │   ├── standards.md        # Universal quality guidelines
-│   │   └── README.md           # Project directory guide
+│   │   └── standards.md        # Universal quality guidelines
+│   ├── domains/                # Domain-specific contexts
+│   │   ├── README.md           # Domain directory guide
+│   │   └── research.md         # Research and discovery domain
 │   └── README.md               # System overview
 ├── .gitignore                  # Version control patterns
 └── README.md                   # Project overview
 
-*Extendable*: domains/, patterns/, tools/, additional commands/
+*Extendable*: patterns/, tools/, additional commands/
 ```
 
 ## System Architecture Status
