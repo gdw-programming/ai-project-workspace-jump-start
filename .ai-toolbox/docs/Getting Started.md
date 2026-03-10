@@ -36,6 +36,7 @@ Just ask for what you need - the context system works in the background.
 **Further customization** (optional, after initialization):
 - Define your project: [Project Context.md](Project%20Context.md)
 - Add domain contexts: [Domains.md](Domains.md)
+- Apply reusable patterns: [Patterns.md](Patterns.md)
 - Manage your backlog: [Backlog.md](Backlog.md)
 - Customize your local preferences: [Local Context.md](Local%20Context.md)
 

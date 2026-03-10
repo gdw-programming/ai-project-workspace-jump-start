@@ -28,7 +28,7 @@ Initialize this project [YOUR_PROJECT_NAME] for [YOUR_PROJECT_DESCRIPTION] maint
 **Context System**: System ready for project initialization  
 **Project Status**: Ready to initialize project, hierarchical context operational, user personalization ready  
 **Available Commands**: Project initialization with user preference collection  
-**Available Documentation**: Getting Started guide, Local Context customization guide, Backlog management guide, Project Context guide, Domain contexts guide  
+**Available Documentation**: Getting Started guide, Local Context customization guide, Backlog management guide, Project Context guide, Domain contexts guide, Patterns guide  
 
 ### Quick Start
 1. Review context system: [.ai-toolbox/README.md](.ai-toolbox/README.md)

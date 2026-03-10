@@ -23,7 +23,7 @@ context.global.md → commands/initialization.md
 context.global.md → context.state.md
 ```
 
-*Additional loading paths available as patterns/ and tools/ extendable modules are configured.*
+*Additional loading paths available as the tools/ extendable module is configured.*
 
 ## System Features
 
@@ -86,7 +86,8 @@ your-project/
 │   ├── Local Context.md # Local environment guide
 │   ├── Backlog.md       # Backlog usage guide
 │   ├── Project Context.md # Project overview and standards guide
-│   └── Domains.md       # Domain context guide
+│   ├── Domains.md       # Domain context guide
+│   └── Patterns.md      # Patterns usage guide
 ├── context.local.md     # User environment basics (minimal personal preferences)
 ├── context.global.md    # 🚀 START HERE - Central routing
 ├── context.state.md     # Current project status
@@ -94,7 +95,8 @@ your-project/
 ├── commands/            # Available operations
 ├── project/             # Project context (overview, standards)
 ├── domains/             # Domain contexts (research.md example provided)
-└── patterns/, tools/   # Extendable modules
+├── patterns/            # Reusable patterns (setup.md example provided)
+└── tools/               # Extendable module
 ```
 
 ## Usage Examples
@@ -107,13 +109,14 @@ context.global.md → context.state.md (project status)
 context.global.md → commands/initialization.md (setup new project)
 ```
 
-### With Domain Contexts
+### With Domain and Pattern Contexts
 - Domain-specific contexts for specialized project types (research.md example provided)
+- Reusable patterns for common development approaches (setup.md example provided)
 
 See [docs/Domains.md](docs/Domains.md) for domain context patterns and how to add new domains.
+See [docs/Patterns.md](docs/Patterns.md) for pattern usage and how to add new patterns.
 
-*Additional capabilities available once patterns/ and tools/ extendable modules are configured:*
-- Pattern libraries for common development approaches  
+*Additional capabilities available once tools/ extendable module is configured:*
 - Tool-specific configurations and workflows
 - Extended command libraries for project operations
 

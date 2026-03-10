@@ -15,7 +15,7 @@ Context for research, learning, and discovery workflows.
 - Version control for research artifacts
 
 ## References
-- `patterns/setup.md` - for organizing research projects *(add when patterns/ is configured)*
+- [patterns/setup.md](../patterns/setup.md) - for organizing research projects
 - `tools/git.md` - for versioning research materials *(add when tools/ is configured)*
 - [project/standards.md](../project/standards.md) - for documentation quality
 

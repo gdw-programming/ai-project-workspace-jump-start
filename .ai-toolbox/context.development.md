@@ -52,22 +52,20 @@ Items that exist solely to support this system's own development process do not 
 ## Upcoming Work
 *Forward-looking only. No history. Order reflects user setup journey: project → domains → patterns → tools → commands.*
 
-**patterns/ — how-you-work context**
-- `patterns/README.md` — remove non-existent pattern references; list only setup.md; frame as extensible
-- `patterns/setup.md` — review; likely clean
-
 **tools/ — tool-specific context**
 - `tools/README.md` — remove non-existent tool references; list only git.md; frame as extensible
 - `tools/git.md` — review; likely clean
+- Create `docs/Tools.md` — prompt-examples-first usage guide + how-to for adding tools
+- Wire into committed files; code review; commit
 
 **commands/ — operational layer (most dependent)**
 - `commands/README.md` — fix loading path (remove context.task.md reference)
 - `commands/context.md` — replace context.task.md references with context.backlog.md / context.state.md
 - `commands/project.md` — replace context.task.md reference with context.backlog.md
 - `commands/development.md` — review; likely clean
+- Wire into committed files; code review; commit
 
-**Commit and verify**
-- Commit all reviewed/fixed untracked files as second repo commit
+**Final verify**
 - Audit `context.state.md` Available Modules against what is actually committed
 
 ## System Development Lifecycle Management
