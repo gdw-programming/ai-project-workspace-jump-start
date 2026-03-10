@@ -38,6 +38,7 @@ There are two distinct contexts at play here:
 - **Local Context Guidance**: Help users customize their minimal personal preferences in context.local.md
 - **Implementation Guides**: Explain system usage patterns, not system architecture
 - **Minimal Context Enforcement**: Ensure context.local.md remains minimal with only essential user preferences
+- **docs/ Guide Structure**: Each guide in docs/ follows this pattern — common prompts first, what-belongs table, worked example (linking to the example file), how-to for adding new items
 
 ## System Content Eligibility Rules
 *Applied when adding or modifying any file in the system during this boilerplate system's development or enhancement*
@@ -50,10 +51,9 @@ Any item added to the workspace system must satisfy at least one of these criter
 Items that exist solely to support this system's own development process do not qualify and must not be committed to the base system.
 
 ## Upcoming Work
-*Forward-looking only. No history. Order reflects user setup journey: project → domains → patterns → tools → commands.*
+*Forward-looking only. No history.*
 
-**Final verify**
-- Audit `context.state.md` Available Modules against what is actually committed
+*(no upcoming work — add future development ideas here)*
 
 ## System Development Lifecycle Management
 **This context file gets deleted during project initialization** - ensures clean user experience with context.global.md as primary entry point.

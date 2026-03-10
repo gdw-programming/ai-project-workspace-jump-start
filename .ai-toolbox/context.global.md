@@ -58,9 +58,10 @@
 
 ### Content Management Rules
 - **Backlog Auto-Management**: Mirror all completed items to context.state.md; age out Recently Completed entries per criteria defined in context.backlog.md; completed items must exist in both files
-- **File Reference Standards**: Note to user when referencing uncommitted files to help prevent broken links
+- **File Reference Standards**: Never use Markdown links to files that have not yet been committed — use plain text references only; Markdown links to uncommitted files create broken documentation
 - **Path Validation**: Ensure all context file paths work for end users
 - **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status
+- **Auto-Sync Targets are Dependencies**: root README.md, context.state.md, and context.backlog.md must stay in sync with committed content at all times — if any is out of sync, fix it immediately as a dependency, not a future task
 - **State Consistency**: Sync status across README.md, context.state.md, and other contexts
 - **Current State Only**: context.state.md reflects present state — no references to superseded decisions or outdated status; Recently Completed Work is an approved duplication (mirrored from context.backlog.md)
 - **Agent Agnostic**: No agent/user references in context files except context.local.md personalization file
@@ -72,6 +73,7 @@
 - **Project State Language**: Use "ready to initialize project" or current project state, not development language
 - **Technical Terms Exception**: Allow specific technical terms like GitHub's "Use this template" button, API names, and platform-specific features that have established meanings
 - **Markdown Links**: All file references in documentation (README files, docs/) must use proper Markdown link syntax with URL-encoded spaces — `[Display Text](path/to/file.md)` — bare path references like `` `./.ai-toolbox/file.md` `` do not create clickable links
+- **Context Framing**: tools/, domains/, and patterns/ use team/project framing ("your team's conventions", "your project's standards") — context.local.md is the only file that uses personal framing ("your preferences", "your environment")
 
 ### Operational Behavior
 - **Local Context Maintenance**: Auto-update environment basics and workspace structure in context.local.md

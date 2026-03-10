@@ -26,5 +26,28 @@ General development patterns that work across project types.
 **Context**: domains/{type}.md + patterns/setup.md
 **Example**: src/, docs/, tests/ with appropriate subdirectories
 
+## Describe Change Set
+**Purpose**: Generate a descriptive summary of the current change set suitable for recording (commit message, PR description, changelog entry, etc.)
+**Pattern**: Identify each file in the change set, determine its category based on prior history, and produce a concise summary with a one-line title and categorized file list
+**Context**: context.global.md + all files in the current change set + their prior recorded history
+**Categories**:
+- **Created** — new files with no prior recorded history
+- **Integrated into** — existing files modified only to wire in new files from this change set
+- **Updated** — existing files with substantive content changes
+- **Fixed** — existing files where something incorrect was corrected
+
+Omit any category that has no files.
+
+## Review Change Set
+**Purpose**: Verify a change set is consistent, correct, and ready to record
+**Pattern**: Review all files in the current change set against established context rules, fix all issues found, re-read changed files to verify no fix introduced a new inconsistency, then report
+**Context**: context.global.md + context.state.md + all files in the current change set
+**Checklist**:
+- Logical consistency, clarity, and alignment with project workflow goals; no rule or constraint conflicts with an existing rule in another context file
+- Compliance with all context and documentation rules (DRY, Minimal Context, Workflow Agnostic, Reference Validation, Language Standards, Markdown Links, Context Framing)
+- All file references and links are correct and point to existing files
+- Workspace trees and module listings in context.state.md and README files reflect all files in this change set — treat them as current
+- Auto-sync targets (root README.md, context.state.md, context.backlog.md) are consistent with current content — if out of sync, fix immediately as a dependency
+
 ---
 *Adapt patterns based on loaded domain contexts*
