@@ -52,12 +52,6 @@ Items that exist solely to support this system's own development process do not 
 ## Upcoming Work
 *Forward-looking only. No history. Order reflects user setup journey: project → domains → patterns → tools → commands.*
 
-**tools/ — tool-specific context**
-- `tools/README.md` — remove non-existent tool references; list only git.md; frame as extensible
-- `tools/git.md` — review; likely clean
-- Create `docs/Tools.md` — prompt-examples-first usage guide + how-to for adding tools
-- Wire into committed files; code review; commit
-
 **commands/ — operational layer (most dependent)**
 - `commands/README.md` — fix loading path (remove context.task.md reference)
 - `commands/context.md` — replace context.task.md references with context.backlog.md / context.state.md

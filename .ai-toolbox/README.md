@@ -23,7 +23,7 @@ context.global.md → commands/initialization.md
 context.global.md → context.state.md
 ```
 
-*Additional loading paths available as the tools/ extendable module is configured.*
+*See the docs/ guides for extending domains, patterns, and tool contexts as your project grows.*
 
 ## System Features
 
@@ -87,7 +87,8 @@ your-project/
 │   ├── Backlog.md       # Backlog usage guide
 │   ├── Project Context.md # Project overview and standards guide
 │   ├── Domains.md       # Domain context guide
-│   └── Patterns.md      # Patterns usage guide
+│   ├── Patterns.md      # Patterns usage guide
+│   └── Tools.md         # Tool contexts guide
 ├── context.local.md     # User environment basics (minimal personal preferences)
 ├── context.global.md    # 🚀 START HERE - Central routing
 ├── context.state.md     # Current project status
@@ -96,7 +97,7 @@ your-project/
 ├── project/             # Project context (overview, standards)
 ├── domains/             # Domain contexts (research.md example provided)
 ├── patterns/            # Reusable patterns (setup.md example provided)
-└── tools/               # Extendable module
+└── tools/               # Tool-specific contexts (git.md example provided)
 ```
 
 ## Usage Examples
@@ -109,16 +110,14 @@ context.global.md → context.state.md (project status)
 context.global.md → commands/initialization.md (setup new project)
 ```
 
-### With Domain and Pattern Contexts
+### With Domain, Pattern, and Tool Contexts
 - Domain-specific contexts for specialized project types (research.md example provided)
 - Reusable patterns for common development approaches (setup.md example provided)
+- Tool-specific contexts for your team's development tools (git.md example provided)
 
 See [docs/Domains.md](docs/Domains.md) for domain context patterns and how to add new domains.
 See [docs/Patterns.md](docs/Patterns.md) for pattern usage and how to add new patterns.
-
-*Additional capabilities available once tools/ extendable module is configured:*
-- Tool-specific configurations and workflows
-- Extended command libraries for project operations
+See [docs/Tools.md](docs/Tools.md) for tool context usage and how to add new tool contexts.
 
 ## Growing the System
 

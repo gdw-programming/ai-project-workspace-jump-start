@@ -84,6 +84,7 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 - Create directories based on project type
 - Initialize domain contexts if applicable — see [docs/Domains.md](../docs/Domains.md) for domain context patterns
 - Apply reusable patterns if applicable — see [docs/Patterns.md](../docs/Patterns.md) for pattern usage
+- Configure tool contexts if applicable — see [docs/Tools.md](../docs/Tools.md) for tool context conventions
 - Configure tool-specific settings
 
 **Documentation**:

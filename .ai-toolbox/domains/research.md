@@ -16,7 +16,7 @@ Context for research, learning, and discovery workflows.
 
 ## References
 - [patterns/setup.md](../patterns/setup.md) - for organizing research projects
-- `tools/git.md` - for versioning research materials *(add when tools/ is configured)*
+- [tools/git.md](../tools/git.md) - for versioning research materials
 - [project/standards.md](../project/standards.md) - for documentation quality
 
 ---

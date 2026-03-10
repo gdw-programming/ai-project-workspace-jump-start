@@ -21,13 +21,14 @@ Current operational status for AI agents. Machine-readable only.
 
 ## Available Modules
 - **Commands**: initialization.md (project setup)
-- **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md, Domains.md, Patterns.md
+- **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md, Domains.md, Patterns.md, Tools.md
 - **Project Context**: overview.md, standards.md
 - **Domain Contexts**: research.md (example — add more as needed)
 - **Pattern Contexts**: setup.md (example — add more as needed)
+- **Tool Contexts**: git.md (example — add more as needed)
 - **Core Context**: System README.md
 
-*Extendable*: tools/, additional commands/
+*Extendable*: additional commands/
 
 ## Current Capabilities
 - System ready for project initialization
@@ -51,7 +52,8 @@ ai-project-workspace/            # Project root
 │   │   ├── Backlog.md          # Backlog usage guide
 │   │   ├── Project Context.md  # Project overview and standards guide
 │   │   ├── Domains.md          # Domain contexts guide
-│   │   └── Patterns.md         # Patterns usage guide
+│   │   ├── Patterns.md         # Patterns usage guide
+│   │   └── Tools.md            # Tool contexts guide
 │   ├── project/                # Project context
 │   │   ├── README.md           # Project directory guide
 │   │   ├── overview.md         # Project mission and goals
@@ -62,11 +64,14 @@ ai-project-workspace/            # Project root
 │   ├── patterns/               # Reusable patterns
 │   │   ├── README.md           # Patterns directory guide
 │   │   └── setup.md            # Project setup patterns
+│   ├── tools/                  # Tool-specific contexts
+│   │   ├── README.md           # Tools directory guide
+│   │   └── git.md              # Git version control context
 │   └── README.md               # System overview
 ├── .gitignore                  # Version control patterns
 └── README.md                   # Project overview
 
-*Extendable*: tools/, additional commands/
+*Extendable*: additional commands/
 ```
 
 ## System Architecture Status

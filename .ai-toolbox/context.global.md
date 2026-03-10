@@ -13,7 +13,7 @@
 ## Hierarchy Levels
 1. **Core**: context.global.md + context.local.md (auto-merged, generated if missing)
 2. **Operational**: context.state.md + available commands/
-3. **Domain**: domains/ (research.md example provided) + patterns/ (setup.md example provided) + [tools/ - extendable]
+3. **Domain**: domains/ (research.md example provided) + patterns/ (setup.md example provided) + tools/ (git.md example provided)
 4. **Project**: project/ (pre-configured stubs — populate with your project details)
 
 ## Standard Loading Paths
@@ -26,7 +26,7 @@
 ### Loading Sequence
 1. **Core**: context.global.md + context.local.md (auto-merged)
 2. **Operational**: context.state.md + available commands/
-3. **Domain**: domains/ + patterns/ + [tools/ - extendable, configure as needed]
+3. **Domain**: domains/ + patterns/ + tools/
 4. **Project**: project/ (overview.md, standards.md — populate with your project details)
 
 *Additional loading paths available as modules are configured*
@@ -40,12 +40,7 @@
 ### Level 3 (Domain)
 - `domains/` - domain-specific contexts (research.md example provided)
 - `patterns/` - reusable patterns (setup.md example provided)
-
-*Extendable — configure as your project needs them:*
-- `tools/` - tool-specific contexts
-
-### Level 4 (Project)
-- `project/` - project essentials (pre-configured stubs — populate with your project details)
+- `tools/` - tool-specific contexts (git.md example provided)
 
 *Additional operational commands available in commands/ directory*
 
