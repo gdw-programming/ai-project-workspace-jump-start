@@ -23,7 +23,7 @@ context.global.md → commands/initialization.md
 context.global.md → context.state.md
 ```
 
-*See the docs/ guides for extending domains, patterns, and tool contexts as your project grows.*
+*See the docs/ guides for extending domains, patterns, tool contexts, and commands as your project grows.*
 
 ## System Features
 
@@ -88,7 +88,8 @@ your-project/
 │   ├── Project Context.md # Project overview and standards guide
 │   ├── Domains.md       # Domain context guide
 │   ├── Patterns.md      # Patterns usage guide
-│   └── Tools.md         # Tool contexts guide
+│   ├── Tools.md         # Tool contexts guide
+│   └── Commands.md      # Commands usage guide
 ├── context.local.md     # User environment basics (minimal personal preferences)
 ├── context.global.md    # 🚀 START HERE - Central routing
 ├── context.state.md     # Current project status
@@ -118,6 +119,7 @@ context.global.md → commands/initialization.md (setup new project)
 See [docs/Domains.md](docs/Domains.md) for domain context patterns and how to add new domains.
 See [docs/Patterns.md](docs/Patterns.md) for pattern usage and how to add new patterns.
 See [docs/Tools.md](docs/Tools.md) for tool context usage and how to add new tool contexts.
+See [docs/Commands.md](docs/Commands.md) for command context usage and how to extend commands.
 
 ## Growing the System
 

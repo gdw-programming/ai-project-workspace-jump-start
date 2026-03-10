@@ -20,15 +20,13 @@ Current operational status for AI agents. Machine-readable only.
 | *(no completed items yet)* | | |
 
 ## Available Modules
-- **Commands**: initialization.md (project setup)
-- **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md, Domains.md, Patterns.md, Tools.md
+- **Commands**: initialization.md (project setup), context.md (context management), development.md (development workflows), project.md (project management)
+- **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md, Domains.md, Patterns.md, Tools.md, Commands.md
 - **Project Context**: overview.md, standards.md
 - **Domain Contexts**: research.md (example — add more as needed)
 - **Pattern Contexts**: setup.md (example — add more as needed)
 - **Tool Contexts**: git.md (example — add more as needed)
 - **Core Context**: System README.md
-
-*Extendable*: additional commands/
 
 ## Current Capabilities
 - System ready for project initialization
@@ -45,7 +43,11 @@ ai-project-workspace/            # Project root
 │   ├── context.state.md         # Project status tracking
 │   ├── context.backlog.md       # Project backlog and completed work
 │   ├── commands/                # Available operations
-│   │   └── initialization.md   # Project initialization
+│   │   ├── README.md           # Commands directory guide
+│   │   ├── initialization.md   # Project initialization
+│   │   ├── context.md          # Context management operations
+│   │   ├── development.md      # Development workflow patterns
+│   │   └── project.md          # Project management operations
 │   ├── docs/                   # User documentation
 │   │   ├── Getting Started.md  # User onboarding guide
 │   │   ├── Local Context.md    # User customization guide
@@ -53,7 +55,8 @@ ai-project-workspace/            # Project root
 │   │   ├── Project Context.md  # Project overview and standards guide
 │   │   ├── Domains.md          # Domain contexts guide
 │   │   ├── Patterns.md         # Patterns usage guide
-│   │   └── Tools.md            # Tool contexts guide
+│   │   ├── Tools.md            # Tool contexts guide
+│   │   └── Commands.md         # Commands usage guide
 │   ├── project/                # Project context
 │   │   ├── README.md           # Project directory guide
 │   │   ├── overview.md         # Project mission and goals
@@ -70,8 +73,6 @@ ai-project-workspace/            # Project root
 │   └── README.md               # System overview
 ├── .gitignore                  # Version control patterns
 └── README.md                   # Project overview
-
-*Extendable*: additional commands/
 ```
 
 ## System Architecture Status

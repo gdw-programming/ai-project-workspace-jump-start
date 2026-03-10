@@ -38,6 +38,7 @@ Just ask for what you need - the context system works in the background.
 - Add domain contexts: [Domains.md](Domains.md)
 - Apply reusable patterns: [Patterns.md](Patterns.md)
 - Configure tool contexts: [Tools.md](Tools.md)
+- Extend command patterns: [Commands.md](Commands.md)
 - Manage your backlog: [Backlog.md](Backlog.md)
 - Customize your local preferences: [Local Context.md](Local%20Context.md)
 
