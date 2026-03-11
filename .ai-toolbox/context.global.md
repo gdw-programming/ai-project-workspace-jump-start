@@ -77,6 +77,7 @@
 
 ### Operational Behavior
 - **Local Context Maintenance**: Auto-update environment basics and workspace structure in context.local.md
+- **Tool Discovery Tracking**: When a tool, runtime, or capability is discovered or found missing during any session, record it in the appropriate location — machine-specific tools (shell type, OS utilities, local runtimes, PDF readers, available commands) go in context.local.md Available Tools; project-wide tool conventions (build tools, test frameworks, deployment targets) go in tools/ contexts; if a needed tool is unavailable, record the absence and the alternative used
 - **Gitignored File Editing**: Allow editing of gitignored files when they are part of system functionality (e.g., context.local.md, user preferences)
 - **Minimal Context**: Create only necessary contexts for project use, avoid unnecessary complexity
 - **Minimal Loading**: Load only required contexts

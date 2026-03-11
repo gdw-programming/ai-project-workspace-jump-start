@@ -9,7 +9,12 @@ The context.local.md file contains minimal user and environment information. Thi
 ### System-Managed Sections
 *Automatically maintained - do not edit*
 - **Environment Basics**: OS, shell, workspace, date
-- **Available Tools**: Auto-detected development tools
+- **Available Tools**: Living log of discovered capabilities — updated throughout the project as tools are found, used, or found missing. Includes runtimes, shells, OS utilities, and machine-specific commands.
+
+**What goes here vs. elsewhere**:
+- Machine-specific tools (only on this machine, may vary by user) → Available Tools in context.local.md
+- Project-wide tool conventions (build tools, test frameworks, deployment) → tools/ contexts
+- If a tool is unavailable, record the absence and what alternative was used
 
 ### User Editable Section
 *Between USER EDITABLE SECTION START/END markers*
