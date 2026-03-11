@@ -13,6 +13,8 @@ Cross-session work tracking for the project. AI agents automatically maintain th
 - After N days OR keep only N newest per contributor, whichever comes first
 
 ## Recently Completed
+*Project deliverables and features only — context system maintenance (updating rules, context files, documentation structure) is not recorded here.*
+
 *Most recent first. All items here are also mirrored in context.state.md — see [docs/Backlog.md](docs/Backlog.md) for this relationship.*
 
 *Oldest entries removed per Age-out Criteria above; full history preserved in context.state.md.*

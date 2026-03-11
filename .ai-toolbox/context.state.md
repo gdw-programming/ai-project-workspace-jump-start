@@ -13,7 +13,7 @@ Current operational status for AI agents. Machine-readable only.
 - **Core System**: ✅ Ready for project initialization
 
 ## Recently Completed Work
-*Mirrored from context.backlog.md — approved duplication. Full history accumulates here permanently as project record; backlog ages out per its criteria.*
+*Project deliverables and features only — context system maintenance is not recorded here. Mirrored from context.backlog.md — approved duplication; full project deliverable history accumulates here permanently while backlog ages out per its criteria.*
 
 | Item | Contributor | Date |
 |------|-------------|------|
