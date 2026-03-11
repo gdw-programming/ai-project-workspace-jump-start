@@ -58,6 +58,7 @@
 
 ### Content Management Rules
 - **Backlog Auto-Management**: Mirror all completed items to context.state.md; age out Recently Completed entries per criteria defined in context.backlog.md; completed items must exist in both files
+- **Contributor Attribution**: Always use the Contributor Name from context.local.md User Preferences when recording completed items in context.backlog.md and context.state.md — if not set, prompt the user for their name before recording
 - **File Reference Standards**: Never use Markdown links to files that have not yet been committed — use plain text references only; Markdown links to uncommitted files create broken documentation
 - **Path Validation**: Ensure all context file paths work for end users
 - **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status

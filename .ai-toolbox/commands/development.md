@@ -33,8 +33,8 @@ General development patterns that work across project types.
 **Categories**:
 - **Created** — new files with no prior recorded history
 - **Integrated into** — existing files modified only to wire in new files from this change set
-- **Updated** — existing files with substantive content changes
-- **Fixed** — existing files where something incorrect was corrected
+- **Updated** — existing files with substantive content changes, including auto-sync target updates (README.md, context.state.md, context.backlog.md) kept current as part of the change set
+- **Fixed** — existing files where content was incorrect or broken (wrong information, bad links, rule violations) — not routine sync lag
 
 Omit any category that has no files.
 
@@ -47,6 +47,7 @@ Omit any category that has no files.
 - Compliance with all context and documentation rules (DRY, Minimal Context, Workflow Agnostic, Reference Validation, Language Standards, Markdown Links, Context Framing)
 - All file references and links are correct and point to existing files
 - Workspace trees and module listings in context.state.md and README files reflect all files in this change set — treat them as current
+- Recently Completed Work in context.state.md and context.backlog.md is current — completed items from this change set are recorded with contributor name and date
 - Auto-sync targets (root README.md, context.state.md, context.backlog.md) are consistent with current content — if out of sync, fix immediately as a dependency
 
 ---
