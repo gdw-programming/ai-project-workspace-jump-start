@@ -26,9 +26,7 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 ### User Preference Collection
 **Personal workflow preferences**:
 - Change management style (iterative vs. batch)
-- Review process preferences  
-- Documentation approach
-- Communication and collaboration style
+- Communication style with AI agents (e.g., verbose explanations vs. concise output)
 
 **Project backlog preferences**:
 - Completed item age-out criteria (default applied if not specified: 30 days OR 3 newest per contributor, whichever comes first)

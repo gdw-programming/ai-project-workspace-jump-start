@@ -82,6 +82,7 @@
 - **Tool Resolution Loop**: Before attempting any task that requires a specific tool or capability — check context.local.md Available Tools first; if the tool is not recorded, prompt the user before assuming it is available or choosing an alternative; once resolved, record the result (available or unavailable + alternative) before proceeding
 - **Gitignored File Editing**: Allow editing of gitignored files when they are part of system functionality (e.g., context.local.md, user preferences)
 - **Minimal Context**: Create only necessary contexts for project use, avoid unnecessary complexity
+- **Local Context Scope**: context.local.md contains only machine-specific and personal preferences — things that vary by individual user or machine; project decisions (backlog criteria, review process, team standards, documentation approach) belong in their authoritative project files, not context.local.md
 - **Minimal Loading**: Load only required contexts
 - **Gitignore Awareness**: Respect .gitignore patterns for file usage in project structure, but reference or use ignored files when contextually relevant
 

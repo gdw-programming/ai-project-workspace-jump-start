@@ -28,8 +28,24 @@ General development patterns that work across project types.
 
 ## Describe Change Set
 **Purpose**: Generate a descriptive summary of the current change set suitable for recording (commit message, PR description, changelog entry, etc.)
-**Pattern**: Identify each version-controlled file in the change set (exclude gitignored and intentionally untracked files), determine its category based on prior history, and produce a concise plain text summary (no markdown formatting) with a one-line title and categorized file list
+**Pattern**: First retrieve the complete list of version-controlled files in the current change set (exclude gitignored and intentionally untracked files). Then for each file, diff against the previously committed version and describe only what is different now — not the session history of how the changes were made. Produce output covering ALL files in the change set in the exact plain text format below. No markdown, no bold, no extra formatting.
 **Context**: context.global.md + all version-controlled files in the current change set + their prior recorded history
+**Output format** (plain text, copy-paste ready):
+```
+[Short one-line description]
+
+Created:
+-- [filename]: [what it is]
+
+Integrated into:
+-- [filename]: [what was wired in]
+
+Updated:
+-- [filename]: [what changed]
+
+Fixed:
+-- [filename]: [what was corrected]
+```
 **Categories**:
 - **Created** — new files with no prior recorded history
 - **Integrated into** — existing files modified only to wire in new files from this change set
