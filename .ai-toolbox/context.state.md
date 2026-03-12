@@ -20,7 +20,7 @@ Current operational status for AI agents. Machine-readable only.
 | *(no completed items yet)* | | |
 
 ## Available Modules
-- **Commands**: initialization.md (project setup), context.md (context management), development.md (development workflows), project.md (project management)
+- **Commands**: initialization.md (project setup), context.md (context management — includes List Commands), development.md (development workflows), project.md (project management)
 - **Documentation**: Getting Started.md, Local Context.md, Backlog.md, Project Context.md, Domains.md, Patterns.md, Tools.md, Commands.md
 - **Project Context**: overview.md, standards.md
 - **Domain Contexts**: research.md (example — add more as needed)
