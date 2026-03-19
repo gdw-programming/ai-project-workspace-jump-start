@@ -40,7 +40,7 @@ General development patterns that work across project types.
 
 ## Describe Change Set
 **Purpose**: Generate a descriptive summary of the current change set suitable for recording (commit message, PR description, changelog entry, etc.)
-**Pattern**: First retrieve the complete list of version-controlled files in the current change set (exclude gitignored and intentionally untracked files). Then for each file, diff against the previously committed version and describe only what is different now — not the session history of how the changes were made. Produce output covering ALL files in the change set in the exact plain text format below. No markdown, no bold, no extra formatting.
+**Pattern**: First retrieve the complete list of version-controlled files in the current change set (exclude gitignored and intentionally untracked files). Then for each file, run `git diff --cached` against the previously committed version and describe only what the diff shows — not what editing steps were taken during the session to produce it. If the diff shows rule A replaced by rule B, describe rule B's content relative to rule A; do not describe intermediate steps like "merged two rules." Produce output covering ALL files in the change set in the exact plain text format below. No markdown, no bold, no extra formatting.
 **Context**: context.global.md + all version-controlled files in the current change set + their prior recorded history
 **Output format** (plain text, copy-paste ready):
 ```

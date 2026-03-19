@@ -84,7 +84,7 @@
 - **Local Context Maintenance**: Auto-update environment basics and workspace structure in context.local.md
 - **Minimal Context**: Create only necessary contexts for project use, avoid unnecessary complexity
 - **Minimal Loading**: Load only required contexts
-- **Gitignored File Editing**: Allow editing of gitignored files when they are part of system functionality (e.g., context.local.md, user preferences)
+- **Gitignored and Untracked File Editing**: Context system files (e.g., context.local.md) may be edited automatically even though they are gitignored. All other gitignored or untracked files — including `.sandbox/` and other personal reference directories — are read-only by default; edit only when the user explicitly instructs an edit to that specific file. Untracked changes are invisible in source control and can be missed during review.
 - **Gitignore Awareness**: Respect .gitignore patterns for file usage in project structure, but reference or use ignored files when contextually relevant
 
 ## Version Control Integration

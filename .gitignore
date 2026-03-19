@@ -10,6 +10,9 @@
 
 # Miscellaneous temp and user storage - non-committed files
 /temp
+# .sandbox/ - Personal developer work area for notes, scratch files, and references.
+#             Not a build artifact. Treated as read-only by the context system;
+#             edit only when explicitly instructed.
 /.sandbox
 
 # local configuration files
