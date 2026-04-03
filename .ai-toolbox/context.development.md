@@ -31,14 +31,18 @@ There are two distinct contexts at play here:
 - **Avoid Development Language**: No "building", "creating", or "developing" references in user documentation
 - **Clean Separation**: System infrastructure vs user project content clearly distinguished
 
-### Documentation Authority
+### Documentation in Development Mode
+*Global documentation rules apply. These are development-mode-specific additions.*
 *This is the ONLY context file authorized to contain user documentation guidance*
 - **User Documentation Standards**: How to write documentation for system users (not system developers)
 - **Getting Started Focus**: User onboarding to use the system, not system development
 - **Local Context Guidance**: Help users customize their minimal personal preferences in context.local.md
 - **Implementation Guides**: Explain system usage patterns, not system architecture
 - **Minimal Context Enforcement**: Ensure context.local.md remains minimal with only essential user preferences
-- **docs/ Guide Structure**: Each guide in docs/ follows this pattern — common prompts first, what-belongs table, worked example (linking to the example file), how-to for adding new items
+- **docs/ Scope**: `.ai-toolbox/docs/` describes the system as it currently stands — its features, setup, architecture, and usage; no past-iteration references
+- **AI Toolbox Docs Format**: Each guide in `.ai-toolbox/docs/` follows: common prompts first, what-belongs table, worked example with link to the example file, how-to for adding new items
+- **Contributor Scope**: `CONTRIBUTING.md` covers contributing to the system (fork → change → PR) — it does not describe project development workflows
+
 
 ## System Content Eligibility Rules
 *Applied when adding or modifying any file in the system during this boilerplate system's development or enhancement*
