@@ -17,7 +17,7 @@ Cross-session work tracking for the project. AI agents automatically maintain th
 
 *Most recent first. All items here are also mirrored in context.state.md — see [docs/Backlog.md](docs/Backlog.md) for this relationship.*
 
-*Oldest entries removed per Age-out Criteria above; full history preserved in context.state.md.*
+*Apply age-out criteria each time an entry is added — remove entries that exceed the limit before finalizing. Full history is preserved in context.state.md.*
 
 | Item | Contributor | Date |
 |------|-------------|------|
