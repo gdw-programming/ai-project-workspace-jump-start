@@ -29,6 +29,7 @@ Essential quality guidelines that apply regardless of project type.
 - Establish validation appropriate for project type
 - Use automated formatting where available
 - Include basic testing where applicable
+- All non-skipped tests must pass — or be explicitly documented as environment-gated with a clear reason
 - Review before committing
 
 ## Context Integration

@@ -25,6 +25,7 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 
 ### User Preference Collection
 **Personal workflow preferences**:
+- Contributor name — used to attribute completed work in backlog and state context
 - Change management style (iterative vs. batch)
 - Communication style with AI agents (e.g., verbose explanations vs. concise output)
 
@@ -120,9 +121,8 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 
 ## Error Handling
 
-**Graceful degradation**: Continue if non-critical capabilities missing
-**Fallbacks**: Provide alternatives for missing tools
-**Recovery**: Offer re-initialization for failed setups
+**Skipped steps**: If the user skips a collection step (e.g., doesn't know the project name yet), leave a clear `[TODO: update this]` placeholder in the affected file and note which files need manual update
+**Graceful degradation**: Continue if non-critical steps fail; flag for manual completion
 
 ---
 

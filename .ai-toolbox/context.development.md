@@ -7,6 +7,8 @@
 - **State**: Project workspace system development (not project usage)
 - **Context Hierarchy**: This file → context.global.md → operational contexts
 - **Scope**: System architecture, documentation, and context improvements
+- **Context Placement**: Anything that applies only while working ON the workspace system — and is not relevant to project users — belongs in this file. This file is deleted at initialization, so anything here must be safe to lose from the project user's perspective. If a rule or principle is useful to project users, it belongs in `context.global.md` or another surviving context file instead.
+- **User-Mode File Protection**: `tools/`, `domains/`, `project/`, and `context.state.md` are written for project users — do not add system development state, progress notes, or temporary tracking to these files. Any system-dev-only content in these files becomes a trace visible to project users. Use this file's Upcoming Work section for all system development tracking.
 
 ## Context (documentation for user's and AI's benefit)
 *The context struggle is real*
@@ -55,9 +57,17 @@ Any item added to the workspace system must satisfy at least one of these criter
 Items that exist solely to support this system's own development process do not qualify and must not be committed to the base system.
 
 ## Upcoming Work
-*Forward-looking only. No history.*
+*Forward-looking only. No history. Remove items when complete — do not mark or annotate them.*
+*`context.state.md` is not used to track system development progress — it represents the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
 
 *(no upcoming work — add future development ideas here)*
+
+## System Development Loading Paths
+
+When working on system features:
+→ context.development.md (entry) → context.global.md → domains/ and tools/ as needed
+
+*System development paths are defined here, not in `context.global.md`. Project users never see this file; all their loading paths are in `context.global.md`.*
 
 ## System Development Lifecycle Management
 **This context file gets deleted during project initialization** - ensures clean user experience with context.global.md as primary entry point.

@@ -4,7 +4,7 @@ Domain contexts tell AI agents about the type of project you're working on — t
 
 ## Available Domains
 
-- [**research.md**](research.md) — Research workflows, information gathering, and discovery processes
+- [**research.md**](research.md) — Research workflows, information gathering, and discovery processes (base system example — replace or extend with your project's domains)
 
 *Add new domains as your project needs them. See [docs/Domains.md](../docs/Domains.md) for how to add a domain.*
 
