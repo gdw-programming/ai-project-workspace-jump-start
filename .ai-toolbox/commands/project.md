@@ -10,8 +10,8 @@ Operations for managing project lifecycle and organization.
 
 ## Track Progress
 **Purpose**: Monitor project status and milestones
-**Pattern**: Update context.state.md and context.backlog.md
-**Context**: context.state.md + context.backlog.md
+**Pattern**: Update STATUS.md and BACKLOG.md
+**Context**: ../STATUS.md + ../BACKLOG.md
 **Example**: Mark completions, identify blockers, plan next steps
 
 ## Maintain Standards
@@ -23,7 +23,7 @@ Operations for managing project lifecycle and organization.
 ## Plan Next Phase
 **Purpose**: Identify and prepare for upcoming work
 **Pattern**: Analyze current state, identify dependencies
-**Context**: context.state.md + context.backlog.md + project/ contexts
+**Context**: ../STATUS.md + ../BACKLOG.md + project/ contexts
 **Example**: Review backlog, update priorities, add next steps
 
 ---

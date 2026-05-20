@@ -8,7 +8,7 @@
 - **Context Hierarchy**: This file → context.global.md → operational contexts
 - **Scope**: System architecture, documentation, and context improvements
 - **Context Placement**: Anything that applies only while working ON the workspace system — and is not relevant to project users — belongs in this file. This file is deleted at initialization, so anything here must be safe to lose from the project user's perspective. If a rule or principle is useful to project users, it belongs in `context.global.md` or another surviving context file instead.
-- **User-Mode File Protection**: `tools/`, `domains/`, `project/`, and `context.state.md` are written for project users — do not add system development state, progress notes, or temporary tracking to these files. Any system-dev-only content in these files becomes a trace visible to project users. Use this file's Upcoming Work section for all system development tracking.
+- **User-Mode File Protection**: `tools/`, `domains/`, `project/`, `STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are written for project users — do not add system development state, progress notes, or temporary tracking to these files. Any system-dev-only content in these files becomes a trace visible to project users. Use this file's Upcoming Work section for all system development tracking.
 
 ## Context (documentation for user's and AI's benefit)
 *The context struggle is real*
@@ -58,9 +58,14 @@ Items that exist solely to support this system's own development process do not 
 
 ## Upcoming Work
 *Forward-looking only. No history. Remove items when complete — do not mark or annotate them.*
-*`context.state.md` is not used to track system development progress — it represents the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
+*`STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are not used to track system development progress — they represent the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
 
 *(no upcoming work — add future development ideas here)*
+
+### Optional Enhancements
+*Not scheduled — consider for future branches*
+
+- **Commands organization** (Low Value): Refactor commands from category-based grouping (development.md, project.md, etc.) to one-command-per-file structure. Improves discoverability, version control clarity, and mental model alignment with explicit invocation pattern. Low effort; organizational improvement only.
 
 ## System Development Loading Paths
 

@@ -1,6 +1,6 @@
 # Backlog — Usage Guide
 
-`context.backlog.md` is your project's cross-session work tracker. AI agents read and maintain it automatically when loaded.
+[BACKLOG.md](../../BACKLOG.md) is your project's cross-session work tracker. AI agents read and maintain it automatically when loaded.
 
 ## Common Prompts
 
@@ -12,12 +12,12 @@
 ### Suggest next steps
 > "Based on the current project state, suggest possible next steps and add them to the backlog for my review."
 
-AI will evaluate `context.state.md` and `context.backlog.md`, propose items, and wait for your approval before adding anything.
+AI will evaluate `STATUS.md` and `BACKLOG.md`, propose items, and wait for your approval before adding anything.
 
 ### Mark something complete
 > "Mark [item] as complete in the backlog."
 
-AI will move it to Recently Completed, mirror it to `context.state.md`, and apply age-out criteria.
+AI will move it to Recently Completed in `BACKLOG.md`, mirror it to `CHANGELOG.md`, and apply age-out criteria.
 
 ### Review the backlog
 > "Show me the current backlog."
@@ -33,11 +33,11 @@ AI will move it to Recently Completed, mirror it to `context.state.md`, and appl
 
 > "Set backlog age-out to 90 days OR 5 newest per contributor, whichever comes first."
 
-AI will update the **Active criteria** line in `context.backlog.md`.
+AI will update the **Active criteria** line in `BACKLOG.md`.
 
 ## Age-out Criteria
 
-Controls how long completed items stay in Recently Completed before aging out to `context.state.md`.
+Controls how long completed items stay in Recently Completed before aging out to `CHANGELOG.md`.
 
 **Default** (applied if not set during initialization): Age out after 30 days OR keep only 3 newest per contributor, whichever comes first.
 
@@ -46,19 +46,19 @@ Available options:
 - Keep only N newest per contributor
 - After N days OR keep only N newest per contributor, whichever comes first
 
-The active criteria is stored in the Age-out Criteria section of `context.backlog.md`. Change it at any time with a prompt (see above) or by editing directly.
+The active criteria is stored in the Age-out Criteria section of `BACKLOG.md`. Change it at any time with a prompt (see above) or by editing directly.
 
-## Recently Completed and context.state.md
+## Recently Completed and CHANGELOG.md
 
-All completed items exist in **both** `context.backlog.md` and `context.state.md` — this is one of the few approved duplications in the system.
+Completed items flow through two files — `BACKLOG.md` for recent context, `CHANGELOG.md` as the permanent record.
 
-| context.backlog.md | context.state.md |
-|--------------------|------------------|
+| BACKLOG.md | CHANGELOG.md |
+|------------|--------------|
 | Recent completions (per age-out criteria) | Full completed work history |
 | Dynamic, actionable view | Stable historical record |
 | Ages out automatically | Never loses completed items |
 
-This means the root `README.md` (auto-synced from `context.state.md`) always reflects completed work, while the backlog stays focused on actionable items without overwhelming history.
+This means `CHANGELOG.md` always holds the complete project history, while the backlog stays focused on actionable items without overwhelming history.
 
 ## Upcoming Work Table Fields
 

@@ -1,6 +1,6 @@
 # Project Backlog
 
-Cross-session work tracking for the project. AI agents automatically maintain this file.
+Cross-session work tracker. Maintained by AI agents.
 
 ## Age-out Criteria
 *Set during initialization. Edit the "Active criteria" line to change behavior at any time.*
@@ -12,16 +12,18 @@ Cross-session work tracking for the project. AI agents automatically maintain th
 - Keep only N newest per contributor
 - After N days OR keep only N newest per contributor, whichever comes first
 
+---
+
 ## Recently Completed
-*Project deliverables and features only — context system maintenance (updating rules, context files, documentation structure) is not recorded here.*
+*Project deliverables and features only — context system maintenance is not recorded here.*
 
-*Most recent first. All items here are also mirrored in context.state.md — see [docs/Backlog.md](docs/Backlog.md) for this relationship.*
-
-*Apply age-out criteria each time an entry is added — remove entries that exceed the limit before finalizing. Full history is preserved in context.state.md.*
+*Most recent first. Items age out per the criteria above; aged-out items move permanently to [CHANGELOG.md](CHANGELOG.md).*
 
 | Item | Contributor | Date |
 |------|-------------|------|
 | *(no completed items yet)* | | |
+
+---
 
 ## Upcoming Work
 *In priority order. Mark dependencies and parallel opportunities explicitly.*
@@ -31,4 +33,4 @@ Cross-session work tracking for the project. AI agents automatically maintain th
 | — | *(add your first backlog item)* | — | — |
 
 ---
-*See [docs/Backlog.md](docs/Backlog.md) for prompt examples and usage guidance.*
+*See [.ai-toolbox/docs/Backlog.md](.ai-toolbox/docs/Backlog.md) for prompt examples and usage guidance.*

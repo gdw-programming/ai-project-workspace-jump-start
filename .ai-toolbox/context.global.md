@@ -12,7 +12,7 @@
 
 ## Hierarchy Levels
 1. **Core**: context.global.md + context.local.md (auto-merged, generated if missing)
-2. **Operational**: context.state.md + available commands/
+2. **Operational**: ../STATUS.md + ../BACKLOG.md + available commands/
 3. **Domain**: domains/ (research.md example provided) + patterns/ (setup.md example provided) + tools/ (git.md example provided)
 4. **Project**: project/ (pre-configured stubs — populate with your project details)
 
@@ -20,12 +20,12 @@
 *Organized by logical importance and application order*
 
 **Core Context**: context.global.md + context.local.md (auto-merged)
-**Project Status**: context.global.md → context.state.md
+**Project Status**: context.global.md → ../STATUS.md
 **Initialization**: context.global.md → commands/initialization.md
 
 ### Loading Sequence
 1. **Core**: context.global.md + context.local.md (auto-merged)
-2. **Operational**: context.state.md + available commands/
+2. **Operational**: ../STATUS.md + ../BACKLOG.md + available commands/
 3. **Domain**: domains/ + patterns/ + tools/
 4. **Project**: project/ (overview.md, standards.md — populate with your project details)
 
@@ -34,8 +34,9 @@
 ## Available Contexts
 
 ### Level 2 (Operational)
-- `context.state.md` - current project status
-- `context.backlog.md` - project backlog and recently completed work
+- `../STATUS.md` - human-readable project status (phase, capabilities, workspace structure)
+- `../BACKLOG.md` - human-readable project backlog and recently completed work
+- `../CHANGELOG.md` - human-readable project history and completed deliverables
 
 ### Level 3 (Domain)
 - `domains/` - domain-specific contexts (research.md example provided)
@@ -50,6 +51,8 @@
 ### Critical System Rules (Always Applied First)
 - **Initialization Check**: If context.local.md missing, initiate project setup workflow before proceeding
 - **AI Agent Discipline**: Always follow maintenance rules - automatic rule application required, not optional
+- **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing and understanding — not for human readers. Human-friendly documentation for the context system lives in `.ai-toolbox/docs/`. Human-facing project status, history, and planning documents (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`) live at the project root outside `.ai-toolbox`.
+- **Project Memory Authority**: `.ai-toolbox` is the project's persistent memory and preferences for cross-agent and cross-tool collaboration. All project-specific findings, domain knowledge, preferences, and work context belong here — not in external agent memory systems, session notes, or out-of-repo tools. Context files are the shared, version-controlled source of truth.
 - **DRY Enforcement**: Detect and eliminate information duplication across all context files
 - **Reference Validation**: Verify all context references before changes
 - **Cross-Reference Validation**: Ensure all file paths and references work
@@ -58,11 +61,10 @@
 - **Human Reading Order**: Organize all content — commands, rules, and reference material — in the logical sequence a human reader would encounter it: prerequisites before dependent items, operations in the order they would naturally be used, edge cases and exceptions after the main rules they qualify
 
 ### Content Management Rules
-- **Auto-Sync Targets are Dependencies**: root README.md, context.state.md, and context.backlog.md must stay in sync with committed content at all times — if any is out of sync, fix it immediately as a dependency, not a future task
-- **State Consistency**: Sync status across README.md, context.state.md, and other contexts
-- **Current State Only**: context.state.md reflects present state — no references to superseded decisions or outdated status; Recently Completed Work is an approved duplication (mirrored from context.backlog.md)
-- **Backlog Auto-Management**: Mirror all completed items to context.state.md; age out Recently Completed entries per criteria defined in context.backlog.md; completed items must exist in both files; Recently Completed tracks project deliverables and features only — context system maintenance (updating rules, adding context files, adjusting documentation structure) is not recorded as completed work; "completed" means verified working and user-confirmed — code written does not qualify
-- **Contributor Attribution**: Always use the Contributor Name from context.local.md User Preferences when recording completed items in context.backlog.md and context.state.md — if not set, prompt the user for their name before recording
+- **Auto-Sync Targets are Dependencies**: root README.md, STATUS.md, BACKLOG.md, and CHANGELOG.md must stay in sync with committed content at all times — if any is out of sync, fix it immediately as a dependency, not a future task
+- **State Consistency**: Sync status across README.md, STATUS.md, and other contexts
+- **Backlog Auto-Management**: Mirror all completed items to CHANGELOG.md; age out Recently Completed entries in BACKLOG.md per criteria defined in BACKLOG.md; completed items must exist in both BACKLOG.md and CHANGELOG.md until aged out; Recently Completed tracks project deliverables and features only — context system maintenance (updating rules, adding context files, adjusting documentation structure) is not recorded as completed work; "completed" means verified working and user-confirmed — code written does not qualify
+- **Contributor Attribution**: Always use the Contributor Name from context.local.md User Preferences when recording completed items in BACKLOG.md and CHANGELOG.md — if not set, prompt the user for their name before recording
 - **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status
 - **File Reference Standards**: Never use Markdown links to files that have not yet been committed — use plain text references only; Markdown links to uncommitted files create broken documentation
 - **Path Validation**: Ensure all context file paths work for end users
@@ -73,10 +75,10 @@
 - **Documentation Separation**: Root README = project content, .ai-toolbox/README.md = context system documentation
 - **Context Framing**: tools/, domains/, and patterns/ use team/project framing ("your team's conventions", "your project's standards") — context.local.md is the only file that uses personal framing ("your preferences", "your environment")
 - **Markdown Links**: All file references in documentation (README files, docs/) must use proper Markdown link syntax with URL-encoded spaces — `[Display Text](path/to/file.md)` — bare path references like `` `./.ai-toolbox/file.md` `` do not create clickable links
-- **Auto-Sync Documentation**: Update ../README.md project status section from context.state.md
+- **Auto-Sync Documentation**: Update ../README.md project status section from STATUS.md
 - **Project State Language**: Use "ready to initialize project" or current project state, not development language
 - **Technical Terms Exception**: Allow specific technical terms like GitHub's "Use this template" button, API names, and platform-specific features that have established meanings
-- **Documentation Location Map**: Three distinct audiences, each with a designated location — (1) **AI agents**: `.ai-toolbox/` (excluding `.ai-toolbox/docs/`) — context rules, domain knowledge, commands, patterns, tools; (2) **Developers building with this project**: `README.md` is the first-contact entry point, `/docs/` is human-facing project documentation (setup, architecture, testing, contributing), `.ai-toolbox/docs/` is human-readable guidance on how to use the AI context system to assist development — what help is available, how to leverage it, and how to extend it for the project; (3) **End-users of the finished product**: structure is the developer's choice — this template does not own that space. Additional documentation structure beyond `README.md` is the developer's decision
+- **Documentation Location Map**: Four distinct audiences, each with a designated location — (1) **AI agents**: `.ai-toolbox/` (excluding `.ai-toolbox/docs/`) — context rules, domain knowledge, commands, patterns, tools; content here is structured for AI processing, not human readers; (2) **Project status and history**: `STATUS.md`, `BACKLOG.md`, `CHANGELOG.md` at the project root — human-readable, format-agnostic, maintained by AI agents for human consumption; (3) **Developers building with this project**: `README.md` is the first-contact entry point, `/docs/` is human-facing project documentation (setup, architecture, testing, contributing), `.ai-toolbox/docs/` is human-readable guidance on how to use the AI context system to assist development — what help is available, how to leverage it, and how to extend it for the project; (4) **End-users of the finished product**: structure is the developer's choice — this template does not own that space. Additional documentation structure beyond `README.md` is the developer's decision
 - **Present-Tense Voice**: All documentation describes current state — do not use change-referencing language ("fixed", "improved", "enhanced", "updated", "now", "added") outside of changelogs; changelogs are the only sanctioned location for documenting what changed
 - **Progressive Disclosure**: Structure human-facing documents in reader-need order — (1) one-sentence description of what it is, (2) direct usage steps or command, (3) only necessary detail for correct usage, (4) background and reference content last or in a linked document; if a document feels like it needs a summary or TL;DR, restructure it instead
 
@@ -89,7 +91,7 @@
 - **Local Context Maintenance**: Auto-update environment basics and workspace structure in context.local.md
 - **Command Execution**: When the user invokes a named command, read its definition from the commands/ directory and execute every step as written — do not answer from session memory or skip steps because the answer seems known. Session context may be incomplete or stale; the command definition is authoritative.
 - **Knowledge Capture**: Any framework behavior, environment pattern, tool behavior, or non-obvious constraint discovered during a session must be captured in the appropriate context file (`domains/`, `tools/`, or `patterns/`) before the session ends. If a behavior is unverified, record it in the relevant context file marked as unverified rather than omitting it. Framework/library behavior → domain contexts; fragile vs. stable patterns → `patterns/`; tool-specific behavior → `tools/`. Review Change Set enforces this as a pre-commit checklist item.
-- **External Memory Scope**: Project-specific findings, domain knowledge, and work context belong in `.ai-toolbox` context files — not external memory systems (agent memory, session notes, out-of-repo tools). External memory is for personal preferences and session-portable agent identity only. Context files are the shared, version-controlled source of truth for all collaborators.
+- **External Memory Scope**: `.ai-toolbox` is the project's persistent memory — project-specific findings, domain knowledge, preferences, and work context belong here, not in external agent memory systems (Copilot memory, session notes, out-of-repo tools). External agent memory is for personal preferences and session-portable agent identity only. Context files are the shared, version-controlled source of truth for all collaborators and agents working on the project.
 - **Learn Before Acting**: For any external, third-party, or poorly-documented environment or API, do not guess at behavior, selectors, timing, or structure. If the required interaction is not documented in the relevant context file, stop and ask the user — do not attempt, fail, and then capture. The correct sequence is: consult context → if undocumented, ask → validate with user → act → capture.
 - **Minimal Context**: Create only necessary contexts for project use, avoid unnecessary complexity
 - **Minimal Loading**: Load only required contexts

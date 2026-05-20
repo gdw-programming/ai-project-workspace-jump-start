@@ -34,7 +34,7 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
   - Option A: After N days
   - Option B: Keep only N newest per contributor
   - Option C: After N days OR keep only N newest per contributor, whichever comes first
-- Update the **Active criteria** line in context.backlog.md with the chosen or default criteria
+- Update the **Active criteria** line in BACKLOG.md with the chosen or default criteria
 - Inform user they can change this at any time — see [docs/Backlog.md](../docs/Backlog.md)
 
 **Development environment preferences**:

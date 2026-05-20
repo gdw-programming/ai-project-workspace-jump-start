@@ -20,7 +20,7 @@ context.global.md + context.local.md (auto-merged)
 context.global.md → commands/initialization.md
 
 # Project status check
-context.global.md → context.state.md
+context.global.md → ../STATUS.md
 ```
 
 *See the docs/ guides for extending domains, patterns, tool contexts, and commands as your project grows.*
@@ -42,18 +42,21 @@ See [docs/Getting Started.md](docs/Getting%20Started.md) for complete setup proc
 
 See [docs/Local Context.md](docs/Local%20Context.md) for local environment management details.
 
-### Project Backlog
-- **Cross-Session Tracking**: Upcoming work and recently completed items persist across sessions
+### Project Backlog and History
+- **Cross-Session Tracking**: Upcoming work and recently completed items persist in [BACKLOG.md](../BACKLOG.md) across sessions
 - **Collaboration Ready**: Dependency and parallel safety signals for team coordination
-- **AI-Maintained**: Completed items automatically mirrored to project state and aged out per configurable criteria
+- **AI-Maintained**: Completed items automatically aged out to [CHANGELOG.md](../CHANGELOG.md) per configurable criteria
 - **Prompt-Driven**: Add items, suggest next steps, and mark completions via natural language
 
 See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog management guidance.
 
 ## Core Principles
 
+- **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing — not for human readers
+- **Project Memory**: `.ai-toolbox` is the project's persistent memory for cross-agent and cross-tool collaboration
+- **Human Docs at Root**: Status, backlog, and changelog live at the project root as human-readable files (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`)
 - **Minimal Loading**: Load only what you need
-- **Domain Agnostic**: No assumptions about project type  
+- **Domain Agnostic**: No assumptions about project type
 - **DRY Information**: Single source of truth
 - **Minimal Context**: Essential information only
 
@@ -64,7 +67,10 @@ See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog managemen
 project-space/
 ├── .ai-toolbox/         # AI context management system
 ├── .sandbox/            # Work area for references (gitignored)
-├── README.md            # Project state documentation
+├── BACKLOG.md           # Project backlog
+├── CHANGELOG.md         # Project history
+├── STATUS.md            # Project status
+├── README.md            # Project documentation
 └── .gitignore           # Version control patterns
 ```
 
@@ -74,6 +80,9 @@ your-project/
 ├── .ai-toolbox/         # AI context system
 ├── .sandbox/            # Work area for references (gitignored)
 ├── */*                  # Your project structure defined by you
+├── BACKLOG.md           # Project backlog
+├── CHANGELOG.md         # Project history
+├── STATUS.md            # Project status
 ├── README.md            # Your project documentation
 └── .gitignore           # Version control patterns
 ```
@@ -81,7 +90,7 @@ your-project/
 **AI Context System Structure**:
 ```
 .ai-toolbox/
-├── docs/                # 📚 System documentation  
+├── docs/                # Human-readable guides for using this system
 │   ├── Getting Started.md # Simple 3-step user guide
 │   ├── Local Context.md # Local environment guide
 │   ├── Backlog.md       # Backlog usage guide
@@ -90,15 +99,20 @@ your-project/
 │   ├── Patterns.md      # Patterns usage guide
 │   ├── Tools.md         # Tool contexts guide
 │   └── Commands.md      # Commands usage guide
-├── context.local.md     # User environment basics (minimal personal preferences)
-├── context.global.md    # 🚀 START HERE - Central routing
-├── context.state.md     # Current project status
-├── context.backlog.md   # Project backlog and recently completed work
-├── commands/            # Available operations
-├── project/             # Project context (overview, standards)
-├── domains/             # Domain contexts (research.md example provided)
-├── patterns/            # Reusable patterns (setup.md example provided)
-└── tools/               # Tool-specific contexts (git.md example provided)
+├── context.local.md     # Machine-specific environment and personal preferences (gitignored)
+├── context.global.md    # 🚀 START HERE - Central routing and maintenance rules
+├── commands/            # Available operations (AI-optimized)
+├── project/             # Project context: overview and standards (AI-optimized)
+├── domains/             # Domain-specific contexts (AI-optimized)
+├── patterns/            # Reusable patterns (AI-optimized)
+└── tools/               # Tool-specific contexts (AI-optimized)
+```
+
+**Project-Level Human Documents** (outside `.ai-toolbox`, maintained by AI agents):
+```
+STATUS.md              # Current project phase and workspace structure
+BACKLOG.md             # Upcoming work and recently completed items
+CHANGELOG.md           # Permanent project history and completed deliverables
 ```
 
 ## Usage Examples
@@ -107,7 +121,7 @@ your-project/
 
 ### Common Paths
 ```
-context.global.md → context.state.md (project status)
+context.global.md → ../STATUS.md (project status)
 context.global.md → commands/initialization.md (setup new project)
 ```
 
