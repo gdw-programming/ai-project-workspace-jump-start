@@ -1,7 +1,7 @@
 # Review Change Set
 
 **Purpose**: Verify a change set is consistent, correct, and ready to record
-**Pattern**: Review all version-controlled files in the current change set (exclude gitignored and intentionally untracked files) against established context rules, fix all issues found, re-read changed files to verify no fix introduced a new inconsistency, then report
+**Pattern**: Review all version-controlled files in the current change set (exclude gitignored and intentionally untracked files) against established context rules. When issues are found, apply judgment on scope: make small corrections directly (broken links, stale references, isolated wording fixes, single-file line-level changes) then report what was changed for user review; for large issues (structural changes, multi-file impact, or anything requiring a design decision) report the issue and ask the user whether to proceed before acting. After all fixes are applied, re-read changed files to verify no fix introduced a new inconsistency. Report the final review outcome. The user may then stage the fixes and request another review pass to confirm the change set is clean.
 **Context**: context.global.md + ../STATUS.md + all version-controlled files in the current change set
 **Checklist**:
 - Logical consistency, clarity, and alignment with project workflow goals; no rule or constraint conflicts with an existing rule in another context file
