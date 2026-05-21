@@ -113,11 +113,14 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 **Completion**:
 - Report initialization summary
 - **Remove System Development Context**: Delete .ai-toolbox/context.development.md (not needed in project mode)
-- **AI Agent Setup**: Add prompt instruction: "Load context from './.ai-toolbox/context.global.md' and follow maintenance rules automatically"
+- **Update Root README**: Replace the pre-initialization `### Getting Started` block in the README.md user-editable section (the "New to this system?" link and "Quick Start: Tell your AI agent" prompt) with a neutral placeholder — e.g., `*Add your project's getting started instructions here*` — so the developer fills it in for their actual end-users
+- **AI Agent Setup**: Configure the agent to automatically load context at the start of every future session for this project — use the most persistent option available:
+  1. **Agent memory** (preferred): Save to the agent's own persistent memory: *"For all sessions in this project at [workspace path], always start by loading context from './.ai-toolbox/context.global.md' and following the established maintenance rules."*
+  2. **Project-level persistent config** (if agent memory is unavailable): Create or update the agent's project configuration file with the instruction `"Always start by loading context from './.ai-toolbox/context.global.md' and follow the established maintenance rules automatically."` — common locations:
+     - **GitHub Copilot (VS Code)**: `.github/copilot-instructions.md`
+     - **Claude**: `CLAUDE.md` at the project root
+     - **Other agents**: Consult the agent's documentation for custom instructions or system prompt configuration
 - Provide next steps
-
-## User Configuration  
-**Essential Prompt**: `"Always start by loading context from './.ai-toolbox/context.global.md' and follow the established maintenance rules automatically."`
 
 ## Error Handling
 
