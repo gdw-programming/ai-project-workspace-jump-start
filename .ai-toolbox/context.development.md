@@ -65,7 +65,7 @@ Items that exist solely to support this system's own development process do not 
 ### Optional Enhancements
 *Not scheduled — consider for future branches*
 
-- **Commands organization** (Low Value): Refactor commands from category-based grouping (development.md, project.md, etc.) to one-command-per-file structure. Improves discoverability, version control clarity, and mental model alignment with explicit invocation pattern. Low effort; organizational improvement only.
+*(no optional enhancements pending)*
 
 ## System Development Loading Paths
 

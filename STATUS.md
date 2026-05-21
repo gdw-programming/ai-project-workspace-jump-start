@@ -26,12 +26,24 @@ ai-project-workspace/            # Project root
 ├── .ai-toolbox/                 # AI context management system
 │   ├── context.development.md  # System development context (deleted at initialization)
 │   ├── context.global.md        # Central routing and maintenance rules
-│   ├── commands/                # Available operations
-│   │   ├── README.md           # Commands directory guide
-│   │   ├── initialization.md   # Project initialization
-│   │   ├── context.md          # Context management operations
-│   │   ├── development.md      # Development workflow patterns
-│   │   └── project.md          # Project management operations
+│   ├── commands/                # Available operations — one file per command
+│   │   ├── README.md           # Commands directory guide and index
+│   │   ├── initialization.md   # Project initialization (auto-triggered)
+│   │   ├── list-commands.md    # List all available commands
+│   │   ├── load-context-chain.md # Load contexts following hierarchy
+│   │   ├── validate-context-chain.md # Check context references
+│   │   ├── update-work-context.md # Update work tracking and backlog
+│   │   ├── add-domain-context.md # Create new domain-specific context
+│   │   ├── initialize-project.md # Set up basic project structure
+│   │   ├── organize-structure.md # Create logical directory organization
+│   │   ├── setup-quality-gates.md # Establish basic quality controls
+│   │   ├── document-project.md # Create appropriate documentation
+│   │   ├── review-change-set.md # Verify change set consistency
+│   │   ├── describe-change-set.md # Generate change set summary
+│   │   ├── define-project-scope.md # Establish project boundaries
+│   │   ├── track-progress.md   # Monitor project status
+│   │   ├── maintain-standards.md # Ensure consistent quality
+│   │   └── plan-next-phase.md  # Identify upcoming work
 │   ├── docs/                   # AI context system documentation
 │   │   ├── Getting Started.md  # User onboarding guide
 │   │   ├── Local Context.md    # User customization guide
