@@ -1,6 +1,6 @@
 # Backlog — Usage Guide
 
-[BACKLOG.md](../../BACKLOG.md) is your project's cross-session work tracker. AI agents read and maintain it automatically when loaded.
+[BACKLOG.md](../../BACKLOG.md) is a pre-configured project tracking file. Use it as-is for cross-session work tracking (AI agents read and maintain it automatically), adapt the format to your needs, or replace it with preferred tools (GitHub Issues, Jira, Notion, etc.) — configure your approach during initialization.
 
 ## Common Prompts
 

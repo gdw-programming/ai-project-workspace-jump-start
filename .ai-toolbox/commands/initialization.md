@@ -24,32 +24,38 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 - Development tools (Docker, databases)
 
 ### User Preference Collection
+*Route decisions by scope: individual and machine-specific preferences go into context.local.md; project-wide decisions that affect all contributors must go into source-controlled files (project/, tools/, domains/, or project root files) — never in context.local.md.*
+
 **Personal workflow preferences**:
 - Contributor name — used to attribute completed work in backlog and state context
 - Change management style (iterative vs. batch)
 - Communication style with AI agents (e.g., verbose explanations vs. concise output)
 
-**Project backlog preferences**:
-- Completed item age-out criteria (default applied if not specified: 30 days OR 3 newest per contributor, whichever comes first)
-  - Option A: After N days
-  - Option B: Keep only N newest per contributor
-  - Option C: After N days OR keep only N newest per contributor, whichever comes first
-- Update the **Active criteria** line in BACKLOG.md with the chosen or default criteria
-- Inform user they can change this at any time — see [docs/Backlog.md](../docs/Backlog.md)
+**Project tracking preferences**:
+- Ask which approach the user prefers for project tracking:
+  - **Built-in files** (default): Use STATUS.md, BACKLOG.md, CHANGELOG.md as provided — AI agents maintain them automatically
+  - **External tools**: GitHub Issues, Jira, Notion, Linear, or other preferred tools — built-in files can be removed or kept as lightweight mirrors
+  - **Minimal**: README.md updates only — no separate tracking files
+- Document the chosen approach in project/standards.md — this is a project-wide decision visible to all contributors
+- If using built-in files:
+  - Completed item age-out criteria (default applied if not specified: 30 days OR 3 newest per contributor, whichever comes first)
+    - Option A: After N days
+    - Option B: Keep only N newest per contributor
+    - Option C: After N days OR keep only N newest per contributor, whichever comes first
+  - Update the **Active criteria** line in BACKLOG.md with the chosen or default criteria
+  - Inform user they can change this at any time — see [docs/Backlog.md](../docs/Backlog.md)
 
 **Development environment preferences**:
-- Preferred editor/IDE setup
-- Terminal and shell preferences
-- Package manager choices
-- Testing and debugging approaches
+- Personal/machine (store in context.local.md): preferred editor/IDE, terminal and shell preferences
+- Project-wide (store in tools/ contexts): package manager, build tools, test frameworks, debugging toolchain — these apply to all contributors
 
-**File system preferences**:
+**File system conventions** (project-wide — store in project/standards.md):
 - Cross-platform path handling
-- Text encoding preferences
+- Text encoding
 - Line ending management
 - File naming conventions
 
-**Local tool configuration**:
+**Personal tool configuration** (store in context.local.md):
 - Git user configuration
 - IDE/editor settings
 - Shell aliases and shortcuts
