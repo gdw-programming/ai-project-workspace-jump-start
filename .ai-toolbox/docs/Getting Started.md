@@ -11,12 +11,12 @@ Simple 3-step process to set up any project with this AI-enabled workspace syste
 
 Tell your AI agent:
 ```
-Load context from './.ai-toolbox/context.global.md' then initialize this project [PROJECT_NAME] for [PROJECT_DESCRIPTION]
+Load context from './.ai-toolbox/context.global.md' then use the initialize command for this project: "[PROJECT_NAME]"; description: "[PROJECT_DESCRIPTION]"
 ```
 
 **Example**:
 ```
-Load context from './.ai-toolbox/context.global.md' then initialize this project "Task Manager" for "Personal productivity app with React frontend"
+Load context from './.ai-toolbox/context.global.md' then use the initialize command for this project: "Task Manager"; description: "Personal productivity app with React frontend"
 ```
 
 ## Step 3: Start Building

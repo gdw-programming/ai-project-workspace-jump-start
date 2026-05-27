@@ -13,7 +13,7 @@
 
 **Quick Start**: Tell your AI agent:
 ```
-Load context from './.ai-toolbox/context.global.md' then initialize this project [YOUR_PROJECT_NAME] for [YOUR_PROJECT_DESCRIPTION]
+Load context from './.ai-toolbox/context.global.md' then use the initialize command for this project: "[YOUR_PROJECT_NAME]"; description: "[YOUR_PROJECT_DESCRIPTION]"
 ```
 
 <!-- USER EDITABLE SECTION END -->

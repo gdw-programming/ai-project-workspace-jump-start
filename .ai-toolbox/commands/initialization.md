@@ -9,6 +9,21 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 
 ## Initialization Sequence
 
+### Project State Detection
+Before proceeding, determine which setup mode applies by checking the following:
+
+- Does `context.development.md` still exist?
+- Does `project/overview.md` contain real project content or stub/placeholder text?
+- Does `README.md` still contain the pre-initialization placeholder?
+
+**First-time setup** — `context.development.md` exists and project files contain placeholder content:
+Run the full sequence below.
+
+**Returning contributor** — `context.development.md` has been deleted and project files are populated:
+- Run: Environment Detection, personal items in User Preference Collection, Local Context Creation, Validation & Handoff, and AI Agent Setup
+- Skip: project-wide User Preference Collection items, Project Customization, Version Control (except personal Git settings), and the shared-file Completion steps (Remove System Development Context, Reset Changelog, Update Root README)
+- Before collecting personal preferences, read `project/overview.md`, `project/standards.md`, and relevant `tools/` contexts so established project conventions are understood and reflected in the contributor's local setup
+
 ### Environment Detection
 **Auto-discover**:
 - Operating system (Windows, macOS, Linux)
@@ -119,6 +134,7 @@ If loading `context.global.md` and `context.local.md` doesn't exist → initiate
 **Completion**:
 - Report initialization summary
 - **Remove System Development Context**: Delete .ai-toolbox/context.development.md (not needed in project mode)
+- **Reset Changelog**: Replace the deliverables table in CHANGELOG.md with a single initialization entry — item: "Initialized from AI Project Workspace Jump-Starter", contributor: name collected during setup, date: current date — this establishes a clean baseline for project history
 - **Update Root README**: Replace the pre-initialization `### Getting Started` block in the README.md user-editable section (the "New to this system?" link and "Quick Start: Tell your AI agent" prompt) with a neutral placeholder — e.g., `*Add your project's getting started instructions here*` — so the developer fills it in for their actual end-users
 - **AI Agent Setup**: Configure the agent to automatically load context at the start of every future session for this project — use the most persistent option available:
   1. **Agent memory** (preferred): Save to the agent's own persistent memory: *"For all sessions in this project at [workspace path], always start by loading context from './.ai-toolbox/context.global.md' and following the established maintenance rules."*

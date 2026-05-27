@@ -2,7 +2,7 @@
 
 **AI Agent Entry Point**: Start here for all context loading. `context.local.md` automatically merged.
 
-**Initialization Required**: If `context.local.md` doesn't exist, this workspace has not been initialized yet — the user has set up from the template but has not run the initialization workflow. Follow `./commands/initialization.md` before proceeding.
+**Local Context Required**: `context.local.md` is machine-specific and gitignored — each contributor creates their own. If it doesn't exist, follow `./commands/initialization.md` to create it before proceeding. Its absence means only that this contributor hasn't created their personal context file — not that the project itself is uninitialized; collaborators cloning an established project will not have this file.
 
 ## Definitions
 - **Project**: The current project using this context management system
