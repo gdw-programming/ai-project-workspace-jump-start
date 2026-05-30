@@ -1,6 +1,6 @@
 # AI Project Context Management System
 
-A flexible, hierarchical context management system for AI agents that supports any type of project without assumptions or opinions.
+A portable, hierarchical context and command system for AI-assisted projects. It enables consistent team collaboration, model and agent switching, and in-repo project memory without locking workflows to a single tool.
 
 ## Getting Started with Your Project
 
@@ -26,6 +26,11 @@ context.global.md → ../STATUS.md
 *See the docs/ guides for extending domains, patterns, tool contexts, and commands as your project grows.*
 
 ## System Features
+
+### Portable AI Collaboration Layer
+- **Context and Command Portability**: Context routing and command patterns live in version-controlled files, so behavior travels with the repository
+- **Cross-Agent Interoperability**: Works with different AI agents and model providers by using shared file-based context instead of tool-specific memory
+- **Team + Local Balance**: Shared project context in `.ai-toolbox` with machine-specific preferences in `context.local.md`
 
 ### Built-In Initialization
 - **Automatic Setup**: Local environment detection and context file creation
@@ -54,6 +59,7 @@ See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog managemen
 
 - **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing — not for human readers
 - **Project Memory**: `.ai-toolbox` is the project's persistent memory for cross-agent and cross-tool collaboration
+- **Portable Context Contract**: Context files and command definitions are the stable contract across contributors, sessions, and AI tools
 - **Human Docs at Root**: Status, backlog, and changelog live at the project root as human-readable files (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`)
 - **Minimal Loading**: Load only what you need
 - **Domain Agnostic**: No assumptions about project type

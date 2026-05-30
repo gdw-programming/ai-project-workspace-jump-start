@@ -44,4 +44,12 @@ Load context from './.ai-toolbox/context.global.md' then use the initialize comm
 
 **System Origin**: This project was created from the AI Project Workspace Jump-Starter system.
 
-**AI Context System**: See [.ai-toolbox/README.md](.ai-toolbox/README.md) for complete documentation and usage patterns.
+**About**: This workspace provides a portable, version-controlled AI collaboration layer for project delivery. It standardizes context and command patterns so teams can work consistently across contributors, switch between AI models and agents with less prompt rework, and keep extended project documentation and operational history inside the repository.
+
+**What it enables**:
+- Context and command portability across sessions, machines, and AI tooling
+- Team collaboration through shared project memory in `.ai-toolbox` plus local contributor overrides in `context.local.md`
+- Model and agent switching by using file-based context routing instead of vendor-specific memory
+- Extended in-repo documentation through layered guides and project tracking files (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`)
+
+**AI Context System**: See [.ai-toolbox/README.md](.ai-toolbox/README.md) for full system capabilities, structure, and usage patterns.

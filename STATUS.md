@@ -13,10 +13,11 @@ Context system operational
 ---
 
 ## Capabilities
-- Project initialization workflow
-- User preference collection and persistence
-- Local environment detection and adaptation
-- Context-aware development support
+- Context and command portability across sessions, contributors, and AI tooling
+- Team collaboration through shared, version-controlled project context with local contributor overrides
+- Model and agent switching using file-based context routing instead of vendor-specific memory
+- Extended in-repo documentation and operational history via STATUS.md, BACKLOG.md, and CHANGELOG.md
+- Project initialization workflow with user preference collection and local environment adaptation
 
 ---
 
