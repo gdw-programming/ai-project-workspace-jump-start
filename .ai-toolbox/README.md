@@ -107,6 +107,7 @@ your-project/
 │   └── Commands.md      # Commands usage guide
 ├── context.local.md     # Machine-specific environment and personal preferences (gitignored)
 ├── context.global.md    # 🚀 START HERE - Central routing and maintenance rules
+├── backlog/             # System development backlog items
 ├── commands/            # Available operations (AI-optimized)
 ├── project/             # Project context: overview and standards (AI-optimized)
 ├── domains/             # Domain-specific contexts (AI-optimized)

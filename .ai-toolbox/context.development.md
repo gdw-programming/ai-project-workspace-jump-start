@@ -59,8 +59,26 @@ Items that exist solely to support this system's own development process do not 
 ## Upcoming Work
 *Forward-looking only. No history. Remove items when complete — do not mark or annotate them.*
 *`STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are not used to track system development progress — they represent the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
+*Detailed context for each item below lives in `backlog/` — each file states its problem, change, target files, and phase dependencies so it can be picked up independently.*
 
-*(no upcoming work — add future development ideas here)*
+**Phase 1 — Foundation** (no dependencies; later phases build on these)
+- Brain/portability core message — backlog/01-brain-portability-messaging.md
+- context.global.md rule authority — backlog/02-context-global-rule-authority.md
+- Steering context file — backlog/03-steering-context-file.md
+- Token-conservation rule (Caveman-derived) — backlog/04-token-conservation-rule.md
+- Simplest-output rule (Ponytail-derived) — backlog/05-simplest-output-rule.md
+
+**Phase 2 — Command Hygiene** (depends on Phase 1)
+- Change-set commands statelessness — backlog/06-change-set-commands-statelessness.md
+- Describe Change Set: Updated vs Fixed clarification — backlog/07-describe-change-set-category-clarification.md
+- Branch Protection rule (opt-in) — backlog/08-branch-protection-opt-in.md
+
+**Phase 3 — New Features** (depends on Phase 1; independent of Phase 2)
+- Upstream Notes system — backlog/09-upstream-notes-system.md
+- Package-manager security tooling — backlog/10-package-manager-security-tooling.md
+
+**Phase 4 — Toolbox-wide Optimization Sweep** (after Phases 1-3 land)
+- Apply the token-conservation and simplest-output rules retroactively across every existing `.ai-toolbox` file, including everything added above — no dedicated backlog file; covered by items 04 and 05 once developed
 
 ### Optional Enhancements
 *Not scheduled — consider for future branches*
