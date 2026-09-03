@@ -58,6 +58,7 @@
 - **AI Agent Discipline**: Always follow maintenance rules - automatic rule application required, not optional
 - **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing and understanding — not for human readers. Human-friendly documentation for the context system lives in `.ai-toolbox/docs/`. Human-facing project status, history, and planning documents (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`) live at the project root outside `.ai-toolbox`.
 - **Project Memory Authority**: `.ai-toolbox` is the project's persistent memory and preferences for cross-agent and cross-tool collaboration. All project-specific findings, domain knowledge, preferences, and work context belong here — not in external agent memory systems, session notes, or out-of-repo tools. Context files are the shared, version-controlled source of truth.
+- **Source Attribution**: When external repositories, systems, ideas, or source materials inform any system contribution, record each source in the [Sources and Credits](./README.md#sources-and-credits) section of the system README with a link and concise description of what was adapted. Credit only sources documented as informing the system; do not create duplicate source registries or copy full implementation rationale into the catalog.
 - **DRY Enforcement**: Detect and eliminate information duplication across all context files
 - **Reference Validation**: Verify all context references before changes
 - **Cross-Reference Validation**: Ensure all file paths and references work

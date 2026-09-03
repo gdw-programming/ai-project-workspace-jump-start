@@ -34,7 +34,6 @@ ai-project-workspace/            # Project root
 │   │   ├── 08-branch-protection-opt-in.md
 │   │   ├── 09-upstream-notes-system.md
 │   │   ├── 10-package-manager-security-tooling.md
-│   │   ├── 11-source-attribution-and-credits.md
 │   │   ├── 12-portable-command-discovery-and-invocation.md
 │   │   └── 13-brain-first-planning-and-research.md
 │   ├── commands/                # Available operations — one file per command

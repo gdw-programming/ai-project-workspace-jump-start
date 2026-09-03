@@ -61,17 +61,14 @@ Items that exist solely to support this system's own development process do not 
 *`STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are not used to track system development progress — they represent the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
 *Detailed context for each active item below lives in `backlog/`; remove its file when the item is complete. Move any durable user-facing guidance to the appropriate system documentation before removal.*
 
-**Phase 1 — Foundation** (no dependencies; later phases build on these)
-- Source attribution and credits — backlog/11-source-attribution-and-credits.md
-
-**Phase 2 — Command Hygiene** (depends on Phase 1)
+**Phase 2 — Command Hygiene**
 - Change-set commands statelessness, including existing-command review and new-command creation assessment — backlog/06-change-set-commands-statelessness.md
 - Describe Change Set: Updated vs Fixed clarification — backlog/07-describe-change-set-category-clarification.md
 - Branch Protection rule (opt-in) — backlog/08-branch-protection-opt-in.md
 - Portable command discovery and invocation — backlog/12-portable-command-discovery-and-invocation.md
 - Brain-first planning and research — backlog/13-brain-first-planning-and-research.md
 
-**Phase 3 — New Features** (depends on Phase 1; independent of Phase 2)
+**Phase 3 — New Features** (independent of Phase 2)
 - Upstream Notes system — backlog/09-upstream-notes-system.md
 - Package-manager security tooling — backlog/10-package-manager-security-tooling.md
 
