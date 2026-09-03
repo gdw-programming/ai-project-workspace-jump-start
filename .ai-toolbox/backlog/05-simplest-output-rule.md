@@ -27,6 +27,7 @@ Reference this pattern from `context.global.md`'s Context Placement rule and Ope
 ## Files to touch
 - `.ai-toolbox/patterns/simplest-output.md` (new)
 - `.ai-toolbox/context.global.md` (Context Placement, Operational Behavior)
+- `.ai-toolbox/README.md` (Sources and Credits section)
 
 ## Notes
-This is a decision-making rule, not a one-time edit — it should be applied by every future backlog item, and folded into the Phase 4 sweep for existing content.
+This is a decision-making rule, not a one-time edit — it should be applied by every future backlog item, and folded into the Phase 4 sweep for existing content. After implementation, update the Sources and Credits section in `.ai-toolbox/README.md` with the documented source and adaptation.

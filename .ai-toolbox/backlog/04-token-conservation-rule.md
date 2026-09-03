@@ -20,6 +20,7 @@ Add a Documentation Standard in `context.global.md` requiring terse, non-redunda
 
 ## Files to touch
 - `.ai-toolbox/context.global.md` (Documentation Standards section)
+- `.ai-toolbox/README.md` (Sources and Credits section)
 
 ## Notes
-This rule feeds Phase 4 (Toolbox-wide Optimization Sweep) — once added, sweep existing files to apply it retroactively.
+This rule feeds Phase 4 (Toolbox-wide Optimization Sweep) — once added, sweep existing files to apply it retroactively. After implementation, update the Sources and Credits section in `.ai-toolbox/README.md` with the documented source and adaptation.

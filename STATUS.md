@@ -28,7 +28,6 @@ ai-project-workspace/            # Project root
 │   ├── context.development.md  # System development context (deleted at initialization)
 │   ├── context.global.md        # Central routing and maintenance rules
 │   ├── backlog/                 # System development backlog items
-│   │   ├── 01-brain-portability-messaging.md
 │   │   ├── 02-context-global-rule-authority.md
 │   │   ├── 03-steering-context-file.md
 │   │   ├── 04-token-conservation-rule.md
@@ -37,7 +36,8 @@ ai-project-workspace/            # Project root
 │   │   ├── 07-describe-change-set-category-clarification.md
 │   │   ├── 08-branch-protection-opt-in.md
 │   │   ├── 09-upstream-notes-system.md
-│   │   └── 10-package-manager-security-tooling.md
+│   │   ├── 10-package-manager-security-tooling.md
+│   │   └── 11-source-attribution-and-credits.md
 │   ├── commands/                # Available operations — one file per command
 │   │   ├── README.md           # Commands directory guide and index
 │   │   ├── initialization.md   # Project initialization (auto-triggered)

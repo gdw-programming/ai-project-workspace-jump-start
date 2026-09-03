@@ -1,6 +1,6 @@
 # AI Project Context Management System
 
-A portable, hierarchical context and command system for AI-assisted projects. It enables consistent team collaboration, model and agent switching, and in-repo project memory without locking workflows to a single tool.
+`.ai-toolbox` is the project's portable brain: persistent memory and context that makes project knowledge travel across agents, tools, sessions, and contributors. It provides a hierarchical context and command system for AI-assisted projects without locking workflows to a single tool.
 
 ## Getting Started with Your Project
 
@@ -57,6 +57,7 @@ See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog managemen
 
 ## Core Principles
 
+- **Portable Project Brain**: `.ai-toolbox` keeps the project's persistent memory and context available across agents, tools, sessions, and contributors
 - **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing — not for human readers
 - **Project Memory**: `.ai-toolbox` is the project's persistent memory for cross-agent and cross-tool collaboration
 - **Portable Context Contract**: Context files and command definitions are the stable contract across contributors, sessions, and AI tools
@@ -65,6 +66,10 @@ See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog managemen
 - **Domain Agnostic**: No assumptions about project type
 - **DRY Information**: Single source of truth
 - **Minimal Context**: Essential information only
+
+## Sources and Credits
+
+Sources and credits for implemented external influences will be maintained here as the corresponding backlog items are completed.
 
 ## Context System Structure
 

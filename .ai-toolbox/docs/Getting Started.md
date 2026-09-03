@@ -1,6 +1,6 @@
 # Getting Started
 
-Simple 3-step process to set up any project with this AI-enabled workspace system.
+Simple 3-step process to set up any project with this AI-enabled workspace system. `.ai-toolbox` is the project's portable brain: persistent context and memory that travels with the repository across agents, tools, sessions, and contributors.
 
 ## Step 1: Get the System
 

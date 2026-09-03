@@ -2,6 +2,8 @@
 
 **AI Agent Entry Point**: Start here for all context loading. `context.local.md` automatically merged.
 
+`.ai-toolbox` is the project's portable brain: its persistent memory and context make project knowledge travel across agents, tools, sessions, and contributors. Load the relevant context before acting so this shared project knowledge remains the basis for decisions.
+
 **Local Context Required**: `context.local.md` is machine-specific and gitignored — each contributor creates their own. If it doesn't exist, follow `./commands/initialization.md` to create it before proceeding. Its absence means only that this contributor hasn't created their personal context file — not that the project itself is uninitialized; collaborators cloning an established project will not have this file.
 
 ## Definitions
