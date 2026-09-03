@@ -52,6 +52,7 @@
 *Organized by logical importance and application order*
 
 ### Critical System Rules (Always Applied First)
+- **Global Rule Authority**: `context.global.md` is the mandatory, always-enforced center for project-wide rules; every session must treat its Maintenance Rules as binding constraints and check them before acting. Apply the `Rule Compliance Gate` and `Correction Integration` rules when evaluating or refining those constraints.
 - **Initialization Check**: If context.local.md missing, initiate project setup workflow before proceeding
 - **AI Agent Discipline**: Always follow maintenance rules - automatic rule application required, not optional
 - **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing and understanding — not for human readers. Human-friendly documentation for the context system lives in `.ai-toolbox/docs/`. Human-facing project status, history, and planning documents (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`) live at the project root outside `.ai-toolbox`.

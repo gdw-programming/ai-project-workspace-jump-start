@@ -28,7 +28,6 @@ ai-project-workspace/            # Project root
 │   ├── context.development.md  # System development context (deleted at initialization)
 │   ├── context.global.md        # Central routing and maintenance rules
 │   ├── backlog/                 # System development backlog items
-│   │   ├── 02-context-global-rule-authority.md
 │   │   ├── 03-steering-context-file.md
 │   │   ├── 04-token-conservation-rule.md
 │   │   ├── 05-simplest-output-rule.md
