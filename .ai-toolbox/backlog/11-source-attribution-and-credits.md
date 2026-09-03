@@ -25,7 +25,6 @@ The system incorporates ideas from external repositories and source materials, b
 ## Files to touch
 - `.ai-toolbox/README.md`
 - `.ai-toolbox/docs/Commands.md`
-- `.ai-toolbox/backlog/05-simplest-output-rule.md`
 
 ## Notes
 Credit only sources that are actually documented as informing the system. Keep the catalog user-facing and concise; do not duplicate full implementation rationale there.

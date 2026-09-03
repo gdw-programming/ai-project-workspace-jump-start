@@ -6,6 +6,7 @@ Reusable approaches and procedures that can be applied across any project type o
 
 - [**setup.md**](setup.md) — Project initialization and setup patterns
 - [**context-compaction.md**](context-compaction.md) — Reduce natural-language context while preserving meaning and capability
+- [**simplest-output.md**](simplest-output.md) — Decide whether new content is needed before adding it
 
 *Add new patterns as your project needs them. See [docs/Patterns.md](../docs/Patterns.md) for how to add a pattern.*
 

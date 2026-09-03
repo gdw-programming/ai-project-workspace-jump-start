@@ -62,7 +62,6 @@ Items that exist solely to support this system's own development process do not 
 *Detailed context for each active item below lives in `backlog/`; remove its file when the item is complete. Move any durable user-facing guidance to the appropriate system documentation before removal.*
 
 **Phase 1 — Foundation** (no dependencies; later phases build on these)
-- Simplest-output rule (Ponytail-derived) — backlog/05-simplest-output-rule.md
 - Source attribution and credits — backlog/11-source-attribution-and-credits.md
 
 **Phase 2 — Command Hygiene** (depends on Phase 1)

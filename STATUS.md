@@ -29,8 +29,6 @@ ai-project-workspace/            # Project root
 │   ├── context.global.md        # Central routing and maintenance rules
 │   ├── context.steering.md      # On-demand keyword and topic routing index
 │   ├── backlog/                 # System development backlog items
-│   │   ├── 04-token-conservation-rule.md
-│   │   ├── 05-simplest-output-rule.md
 │   │   ├── 06-change-set-commands-statelessness.md
 │   │   ├── 07-describe-change-set-category-clarification.md
 │   │   ├── 08-branch-protection-opt-in.md
@@ -78,7 +76,8 @@ ai-project-workspace/            # Project root
 │   ├── patterns/               # Reusable patterns
 │   │   ├── README.md           # Patterns directory guide
 │   │   ├── setup.md            # Project setup patterns
-│   │   └── context-compaction.md # Context compaction pattern
+│   │   ├── context-compaction.md # Context compaction pattern
+│   │   └── simplest-output.md   # Simplest-output decision ladder
 │   ├── tools/                  # Tool-specific contexts
 │   │   ├── README.md           # Tools directory guide
 │   │   └── git.md              # Git version control context

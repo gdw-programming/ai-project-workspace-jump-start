@@ -70,6 +70,7 @@ See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog managemen
 ## Sources and Credits
 
 - [Caveman](https://github.com/JuliusBrussee/caveman) — token-conservation rule for terse, non-redundant context content.
+- [Ponytail](https://github.com/DietrichGebert/ponytail) — simplest-output decision ladder.
 
 ## Context System Structure
 
