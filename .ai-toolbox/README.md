@@ -109,9 +109,11 @@ your-project/
 │   ├── Domains.md       # Domain context guide
 │   ├── Patterns.md      # Patterns usage guide
 │   ├── Tools.md         # Tool contexts guide
-│   └── Commands.md      # Commands usage guide
+│   ├── Commands.md      # Commands usage guide
+│   └── Steering.md      # Steering context guide
 ├── context.local.md     # Machine-specific environment and personal preferences (gitignored)
 ├── context.global.md    # 🚀 START HERE - Central routing and maintenance rules
+├── context.steering.md  # On-demand keyword and topic routing index
 ├── backlog/             # System development backlog items
 ├── commands/            # Available operations (AI-optimized)
 ├── project/             # Project context: overview and standards (AI-optimized)

@@ -62,7 +62,6 @@ Items that exist solely to support this system's own development process do not 
 *Detailed context for each item below lives in `backlog/` — each file states its problem, change, target files, and phase dependencies so it can be picked up independently.*
 
 **Phase 1 — Foundation** (no dependencies; later phases build on these)
-- Steering context file — backlog/03-steering-context-file.md
 - Token-conservation rule (Caveman-derived) — backlog/04-token-conservation-rule.md
 - Simplest-output rule (Ponytail-derived) — backlog/05-simplest-output-rule.md
 - Source attribution and credits — backlog/11-source-attribution-and-credits.md
@@ -71,6 +70,8 @@ Items that exist solely to support this system's own development process do not 
 - Change-set commands statelessness, including existing-command review and new-command creation assessment — backlog/06-change-set-commands-statelessness.md
 - Describe Change Set: Updated vs Fixed clarification — backlog/07-describe-change-set-category-clarification.md
 - Branch Protection rule (opt-in) — backlog/08-branch-protection-opt-in.md
+- Portable command discovery and invocation — backlog/12-portable-command-discovery-and-invocation.md
+- Brain-first planning and research — backlog/13-brain-first-planning-and-research.md
 
 **Phase 3 — New Features** (depends on Phase 1; independent of Phase 2)
 - Upstream Notes system — backlog/09-upstream-notes-system.md

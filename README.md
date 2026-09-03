@@ -28,7 +28,7 @@ Load context from './.ai-toolbox/context.global.md' then use the initialize comm
 **Context System**: System ready for project initialization  
 **Project Status**: Ready to initialize project, hierarchical context operational, user personalization ready  
 **Available Commands**: Project initialization with user preference collection  
-**Available Documentation**: Getting Started guide, Local Context customization guide, Backlog management guide, Project Context guide, Domain contexts guide, Patterns guide, Tool contexts guide, Commands guide  
+**Available Documentation**: Getting Started guide, Local Context customization guide, Backlog management guide, Project Context guide, Domain contexts guide, Patterns guide, Tool contexts guide, Commands guide, Steering guide
 
 ### Quick Start
 1. Review context system: [.ai-toolbox/README.md](.ai-toolbox/README.md)

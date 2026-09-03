@@ -27,8 +27,8 @@ ai-project-workspace/            # Project root
 ├── .ai-toolbox/                 # AI context management system
 │   ├── context.development.md  # System development context (deleted at initialization)
 │   ├── context.global.md        # Central routing and maintenance rules
+│   ├── context.steering.md      # On-demand keyword and topic routing index
 │   ├── backlog/                 # System development backlog items
-│   │   ├── 03-steering-context-file.md
 │   │   ├── 04-token-conservation-rule.md
 │   │   ├── 05-simplest-output-rule.md
 │   │   ├── 06-change-set-commands-statelessness.md
@@ -36,7 +36,9 @@ ai-project-workspace/            # Project root
 │   │   ├── 08-branch-protection-opt-in.md
 │   │   ├── 09-upstream-notes-system.md
 │   │   ├── 10-package-manager-security-tooling.md
-│   │   └── 11-source-attribution-and-credits.md
+│   │   ├── 11-source-attribution-and-credits.md
+│   │   ├── 12-portable-command-discovery-and-invocation.md
+│   │   └── 13-brain-first-planning-and-research.md
 │   ├── commands/                # Available operations — one file per command
 │   │   ├── README.md           # Commands directory guide and index
 │   │   ├── initialization.md   # Project initialization (auto-triggered)
@@ -63,7 +65,8 @@ ai-project-workspace/            # Project root
 │   │   ├── Domains.md          # Domain contexts guide
 │   │   ├── Patterns.md         # Patterns usage guide
 │   │   ├── Tools.md            # Tool contexts guide
-│   │   └── Commands.md         # Commands usage guide
+│   │   ├── Commands.md         # Commands usage guide
+│   │   └── Steering.md         # Steering context guide
 │   ├── project/                # Project context
 │   │   ├── README.md           # Project directory guide
 │   │   ├── overview.md         # Project mission and goals
