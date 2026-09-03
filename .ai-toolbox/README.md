@@ -69,7 +69,7 @@ See [docs/Backlog.md](docs/Backlog.md) for prompt examples and backlog managemen
 
 ## Sources and Credits
 
-Sources and credits for implemented external influences will be maintained here as the corresponding backlog items are completed.
+- [Caveman](https://github.com/JuliusBrussee/caveman) — token-conservation rule for terse, non-redundant context content.
 
 ## Context System Structure
 

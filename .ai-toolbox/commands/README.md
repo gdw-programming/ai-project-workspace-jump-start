@@ -9,6 +9,7 @@ One command per file. Load by name when needed.
 - **[list-commands.md](list-commands.md)** — List all available commands
 - **[load-context-chain.md](load-context-chain.md)** — Load contexts following hierarchy for specific task
 - **[validate-context-chain.md](validate-context-chain.md)** — Check context references and consistency
+- **[compact-context.md](compact-context.md)** — Reduce natural-language context while preserving meaning and capability
 - **[update-work-context.md](update-work-context.md)** — Update work tracking and backlog
 - **[add-domain-context.md](add-domain-context.md)** — Create new domain-specific context
 

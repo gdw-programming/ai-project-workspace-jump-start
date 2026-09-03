@@ -59,10 +59,9 @@ Items that exist solely to support this system's own development process do not 
 ## Upcoming Work
 *Forward-looking only. No history. Remove items when complete — do not mark or annotate them.*
 *`STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are not used to track system development progress — they represent the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
-*Detailed context for each item below lives in `backlog/` — each file states its problem, change, target files, and phase dependencies so it can be picked up independently.*
+*Detailed context for each active item below lives in `backlog/`; remove its file when the item is complete. Move any durable user-facing guidance to the appropriate system documentation before removal.*
 
 **Phase 1 — Foundation** (no dependencies; later phases build on these)
-- Token-conservation rule (Caveman-derived) — backlog/04-token-conservation-rule.md
 - Simplest-output rule (Ponytail-derived) — backlog/05-simplest-output-rule.md
 - Source attribution and credits — backlog/11-source-attribution-and-credits.md
 
@@ -78,7 +77,7 @@ Items that exist solely to support this system's own development process do not 
 - Package-manager security tooling — backlog/10-package-manager-security-tooling.md
 
 **Phase 4 — Toolbox-wide Optimization Sweep** (after Phases 1-3 land)
-- Apply the token-conservation and simplest-output rules retroactively across every existing `.ai-toolbox` file, including everything added above — no dedicated backlog file; covered by items 04 and 05 once developed
+- Apply the token-conservation and simplest-output rules retroactively across every existing `.ai-toolbox` file, including everything added above, while preserving the information required for the system's purpose and capabilities. Continue applying both rules to every new context addition during project growth — no dedicated backlog file
 
 ### Optional Enhancements
 *Not scheduled — consider for future branches*

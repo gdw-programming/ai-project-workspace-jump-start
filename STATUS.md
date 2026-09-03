@@ -45,6 +45,7 @@ ai-project-workspace/            # Project root
 │   │   ├── list-commands.md    # List all available commands
 │   │   ├── load-context-chain.md # Load contexts following hierarchy
 │   │   ├── validate-context-chain.md # Check context references
+│   │   ├── compact-context.md      # Reduce natural-language context
 │   │   ├── update-work-context.md # Update work tracking and backlog
 │   │   ├── add-domain-context.md # Create new domain-specific context
 │   │   ├── initialize-project.md # Set up basic project structure
@@ -76,7 +77,8 @@ ai-project-workspace/            # Project root
 │   │   └── research.md         # Research and discovery domain
 │   ├── patterns/               # Reusable patterns
 │   │   ├── README.md           # Patterns directory guide
-│   │   └── setup.md            # Project setup patterns
+│   │   ├── setup.md            # Project setup patterns
+│   │   └── context-compaction.md # Context compaction pattern
 │   ├── tools/                  # Tool-specific contexts
 │   │   ├── README.md           # Tools directory guide
 │   │   └── git.md              # Git version control context

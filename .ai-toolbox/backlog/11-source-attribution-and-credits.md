@@ -25,7 +25,6 @@ The system incorporates ideas from external repositories and source materials, b
 ## Files to touch
 - `.ai-toolbox/README.md`
 - `.ai-toolbox/docs/Commands.md`
-- `.ai-toolbox/backlog/04-token-conservation-rule.md`
 - `.ai-toolbox/backlog/05-simplest-output-rule.md`
 
 ## Notes
