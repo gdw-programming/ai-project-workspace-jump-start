@@ -2,13 +2,13 @@
 
 **AI Agent Entry Point**: Start here for all context loading. `context.local.md` automatically merged.
 
-`.ai-toolbox` is the project's portable brain: its persistent memory and context make project knowledge travel across agents, tools, sessions, and contributors. Load the relevant context before acting so this shared project knowledge remains the basis for decisions.
+`.ai-toolbox` is the project's portable brain: persistent memory and context across agents, tools, sessions, and contributors. Load relevant context before acting.
 
-**Local Context Required**: `context.local.md` is machine-specific and gitignored — each contributor creates their own. If it doesn't exist, follow `./commands/initialization.md` to create it before proceeding. Its absence means only that this contributor hasn't created their personal context file — not that the project itself is uninitialized; collaborators cloning an established project will not have this file.
+**Local Context Required**: `context.local.md` is machine-specific and gitignored. If missing, follow `./commands/initialization.md` to create it. Absence means contributor has not created personal context file, not that project is uninitialized.
 
 ## Definitions
-- **Project**: The current project using this context management system
-- **Context System**: The hierarchical context management structure within the project
+- **Project**: Current project using this context system
+- **Context System**: Hierarchical context management structure within project
 - **Root README**: `../README.md` (project-level documentation)
 - **System README**: `./README.md` (context system documentation)
 
@@ -16,10 +16,9 @@
 1. **Core**: context.global.md + context.local.md (auto-merged, generated if missing)
 2. **Operational**: available commands/ + project tracking files (STATUS.md, BACKLOG.md, CHANGELOG.md — pre-configured templates, configured during initialization)
 3. **Domain**: domains/ (research.md example provided) + patterns/ (setup.md example provided) + tools/ (git.md example provided)
-4. **Project**: project/ (pre-configured stubs — populate with your project details)
+4. **Project**: project/ (pre-configured stubs — populate with project details)
 
 ## Standard Loading Paths
-*Organized by logical importance and application order*
 
 **Core Context**: context.global.md + context.local.md (auto-merged)
 **Project Status**: context.global.md → ../STATUS.md
@@ -28,16 +27,14 @@
 
 ### Loading Sequence
 1. **Core**: context.global.md + context.local.md (auto-merged)
-2. **Operational**: available commands/ + project tracking files (STATUS.md, BACKLOG.md, CHANGELOG.md — load if configured for use)
+2. **Operational**: available commands/ + project tracking files (STATUS.md, BACKLOG.md, CHANGELOG.md — load if configured)
 3. **Domain**: domains/ + patterns/ + tools/
-4. **Project**: project/ (overview.md, standards.md — populate with your project details)
-
-*Additional loading paths available as modules are configured*
+4. **Project**: project/ (overview.md, standards.md — populate with project details)
 
 ## Available Contexts
 
 ### Level 2 (Operational)
-**Project Tracking Files** — pre-configured templates. Use as-is, adapt the format, or replace with preferred tools (GitHub Issues, Jira, Notion, etc.) — configure your approach during initialization.
+**Project Tracking Files** — pre-configured templates. Use as-is, adapt, or replace with preferred external tools (GitHub Issues, Jira, Notion). Configure during initialization.
 - `../STATUS.md` - project status (phase, capabilities, workspace structure)
 - `../BACKLOG.md` - project backlog and recently completed work
 - `../CHANGELOG.md` - project history and completed deliverables
@@ -47,75 +44,74 @@
 - `patterns/` - reusable patterns (setup.md example provided)
 - `tools/` - tool-specific contexts (git.md example provided)
 
-*Additional operational commands available in commands/ directory*
+*Operational commands available in commands/ directory.*
 
 ## Maintenance Rules
-*Organized by logical importance and application order*
 
 ### Critical System Rules (Always Applied First)
-- **Global Rule Authority**: `context.global.md` is the mandatory, always-enforced center for project-wide rules; every session must treat its Maintenance Rules as binding constraints and check them before acting. Apply the `Rule Compliance Gate` and `Correction Integration` rules when evaluating or refining those constraints.
-- **Initialization Check**: If context.local.md missing, initiate project setup workflow before proceeding
-- **AI Agent Discipline**: Always follow maintenance rules - automatic rule application required, not optional
-- **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing and understanding — not for human readers. Human-friendly documentation for the context system lives in `.ai-toolbox/docs/`. Human-facing project status, history, and planning documents (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`) live at the project root outside `.ai-toolbox`.
-- **Project Memory Authority**: `.ai-toolbox` is the project's persistent memory and preferences for cross-agent and cross-tool collaboration. All project-specific findings, domain knowledge, preferences, and work context belong here — not in external agent memory systems, session notes, or out-of-repo tools. Context files are the shared, version-controlled source of truth.
-- **Source Attribution**: When external repositories, systems, ideas, or source materials inform any system contribution, record each source in the [Sources and Credits](./README.md#sources-and-credits) section of the system README with a link and concise description of what was adapted. Credit only sources documented as informing the system; do not create duplicate source registries or copy full implementation rationale into the catalog.
-- **DRY Enforcement**: Detect and eliminate information duplication across all context files
-- **Reference Validation**: Verify all context references before changes
-- **Cross-Reference Validation**: Ensure all file paths and references work
-- **Workflow Agnostic**: No references to specific user workflows (git staging, commit patterns, etc.) in context files or documentation - let users choose their own workflow preferences
-- **Context Organization**: Keep all context files organized by logical importance and application order - most critical rules first, supporting details last
-- **Human Reading Order**: Organize all content — commands, rules, and reference material — in the logical sequence a human reader would encounter it: prerequisites before dependent items, operations in the order they would naturally be used, edge cases and exceptions after the main rules they qualify
+- **Global Rule Authority**: `context.global.md` is mandatory center for project-wide rules. Treat Maintenance Rules as binding constraints and check before acting. Apply `Rule Compliance Gate` and `Correction Integration` when evaluating constraints.
+- **Initialization Check**: If context.local.md missing, initiate project setup workflow before proceeding.
+- **AI Agent Discipline**: Always follow maintenance rules — automatic rule application required.
+- **AI-Optimized Content**: `.ai-toolbox` content (excluding `docs/`) is structured for AI processing. Human documentation for context system lives in `.ai-toolbox/docs/`. Human project tracking (`STATUS.md`, `BACKLOG.md`, `CHANGELOG.md`) lives at project root.
+- **Project Memory Authority**: `.ai-toolbox` is persistent memory for cross-agent/tool collaboration. All project findings, domain knowledge, preferences, and work context belong here — not in external agent memory systems, session notes, or out-of-repo tools.
+- **Source Attribution**: Record external sources in [Sources and Credits](./README.md#sources-and-credits) section of system README with link and concise description. Do not create duplicate registries.
+- **DRY Enforcement**: Detect and eliminate information duplication across context files.
+- **Reference Validation**: Verify all context references before changes.
+- **Cross-Reference Validation**: Ensure all file paths and references work.
+- **Workflow Agnostic**: No references to specific user workflows (git staging, commit patterns) in context files or documentation.
+- **Context Organization**: Keep context files organized by logical importance — most critical rules first, supporting details last.
+- **Human Reading Order**: Organize content in logical reader order: prerequisites first, operations in natural sequence, edge cases/exceptions last.
 
 ### Content Management Rules
-- **Auto-Sync Targets are Dependencies**: root README.md must stay in sync with committed content at all times. Project tracking files (STATUS.md, BACKLOG.md, CHANGELOG.md) apply only if the project is configured to use them — if any in-use file is out of sync, fix it immediately as a dependency, not a future task
-- **State Consistency**: Sync status across README.md, STATUS.md, and other contexts
-- **Backlog Auto-Management**: If using the built-in BACKLOG.md and CHANGELOG.md: mirror all completed items to CHANGELOG.md; age out Recently Completed entries in BACKLOG.md per criteria defined in BACKLOG.md; completed items must exist in both BACKLOG.md and CHANGELOG.md until aged out. In all cases: Recently Completed tracks project deliverables and features only — context system maintenance (updating rules, adding context files, adjusting documentation structure) is not recorded; "completed" means verified working and user-confirmed — code written does not qualify
-- **Contributor Attribution**: When recording completed items in project tracking files (BACKLOG.md, CHANGELOG.md): always use the Contributor Name from context.local.md User Preferences — if not set, prompt the user for their name before recording
-- **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status
-- **File Reference Standards**: Never use Markdown links to files that have not yet been committed — use plain text references only; Markdown links to uncommitted files create broken documentation
-- **Path Validation**: Ensure all context file paths work for end users
-- **Agent Agnostic**: No agent/user references in context files except context.local.md personalization file
-- **Passive Updates**: All context file and documentation updates automatically synchronized by processing agents
+- **Auto-Sync Targets are Dependencies**: root README.md must stay in sync with committed content. Project tracking files (STATUS.md, BACKLOG.md, CHANGELOG.md) apply if configured — if out of sync, fix immediately as a dependency.
+- **State Consistency**: Sync status across README.md, STATUS.md, and other contexts.
+- **Backlog Auto-Management**: If using built-in BACKLOG.md and CHANGELOG.md: mirror completed items to CHANGELOG.md; age out Recently Completed entries in BACKLOG.md per criteria. Recently Completed tracks deliverables and features only — context system maintenance is not recorded; "completed" means verified working and user-confirmed.
+- **Contributor Attribution**: When recording completed items in project tracking files: use Contributor Name from context.local.md User Preferences. If not set, prompt user.
+- **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status.
+- **File Reference Standards**: Never use Markdown links to uncommitted files — use plain text references.
+- **Path Validation**: Ensure all context file paths work for end users.
+- **Agent Agnostic**: No agent/user references in context files except context.local.md.
+- **Passive Updates**: All context file and documentation updates automatically synchronized by processing agents.
 
 ### Documentation Standards
-- **Documentation Separation**: Root README = project content, .ai-toolbox/README.md = context system documentation
-- **Context Framing**: tools/, domains/, and patterns/ use team/project framing ("your team's conventions", "your project's standards") — context.local.md is the only file that uses personal framing ("your preferences", "your environment")
-- **Markdown Links**: All file references in documentation (README files, docs/) must use proper Markdown link syntax with URL-encoded spaces — `[Display Text](path/to/file.md)` — bare path references like `` `./.ai-toolbox/file.md` `` do not create clickable links
-- **Auto-Sync Documentation**: Update ../README.md project status section from STATUS.md
-- **Project State Language**: Use "ready to initialize project" or current project state, not development language
-- **Technical Terms Exception**: Allow specific technical terms like GitHub's "Use this template" button, API names, and platform-specific features that have established meanings
-- **Documentation Location Map**: Four distinct audiences, each with a designated location — (1) **AI agents**: `.ai-toolbox/` (excluding `.ai-toolbox/docs/`) — context rules, domain knowledge, commands, patterns, tools; content here is structured for AI processing, not human readers; (2) **Project status and history**: `STATUS.md`, `BACKLOG.md`, `CHANGELOG.md` at the project root — pre-configured project tracking templates; use as-is, adapt, or replace with preferred external tools — configured during initialization; (3) **Developers building with this project**: `README.md` is the first-contact entry point, `/docs/` is human-facing project documentation (setup, architecture, testing, contributing), `.ai-toolbox/docs/` is human-readable guidance on how to use the AI context system to assist development — what help is available, how to leverage it, and how to extend it for the project; (4) **End-users of the finished product**: structure is the developer's choice — this template does not own that space. Additional documentation structure beyond `README.md` is the developer's decision
-- **Present-Tense Voice**: All documentation describes current state — do not use change-referencing language ("fixed", "improved", "enhanced", "updated", "now", "added") outside of changelogs; changelogs are the only sanctioned location for documenting what changed
-- **Progressive Disclosure**: Structure human-facing documents in reader-need order — (1) one-sentence description of what it is, (2) direct usage steps or command, (3) only necessary detail for correct usage, (4) background and reference content last or in a linked document; if a document feels like it needs a summary or TL;DR, restructure it instead
-- **Token Conservation**: Keep `.ai-toolbox` content terse and non-redundant without removing information needed for its purpose or capabilities; remove filler and throat-clearing prose while preserving exact code, commands, file paths, rule names, and error messages verbatim. Apply this rule to all content authored from this point forward, including context added as the project grows and later backlog items
+- **Documentation Separation**: Root README = project content, .ai-toolbox/README.md = context system documentation.
+- **Context Framing**: tools/, domains/, patterns/ use team/project framing; context.local.md uses personal framing.
+- **Markdown Links**: All file references in documentation (README files, docs/) must use proper Markdown link syntax with URL-encoded spaces: `[Display Text](path/to/file.md)`. Bare paths do not create links.
+- **Auto-Sync Documentation**: Update ../README.md project status section from STATUS.md.
+- **Project State Language**: Use "ready to initialize project" or current project state, not development language.
+- **Technical Terms Exception**: Allow specific technical terms (e.g. GitHub "Use this template" button, API names) with established meanings.
+- **Documentation Location Map**: Four audiences: (1) **AI agents**: `.ai-toolbox/` (excluding `docs/`) — AI-structured context; (2) **Project tracking**: `STATUS.md`, `BACKLOG.md`, `CHANGELOG.md` at root; (3) **Developers**: `README.md` (entry point), `/docs/` (project docs), `.ai-toolbox/docs/` (AI context system guide); (4) **End-users**: developer's choice.
+- **Present-Tense Voice**: All documentation describes current state — no change-referencing language ("fixed", "improved", "added") outside changelogs.
+- **Progressive Disclosure**: Structure documents in reader-need order: (1) one-sentence summary, (2) direct steps/command, (3) necessary usage details, (4) reference/background. Restructure instead of adding TL;DR.
+- **Token Conservation**: Keep `.ai-toolbox` content terse and non-redundant without removing required information; remove filler while preserving exact code, commands, file paths, rule names, and error messages verbatim.
 
 ### Operational Behavior
-- **Clarify Before Acting**: Before taking action on any request, apply `patterns/simplest-output.md`, then verify the loaded context is sufficient to proceed with confidence. If the request is ambiguous, the scope is unclear, or required information is missing, ask targeted questions before proceeding — do not assume, infer, or proceed on best guesses. Ask for the minimum information needed; prefer specific questions with examples or options over open-ended prompts. When clarification reveals project-level information or decisions, capture them in the appropriate context file — session responses are not a substitute for persistent context.
-- **Brain-First Planning and Research**: Before planning work, asking clarification questions, or conducting external research, consult the project brain in this order: `context.global.md` -> `context.steering.md` -> relevant `project/`, `domains/`, `patterns/`, and `tools/` contexts -> applicable commands -> status, backlog, and history. Treat recorded project decisions, constraints, standards, and knowledge as authoritative unless the user explicitly changes them. Use external research only when the project brain does not contain enough information, and capture new decisions, validated discoveries, and reusable project knowledge in the appropriate brain location.
-- **Rule Compliance Gate**: Before executing any action, verify it is consistent with the rules in the loaded context. If an action would violate an established rule or if the user's request conflicts with context rules, do not proceed silently — identify the applicable rule, explain the conflict, and ask for explicit permission to deviate or for guidance to resolve it. If uncertain whether an action falls within established rules, ask rather than assume.
-- **Correction Integration**: When the user corrects the agent or reminds it of a rule, preference, or how they want something done, immediately update the appropriate `.ai-toolbox` context file to enforce the correction — do not rely on session memory or assume retention across sessions. `.ai-toolbox` is the primary and authoritative source of direction; all corrections and refinements belong here to persist across sessions, agents, and collaborators. Treat every user correction as a signal that the context system is incomplete and must be updated before proceeding.
-- **Workspace State Awareness**: Not all workspace changes are agent-initiated — users may manually edit files, stage changes, run commands, or install tools independently between agent interactions. Before responding to any request that depends on the current state of the workspace (staged files, file content, available tools, active branch, etc.), read the current state directly rather than relying on session memory. Do not deny or fail a request based on assumed state; verify first. When a user-initiated change is discovered (e.g., a new tool recorded in context.local.md, a manually staged file), incorporate it immediately without requiring reinitialization.
-- **Tool Resolution Loop**: Before attempting any task that requires a specific tool or capability — check context.local.md Available Tools first; if the tool is not recorded, prompt the user before assuming it is available or choosing an alternative; once resolved, record the result (available or unavailable + alternative) before proceeding; if the user reports a recorded status is incorrect, re-verify via shell and update the record before continuing
-- **Tool Discovery Tracking**: At the end of every session, verify that all tools, runtimes, and capabilities used are recorded in context.local.md Available Tools — add any that are missing before closing. When a tool is used or found missing mid-session, record it immediately rather than waiting. Machine-specific tools (shell type, OS utilities, local runtimes, PDF readers, available commands) go in context.local.md Available Tools; project-wide tool conventions (build tools, test frameworks, deployment targets) go in tools/ contexts; if a needed tool is unavailable, record the absence and the alternative used
-- **Local Context Scope**: context.local.md is for machine-specific and personal preferences only — things that vary by individual contributor or machine (OS, shell, editor, contributor name, communication style). Any decision that affects all contributors or the project as a whole must be stored in a source-controlled file (project/, tools/, domains/, context.global.md, or project root files) — never in context.local.md; project decisions stored only in context.local.md are invisible to other contributors and agents and will be lost when context.local.md is regenerated
-- **Local Context Authority**: Preferences in context.local.md govern how the agent engages — pacing, communication style, approval gates — not whether the context system evolves or stays accurate. A local preference that would prevent the context system from being updated, kept in sync, or progressed must be flagged to the user as a conflict rather than silently honored; the system's health takes precedence over process preferences
-- **Context Placement**: Apply `patterns/simplest-output.md` before adding or updating context. When context is needed, use the first matching location — user/machine-specific tools, environment, or personal work-style preferences → `context.local.md`; domain knowledge, framework behavior, or domain-specific conventions → `domains/{name}.md`; reusable approaches that apply across domains → `patterns/`; tool behavior, conventions, or CI/CD workflows → `tools/{name}.md`; project facts, scope, stakeholders, or quality standards → `project/overview.md` or `project/standards.md`; system-wide behaviors, maintenance rules, or routing logic → `context.global.md`. If routing is unclear, load `context.steering.md` on demand before proposing a location.
-- **Local Context Maintenance**: Auto-update environment basics and workspace structure in context.local.md
-- **Command Discovery and Execution**: When a user invokes a named top-level command, normalize case and surrounding whitespace, then match the complete requested name against the display names and aliases declared in the commands/ directory. Evaluate exact matches before interpreting the request as a general task. For one exact match, read that command's definition and execute every step as written — do not substitute a neighboring or related command, answer from session memory, or skip steps because the answer seems known. Session context may be incomplete or stale; the command definition is authoritative. If no exact match exists, do not execute a command: offer a concise list of near matches based on meaningful shared words from registered names and aliases, or direct the user to `list-commands` when no useful candidate exists. If multiple matches remain, show the exact command names and ask the user to choose. A selected suggestion requires an explicit exact command request before execution; suggestions never authorize substitution. Named sub-steps remain governed by the selected command definition and are not independently resolved.
-- **Knowledge Capture**: Any framework behavior, environment pattern, tool behavior, or non-obvious constraint discovered during a session must be captured in the appropriate context file (`domains/`, `tools/`, or `patterns/`) before the session ends. If a behavior is unverified, record it in the relevant context file marked as unverified rather than omitting it. Framework/library behavior → domain contexts; fragile vs. stable patterns → `patterns/`; tool-specific behavior → `tools/`. Review Change Set enforces this as a pre-commit checklist item.
-- **External Memory Scope**: `.ai-toolbox` is the project's persistent memory — project-specific findings, domain knowledge, preferences, and work context belong here, not in external agent memory systems (Copilot memory, session notes, out-of-repo tools). External agent memory is for personal preferences and session-portable agent identity only. Context files are the shared, version-controlled source of truth for all collaborators and agents working on the project.
-- **Upstream Notes**: During planning, scan `.ai-toolbox/upstream-notes/` for relevant existing findings. When a finding is agnostic to the current project and would improve the workspace system for all downstream projects, create or update a finding there using the naming convention in its `README.md`, and list that work as an explicit plan item. Finding files are gitignored and sent manually to the upstream maintainer; upstream notes are a required deliverable for every change set.
-- **Learn Before Acting**: For any external, third-party, or poorly-documented environment or API, do not guess at behavior, selectors, timing, or structure. If the required interaction is not documented in the relevant context file, stop and ask the user — do not attempt, fail, and then capture. The correct sequence is: consult context → if undocumented, ask → validate with user → act → capture.
-- **Minimal Context**: Create only necessary contexts for project use, avoid unnecessary complexity
-- **Minimal Loading**: Load only required contexts
-- **Gitignored and Untracked File Editing**: Context system files (e.g., context.local.md) may be edited automatically even though they are gitignored. All other gitignored or untracked files — including `.sandbox/` and other personal reference directories — are read-only by default; edit only when the user explicitly instructs an edit to that specific file. Untracked changes are invisible in source control and can be missed during review.
-- **Gitignore Awareness**: Respect .gitignore patterns for file usage in project structure, but reference or use ignored files when contextually relevant
+- **Clarify Before Acting**: Apply `patterns/simplest-output.md`, then verify context before acting. If request is ambiguous, ask targeted questions with specific options. Capture revealed decisions in appropriate context file.
+- **Brain-First Planning and Research**: Consult brain in order: `context.global.md` -> `context.steering.md` -> relevant `project/`, `domains/`, `patterns/`, `tools/` contexts -> applicable commands -> status, backlog, history. Treat recorded decisions as authoritative. Use external research only when brain lacks info; capture new knowledge in brain.
+- **Rule Compliance Gate**: Verify action matches context rules. If conflicting, explain conflict and ask permission to deviate.
+- **Correction Integration**: When user corrects or reminds agent of a rule, immediately update appropriate `.ai-toolbox` context file. User corrections signal incomplete context.
+- **Workspace State Awareness**: Check current workspace state directly before acting rather than relying on session memory. Incorporate user-initiated changes immediately.
+- **Tool Resolution Loop**: Check context.local.md Available Tools first. If unrecorded, prompt user, then record result.
+- **Tool Discovery Tracking**: At session end, verify all used tools/runtimes are recorded in context.local.md Available Tools. Machine-specific tools go in context.local.md; project-wide conventions go in `tools/`.
+- **Local Context Scope**: context.local.md is for machine-specific/personal preferences only. Project-wide decisions belong in version-controlled context files.
+- **Local Context Authority**: Preferences in context.local.md govern agent engagement pacing/style, not context system health. Context system maintenance overrides process preferences.
+- **Context Placement**: Apply `patterns/simplest-output.md`. Match location: user/machine preferences → `context.local.md`; domain conventions → `domains/{name}.md`; reusable approaches → `patterns/`; tool/CI behavior → `tools/{name}.md`; project facts/standards → `project/`; system rules/routing → `context.global.md`. Load `context.steering.md` if routing is unclear.
+- **Local Context Maintenance**: Auto-update environment basics and workspace structure in context.local.md.
+- **Command Discovery and Execution**: Match top-level user commands against `commands/` names/aliases. For exact match, read definition and execute every step as written. If no exact match, suggest near matches or direct to `list-commands`. Selected suggestions require explicit exact request before execution.
+- **Knowledge Capture**: Capture non-obvious framework, tool, or environment behavior in `domains/`, `tools/`, or `patterns/` before session ends.
+- **External Memory Scope**: `.ai-toolbox` is persistent project memory. All project findings belong here, not in external agent memory systems.
+- **Upstream Notes**: Scan `.ai-toolbox/upstream-notes/` during planning. If a finding is project-agnostic, record in `upstream-notes/` and list in plan. Upstream notes are required deliverables.
+- **Learn Before Acting**: Do not guess undocumented external APIs/environments. Sequence: consult context → if undocumented, ask user → validate → act → capture.
+- **Minimal Context**: Create only necessary contexts; avoid complexity.
+- **Minimal Loading**: Load only required contexts.
+- **Gitignored and Untracked File Editing**: Context system files (e.g., context.local.md) may be edited automatically. All other gitignored/untracked files are read-only unless user explicitly instructs edit.
+- **Gitignore Awareness**: Respect .gitignore patterns, but reference ignored files when relevant.
 
 ## Version Control Integration
-- **User Exclusions**: `context.local.md` (covered by `*.local.*` in .gitignore), `.sandbox/` (gitignored), `temp/` excluded via .gitignore
-- **Project Files**: All project infrastructure committed and versioned
-- **Reference Usage**: Can examine ignored files (node_modules, build outputs) for context without including in commits
-- **Upstream Notes**: `.ai-toolbox/upstream-notes/` contains personal findings to send to the upstream workspace system project. Its `README.md` is committed; finding files are gitignored and sent manually.
+- **User Exclusions**: `context.local.md` (`*.local.*` in .gitignore), `.sandbox/`, `temp/` excluded via .gitignore.
+- **Project Files**: All project infrastructure committed and versioned.
+- **Reference Usage**: Can examine ignored files (node_modules, build outputs) for context.
+- **Upstream Notes**: `.ai-toolbox/upstream-notes/` contains findings for upstream. `README.md` is committed; finding files are gitignored.
 
 ---
 *Keep this file compact and machine-readable. See `./README.md` for human documentation.*

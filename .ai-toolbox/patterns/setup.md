@@ -1,6 +1,6 @@
 # Project Setup Patterns
 
-Reusable approaches for initializing any type of project.
+Reusable approaches for initializing any project.
 
 ## Universal Setup Steps
 1. **Define Purpose**: Clear problem statement and goals
@@ -27,4 +27,4 @@ context.global.md → context.local.md → patterns/setup.md → domains/{type}.
 - License file (if sharing)
 
 ---
-*Reference from any domain when starting new projects*
+*Reference from any domain when starting new projects.*

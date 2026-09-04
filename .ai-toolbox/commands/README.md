@@ -1,6 +1,6 @@
 # Command Context Directory
 
-One command per file. Command definitions are authoritative for display names and aliases; this file is the discovery index.
+One command per file. Command definitions are authoritative for display names and aliases; this index is for discovery.
 
 ## System
 - **[Project Initialization Command](initialization.md)** — alias: `initialization` — Full project setup workflow (auto-triggered when context.local.md is missing)
@@ -17,10 +17,10 @@ One command per file. Command definitions are authoritative for display names an
 - **[Initialize Project](initialize-project.md)** — alias: `initialize-project` — Set up basic project structure
 - **[Organize Structure](organize-structure.md)** — alias: `organize-structure` — Create logical directory organization
 - **[Setup Quality Gates](setup-quality-gates.md)** — alias: `setup-quality-gates` — Establish basic quality controls
-- **[Fix Security Advisories](fix-security-advisories.md)** — alias: `fix-security-advisories` — Apply non-breaking security fixes through the project's package manager
+- **[Fix Security Advisories](fix-security-advisories.md)** — alias: `fix-security-advisories` — Apply non-breaking security fixes through package manager
 - **[Document Project](document-project.md)** — alias: `document-project` — Create appropriate documentation
-- **[Review Change Set](review-change-set.md)** — alias: `review-change-set` — Verify a change set is consistent and ready to record
-- **[Describe Change Set](describe-change-set.md)** — alias: `describe-change-set` — Generate a change set summary for recording
+- **[Review Change Set](review-change-set.md)** — alias: `review-change-set` — Verify change set is consistent and ready to record
+- **[Describe Change Set](describe-change-set.md)** — alias: `describe-change-set` — Generate change set summary for recording
 
 ## Project Management
 - **[Define Project Scope](define-project-scope.md)** — alias: `define-project-scope` — Establish project boundaries and goals
@@ -34,18 +34,14 @@ Load commands as part of context hierarchy:
 context.global.md → commands/{command-name}.md
 ```
 
-When a request names a command, match its complete display name or alias before treating the request as a general task. If no exact match exists, use the names and aliases here to offer concise near-match suggestions; do not execute a suggestion or substitute a related command. Ask the user to choose when multiple candidates remain.
-
-Update this index whenever a command is added, renamed, or removed. Keep each row synchronized with the command file's display name, aliases, and path.
+Match user request against display name or alias before treating as general task. If no exact match, offer near-match suggestions from this index. Ask user to choose if multiple candidates remain. Sync index when commands are added, renamed, or removed.
 
 ## Command Style
-Commands are documented as:
+Commands document:
 - **Purpose**: What it accomplishes
 - **Pattern**: General approach
 - **Context**: Required context loading
 - **Example**: Basic usage
 
-Focus on patterns rather than specific implementations.
-
 ---
-*See [docs/Commands.md](../docs/Commands.md) for prompt examples and usage guidance.*
+*See [docs/Commands.md](../docs/Commands.md) for usage guidance.*
