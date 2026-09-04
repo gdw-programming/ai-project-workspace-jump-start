@@ -48,6 +48,13 @@ Commands provide patterns, not prescriptions. Adapt them to your project's workf
 
 1. Create `commands/{command-name}.md` with the standard structure (Purpose, Pattern, Context, Example)
 2. Add it to [commands/README.md](../commands/README.md) under the appropriate category
+3. Before finalizing the command, assess whether it depends on live workspace state, git state, staged files, branch status, tool availability, or user edits that may change between turns. If so, the command must explicitly instruct the agent to re-read current state at command start every run instead of relying on earlier session memory or prior outputs.
+4. Review existing commands for the same statelessness requirement before accepting a new command as complete; if a command can be run multiple times in one session, it must be safe against stale state and must say so in its definition.
+
+**Statelessness rule for command authoring**:
+- Every existing command must be reviewed for whether it is stateful or stateless.
+- If a command reads or interprets anything that can change between turns — workspace files, staging, branch state, tool availability, repo status, diff output, or user edits — it must re-read current state at the start of every invocation.
+- New commands must be assessed the same way before they are added to the command set; if they depend on current state, the command definition must state that requirement explicitly and reference the Workspace State Awareness rule in [context.global.md](../context.global.md) instead of implying session continuity.
 
 **Prompt to add a command**:
 > "Add a command for [operation] to commands/ following the existing structure."
