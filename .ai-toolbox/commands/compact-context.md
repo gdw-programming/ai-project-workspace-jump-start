@@ -1,5 +1,6 @@
 # Compact Context
 
+**Aliases**: `compact-context`
 **Purpose**: Reduce natural-language context while preserving purpose, capabilities, structure, and exact operational content
 **Pattern**: Apply `patterns/context-compaction.md`
 **Context**: `context.global.md` + target context file + relevant linked contexts

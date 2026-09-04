@@ -1,5 +1,6 @@
 # Project Initialization Command
 
+**Aliases**: `initialization`
 **Trigger**: When `context.local.md` is missing during context loading
 **Purpose**: Complete workspace system setup to an operational project
 

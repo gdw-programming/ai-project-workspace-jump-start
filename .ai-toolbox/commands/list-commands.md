@@ -1,5 +1,6 @@
 # List Commands
 
+**Aliases**: `list-commands`
 **Purpose**: Display all available commands in logical use order, with sub-steps shown hierarchically
 **Pattern**: Read all files in commands/; for each file read the H1 command name; identify sub-steps by checking whether the command contains named sub-steps or explicitly sequences into another named command; produce plain text output in the format below
 **Context**: commands/ directory

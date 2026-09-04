@@ -1,5 +1,6 @@
 # Load Context Chain
 
+**Aliases**: `load-context-chain`
 **Purpose**: Load contexts following hierarchy for specific task
 **Pattern**: Start with global routing, add contexts as needed
 **Context**: Always start with context.global.md

@@ -31,7 +31,6 @@ ai-project-workspace/            # Project root
 │   ├── backlog/                 # System development backlog items
 │   │   ├── 09-upstream-notes-system.md
 │   │   ├── 10-package-manager-security-tooling.md
-│   │   ├── 12-portable-command-discovery-and-invocation.md
 │   │   └── 13-brain-first-planning-and-research.md
 │   ├── commands/                # Available operations — one file per command
 │   │   ├── README.md           # Commands directory guide and index

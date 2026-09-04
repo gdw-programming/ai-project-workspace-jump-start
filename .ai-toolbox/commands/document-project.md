@@ -1,5 +1,6 @@
 # Document Project
 
+**Aliases**: `document-project`
 **Purpose**: Create appropriate documentation
 **Pattern**: README + domain-specific docs
 **Context**: patterns/setup.md + project/standards.md

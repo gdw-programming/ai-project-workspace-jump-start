@@ -62,7 +62,6 @@ Items that exist solely to support this system's own development process do not 
 *Detailed context for each active item below lives in `backlog/`; remove its file when the item is complete. Move any durable user-facing guidance to the appropriate system documentation before removal.*
 
 **Phase 2 — Command Hygiene**
-- Portable command discovery and invocation — backlog/12-portable-command-discovery-and-invocation.md
 - Brain-first planning and research — backlog/13-brain-first-planning-and-research.md
 
 **Phase 3 — New Features** (independent of Phase 2)

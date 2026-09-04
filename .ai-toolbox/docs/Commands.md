@@ -9,6 +9,15 @@ The `commands/` directory provides operation patterns for common tasks. Command 
 
 > "I need to organize my project structure — load the relevant command context."
 
+### Invoke a named command
+> "Review Change Set"
+
+> "Run the `review-change-set` command."
+
+Command names and aliases are matched exactly after normalizing case and surrounding whitespace. The agent loads the matching command definition and follows every step in it. A related command is never substituted.
+
+When no exact match exists, the agent does not execute a command. It may offer a short list of near matches based on meaningful shared words from registered names and aliases. Select a suggestion by naming the exact command or alias. When multiple candidates remain, choose one explicitly. Use `list-commands` to view the complete registry.
+
 ### Add a command pattern
 > "Add a command for [operation] to commands/ following the existing structure."
 
@@ -46,8 +55,8 @@ Commands provide patterns, not prescriptions. Adapt them to your project's workf
 
 ## Adding a New Command Pattern
 
-1. Create `commands/{command-name}.md` with the standard structure (Purpose, Pattern, Context, Example)
-2. Add it to [commands/README.md](../commands/README.md) under the appropriate category
+1. Create `commands/{command-name}.md` with the standard structure (Purpose, Pattern, Context, Example), using its H1 as the display name and adding an `Aliases` field.
+2. Add the display name, aliases, and file path to [commands/README.md](../commands/README.md) under the appropriate category.
 3. Before finalizing the command, assess whether it depends on live workspace state, git state, staged files, branch status, tool availability, or user edits that may change between turns. If so, the command must explicitly instruct the agent to re-read current state at command start every run instead of relying on earlier session memory or prior outputs.
 4. Review existing commands for the same statelessness requirement before accepting a new command as complete; if a command can be run multiple times in one session, it must be safe against stale state and must say so in its definition.
 
