@@ -61,9 +61,6 @@ Items that exist solely to support this system's own development process do not 
 *`STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are not used to track system development progress — they represent the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
 *Detailed context for each active item below lives in `backlog/`; remove its file when the item is complete. Move any durable user-facing guidance to the appropriate system documentation before removal.*
 
-**Phase 2 — Command Hygiene**
-- Brain-first planning and research — backlog/13-brain-first-planning-and-research.md
-
 **Phase 3 — New Features** (independent of Phase 2)
 - Upstream Notes system — backlog/09-upstream-notes-system.md
 - Package-manager security tooling — backlog/10-package-manager-security-tooling.md

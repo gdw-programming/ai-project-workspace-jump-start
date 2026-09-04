@@ -30,8 +30,7 @@ ai-project-workspace/            # Project root
 │   ├── context.steering.md      # On-demand keyword and topic routing index
 │   ├── backlog/                 # System development backlog items
 │   │   ├── 09-upstream-notes-system.md
-│   │   ├── 10-package-manager-security-tooling.md
-│   │   └── 13-brain-first-planning-and-research.md
+│   │   └── 10-package-manager-security-tooling.md
 │   ├── commands/                # Available operations — one file per command
 │   │   ├── README.md           # Commands directory guide and index
 │   │   ├── initialization.md   # Project initialization (auto-triggered)

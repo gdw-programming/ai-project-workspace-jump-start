@@ -2,6 +2,14 @@
 
 Context for research, learning, and discovery workflows.
 
+## Brain-First Workflow
+- Consult `context.global.md`, `context.steering.md`, and relevant project, domain, pattern, tool, command, status, backlog, and history contexts before asking questions or researching externally.
+- Identify existing decisions, constraints, standards, recorded knowledge, and information gaps.
+- Treat existing project knowledge as authoritative unless the user explicitly changes it.
+- Ask targeted questions only for unresolved project-specific information.
+- Use external sources only for remaining gaps; evaluate and record validated findings.
+- Capture new decisions, discoveries, and reusable knowledge in the appropriate `.ai-toolbox` context.
+
 ## Common Patterns
 - Information gathering and synthesis
 - Technology evaluation and comparison
