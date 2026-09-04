@@ -17,13 +17,17 @@ Integrated into:
 Updated:
 -- [filename]: [what changed]
 
+Deleted:
+-- [filename]: [what was removed]
+
 Fixed:
 -- [filename]: [what was corrected]
 ```
 **Categories**:
 - **Created** — new files with no prior recorded history
 - **Integrated into** — existing files modified only to wire in new files from this change set
-- **Updated** — existing files with substantive content changes, including auto-sync target updates (README.md, STATUS.md, BACKLOG.md, CHANGELOG.md) kept current as part of the change set
-- **Fixed** — existing files where content was incorrect or broken (wrong information, bad links, rule violations) — not routine sync lag
+- **Updated** — existing files with substantive content changes, including feature-driven synchronization work: renamed functions updated wherever referenced, stale comments corrected because the code they described changed, outdated API references updated to match the current implementation, auto-sync target updates (README.md, STATUS.md, BACKLOG.md, CHANGELOG.md) kept current as part of the change set. These are part of the feature work.
+- **Deleted** — files removed as part of the development workflow or feature work, including cleanup, dependency removals, or file deletions required by a refactor. A deleted file is not a bug fix simply because the removal corrected inconsistency; if the file was removed because of the feature or workflow, it belongs here.
+- **Fixed** — existing files where content was incorrect or broken in previously committed code, independent of the current feature. A fix corrects something that was wrong before the current work started and would remain wrong if the feature were reverted. Use the test: would this file need changing without this feature or workflow action? If not, it is Updated or Deleted, not Fixed.
 
 Omit any category that has no files.
