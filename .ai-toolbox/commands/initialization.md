@@ -15,9 +15,18 @@ Before proceeding, determine which setup mode applies by checking the following:
 - Does `context.development.md` still exist?
 - Does `project/overview.md` contain real project content or stub/placeholder text?
 - Does `README.md` still contain the pre-initialization placeholder?
+- Does the workspace contain established project files outside the system's template files, such as source directories, a populated root README, changelog history, or an existing Git repository with project history?
 
 **First-time setup** — `context.development.md` exists and project files contain placeholder content:
 Run the full sequence below.
+
+**Existing-project setup** — `context.development.md` exists, but the workspace contains established project files or history:
+- Treat this state as higher priority than **First-time setup** when both conditions appear true. Template-owned `docs/`, metadata stubs, and an empty or template-only Git repository do not by themselves indicate an existing project.
+- Before any project customization, ask the project owner to inventory the existing source structure, README and documentation, CHANGELOG, Git repository and remotes, project metadata, and team tool conventions.
+- Ask whether to use **retrofit setup** or intentionally proceed with **full initialization**. Do not choose full initialization silently when existing project signals are present.
+- Retrofit setup preserves existing source files, project directories, README, documentation, CHANGELOG history, Git history, and remotes by default. Any change to an existing project file requires explicit approval.
+- Use existing documentation to suggest project metadata, but ask the owner to confirm before populating `project/overview.md` or `project/standards.md`. Leave placeholders for unconfirmed information.
+- If the owner cannot confirm the project state, stop before destructive setup steps and request clarification.
 
 **Returning contributor** — `context.development.md` has been deleted and project files are populated:
 - Run: Environment Detection, personal items in User Preference Collection, Local Context Creation, Validation & Handoff, and AI Agent Setup
@@ -60,6 +69,13 @@ Run the full sequence below.
   - Update the **Active criteria** line in BACKLOG.md with the chosen or default criteria
   - Inform user they can change this at any time — see [docs/Backlog.md](../docs/Backlog.md)
 
+**Branching strategy preference**:
+- Ask whether the project wants an enforced feature-branch-only workflow (never commit directly to main/master):
+  - **Enforced**: Populate the **Branching strategy** line in tools/git.md with the Branch Protection rule below.
+  - **Not enforced or unspecified**: Leave the existing tools/git.md Branching strategy placeholder unchanged.
+- If enforced, use this text verbatim:
+  > **Branch Protection**: All code changes must land on a feature branch — never directly on main/master. Determine the correct branch during planning: if the work continues an existing feature branch, identify it and confirm; if on main/master at implementation start, the first action before any file edit is to create a new branch per tools/git.md conventions. Post-plan, verify the active branch before proceeding. This is especially important for private repositories where branch protection rules may not be configured — this rule is the only safeguard against committing directly to main.
+
 **Development environment preferences**:
 - Personal/machine (store in context.local.md): preferred editor/IDE, terminal and shell preferences
 - Project-wide (store in tools/ contexts): package manager, build tools, test frameworks, debugging toolchain — these apply to all contributors
@@ -100,23 +116,34 @@ Run the full sequence below.
 - Initialize preference persistence system
 
 ### Project Customization
-**Structure setup**:
+**New project structure setup**:
 - Create directories based on project type
 - Initialize domain contexts if applicable — see [docs/Domains.md](../docs/Domains.md) for domain context patterns
 - Apply reusable patterns if applicable — see [docs/Patterns.md](../docs/Patterns.md) for pattern usage
 - Configure tool contexts if applicable — see [docs/Tools.md](../docs/Tools.md) for tool context conventions
 - Configure tool-specific settings
 
+**Existing-project retrofit**:
+- Preserve the established project structure; do not create duplicate source or documentation directories.
+- Review existing documentation as input, then populate project metadata only after owner confirmation.
+- Configure only `.ai-toolbox` contexts and other changes explicitly approved during the inventory.
+
 **Documentation**:
-- Update root README with project info
-- Populate `project/overview.md` with project name, mission, goals, and scope gathered during setup
-- Populate `project/standards.md` with quality standards based on user's development preferences
+- **New project**: Update root README with project info
+- **Existing-project retrofit**: Preserve a populated root README and offer suggested additions for owner approval
+- **New project**: Populate `project/overview.md` with project name, mission, goals, and scope gathered during setup
+- **Existing-project retrofit**: Populate `project/overview.md` only after owner confirmation of suggested metadata
+- **New project**: Populate `project/standards.md` with quality standards based on user's development preferences
+- **Existing-project retrofit**: Populate `project/standards.md` only after owner confirmation of suggested standards
 
 ### Version Control
 **If Git detected**:
-- Initialize repository (if needed)
-- Create .gitignore for detected technologies
-- Set up initial commit
+- **New project**: Initialize repository if needed
+- **Existing-project retrofit**: Preserve an existing repository, history, remotes, and configuration; initialize Git only after confirming that no repository exists and setup requires one
+- **New project**: Create .gitignore for detected technologies
+- **Existing-project retrofit**: Preserve the existing .gitignore; propose changes for owner approval
+- **New project**: Set up initial commit
+- **Existing-project retrofit**: Do not rewrite history or create an initial commit automatically
 - Configure user Git settings
 
 ### Validation & Handoff
@@ -127,15 +154,18 @@ Run the full sequence below.
 - Validate user preferences active
 
 **Documentation sync**:
-- Update project status in README files
-- Generate quick start instructions
-- Create usage examples
+- **New project**: Update project status in README files and generate quick start instructions
+- **Existing-project retrofit**: Preserve existing project documentation and provide suggested status or quick start changes for owner approval
+- **New project**: Create usage examples
+- **Existing-project retrofit**: Create usage examples only with owner approval
 
 **Completion**:
 - Report initialization summary
 - **Remove System Development Context**: Delete .ai-toolbox/context.development.md (not needed in project mode)
-- **Reset Changelog**: Replace the deliverables table in CHANGELOG.md with a single initialization entry — item: "Initialized from AI Project Workspace Jump-Starter", contributor: name collected during setup, date: current date — this establishes a clean baseline for project history
-- **Update Root README**: Replace the pre-initialization `### Getting Started` block in the README.md user-editable section (the "New to this system?" link and "Quick Start: Tell your AI agent" prompt) with a neutral placeholder — e.g., `*Add your project's getting started instructions here*` — so the developer fills it in for their actual end-users
+- **Reset Changelog (new project only)**: Replace the deliverables table in CHANGELOG.md with a single initialization entry — item: "Initialized from AI Project Workspace Jump-Starter", contributor: name collected during setup, date: current date — this establishes a clean baseline for project history
+- **Preserve Changelog (existing-project retrofit)**: Keep existing CHANGELOG history. Report that history was preserved and ask before appending any initialization entry.
+- **Update Root README (new project only)**: Replace the pre-initialization `### Getting Started` block in the README.md user-editable section (the "New to this system?" link and "Quick Start: Tell your AI agent" prompt) with a neutral placeholder — e.g., `*Add your project's getting started instructions here*` — so the developer fills it in for their actual end-users
+- **Preserve Root README (existing-project retrofit)**: Do not replace populated README content. Report that it was preserved and offer proposed changes for owner approval.
 - **AI Agent Setup**: Configure the agent to automatically load context at the start of every future session for this project — use the most persistent option available:
   1. **Agent memory** (preferred): Save to the agent's own persistent memory: *"For all sessions in this project at [workspace path], always start by loading context from './.ai-toolbox/context.global.md' and following the established maintenance rules."*
   2. **Project-level persistent config** (if agent memory is unavailable): Create or update the agent's project configuration file with the instruction `"Always start by loading context from './.ai-toolbox/context.global.md' and follow the established maintenance rules automatically."` — common locations:

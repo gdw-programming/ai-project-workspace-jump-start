@@ -19,6 +19,8 @@ Load context from './.ai-toolbox/context.global.md' then use the initialize comm
 Load context from './.ai-toolbox/context.global.md' then use the initialize command for this project: "Task Manager"; description: "Personal productivity app with React frontend"
 ```
 
+**Adding the system to an existing project**: Initialization detects established source files, documentation, changelog history, or Git history and asks what is already configured. Retrofit setup preserves existing project files and history by default; changes to existing files require confirmation.
+
 ## Step 3: Start Building
 
 Your project is ready! The AI context system is now active and will:

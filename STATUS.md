@@ -29,7 +29,6 @@ ai-project-workspace/            # Project root
 │   ├── context.global.md        # Central routing and maintenance rules
 │   ├── context.steering.md      # On-demand keyword and topic routing index
 │   ├── backlog/                 # System development backlog items
-│   │   ├── 08-branch-protection-opt-in.md
 │   │   ├── 09-upstream-notes-system.md
 │   │   ├── 10-package-manager-security-tooling.md
 │   │   ├── 12-portable-command-discovery-and-invocation.md
