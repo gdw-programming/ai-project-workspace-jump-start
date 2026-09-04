@@ -29,8 +29,9 @@ ai-project-workspace/            # Project root
 │   ├── context.global.md        # Central routing and maintenance rules
 │   ├── context.steering.md      # On-demand keyword and topic routing index
 │   ├── backlog/                 # System development backlog items
-│   │   ├── 09-upstream-notes-system.md
 │   │   └── 10-package-manager-security-tooling.md
+│   ├── upstream-notes/          # Findings to send back to the upstream system project
+│   │   └── README.md             # Finding naming and frontmatter guide
 │   ├── commands/                # Available operations — one file per command
 │   │   ├── README.md           # Commands directory guide and index
 │   │   ├── initialization.md   # Project initialization (auto-triggered)

@@ -122,6 +122,7 @@ Run the full sequence below.
 - Initialize domain contexts if applicable — see [docs/Domains.md](../docs/Domains.md) for domain context patterns
 - Apply reusable patterns if applicable — see [docs/Patterns.md](../docs/Patterns.md) for pattern usage
 - Configure tool contexts if applicable — see [docs/Tools.md](../docs/Tools.md) for tool context conventions
+- Create `.ai-toolbox/upstream-notes/` with its committed `README.md` stub for template-agnostic findings to send upstream
 - Configure tool-specific settings
 
 **Existing-project retrofit**:

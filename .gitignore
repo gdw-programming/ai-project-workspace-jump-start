@@ -15,6 +15,11 @@
 #             edit only when explicitly instructed.
 /.sandbox
 
+# .ai-toolbox/upstream-notes/ - Personal findings for template improvements.
+# README.md stays committed; finding files are sent manually upstream.
+/.ai-toolbox/upstream-notes/*
+!/.ai-toolbox/upstream-notes/README.md
+
 # local configuration files
 *.env
 *.local

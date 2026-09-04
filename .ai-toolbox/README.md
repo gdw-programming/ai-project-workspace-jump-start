@@ -116,6 +116,8 @@ your-project/
 ├── context.global.md    # 🚀 START HERE - Central routing and maintenance rules
 ├── context.steering.md  # On-demand keyword and topic routing index
 ├── backlog/             # System development backlog items
+├── upstream-notes/      # Findings to send back to the upstream system project
+│   └── README.md        # Finding naming and frontmatter guide
 ├── commands/            # Available operations (AI-optimized)
 ├── project/             # Project context: overview and standards (AI-optimized)
 ├── domains/             # Domain-specific contexts (AI-optimized)

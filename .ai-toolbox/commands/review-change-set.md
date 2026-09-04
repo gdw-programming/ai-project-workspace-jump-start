@@ -17,4 +17,5 @@
 - Staged/unstaged cross-check: any reference in a staged file to another file (import, path, link) must resolve against staged content — an unstaged file referenced by committed code will break anyone pulling the branch
 - Dependent context files updated: all context files (domains/, tools/, commands/, context.*.md) that reference deleted or renamed code, APIs, or file paths are updated in this change set
 - Knowledge capture: identify any framework behavior, fragile patterns, or tool internals discovered during this work — verify they are captured in the appropriate context files per the Knowledge Capture rule before closing
+- Upstream notes: verify template-agnostic findings from this work are captured in `.ai-toolbox/upstream-notes/`; for any previously-sent finding that was revised, set `date-updated` and `status: needs-resend`
 - No non-productive content: remove any files or sections that serve no ongoing operational purpose - initialization summaries, one-time status dumps, redundant checklists, or content that duplicates what a live context file already provides authoritatively

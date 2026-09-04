@@ -62,7 +62,6 @@ Items that exist solely to support this system's own development process do not 
 *Detailed context for each active item below lives in `backlog/`; remove its file when the item is complete. Move any durable user-facing guidance to the appropriate system documentation before removal.*
 
 **Phase 3 — New Features** (independent of Phase 2)
-- Upstream Notes system — backlog/09-upstream-notes-system.md
 - Package-manager security tooling — backlog/10-package-manager-security-tooling.md
 
 **Phase 4 — Toolbox-wide Optimization Sweep** (after Phases 1-3 land)
