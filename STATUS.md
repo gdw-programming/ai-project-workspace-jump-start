@@ -28,14 +28,13 @@ ai-project-workspace/            # Project root
 │   ├── context.development.md  # System development context (deleted at initialization)
 │   ├── context.global.md        # Central routing and maintenance rules
 │   ├── context.steering.md      # On-demand keyword and topic routing index
-│   ├── backlog/                 # System development backlog items
-│   │   └── 10-package-manager-security-tooling.md
-│   ├── upstream-notes/          # Findings to send back to the upstream system project
-│   │   └── README.md             # Finding naming and frontmatter guide
+│   ├── upstream-notes/          # Findings to send back to the upstream system project (findings gitignored)
+│   │   └── README.md             # Finding naming and frontmatter guide (tracked)
 │   ├── commands/                # Available operations — one file per command
 │   │   ├── README.md           # Commands directory guide and index
 │   │   ├── initialization.md   # Project initialization (auto-triggered)
 │   │   ├── list-commands.md    # List all available commands
+│   │   ├── fix-security-advisories.md # Apply non-breaking package-manager security fixes
 │   │   ├── load-context-chain.md # Load contexts following hierarchy
 │   │   ├── validate-context-chain.md # Check context references
 │   │   ├── compact-context.md      # Reduce natural-language context
@@ -75,7 +74,10 @@ ai-project-workspace/            # Project root
 │   │   └── simplest-output.md   # Simplest-output decision ladder
 │   ├── tools/                  # Tool-specific contexts
 │   │   ├── README.md           # Tools directory guide
-│   │   └── git.md              # Git version control context
+│   │   ├── git.md              # Git version control context
+│   │   └── package-managers/   # Package-manager security tooling
+│   │       ├── README.md       # Generic security audit workflow
+│   │       └── npm.md          # npm security audit workflow
 │   └── README.md               # AI context system overview
 ├── BACKLOG.md                  # Project backlog and recently completed work
 ├── CHANGELOG.md                # Project history and completed deliverables

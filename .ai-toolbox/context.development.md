@@ -9,6 +9,7 @@
 - **Scope**: System architecture, documentation, and context improvements
 - **Context Placement**: Anything that applies only while working ON the workspace system — and is not relevant to project users — belongs in this file. This file is deleted at initialization, so anything here must be safe to lose from the project user's perspective. If a rule or principle is useful to project users, it belongs in `context.global.md` or another surviving context file instead.
 - **User-Mode File Protection**: `tools/`, `domains/`, `project/`, `STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are written for project users — do not add system development state, progress notes, or temporary tracking to these files. Any system-dev-only content in these files becomes a trace visible to project users. Use this file's Upcoming Work section for all system development tracking.
+- **Upstream-Note Override**: Upstream-note capture applies to downstream projects sending reusable findings to this system. It is not required when this repository is the upstream workspace-system source.
 
 ## Context (documentation for user's and AI's benefit)
 *The context struggle is real*
@@ -61,10 +62,7 @@ Items that exist solely to support this system's own development process do not 
 *`STATUS.md`, `BACKLOG.md`, and `CHANGELOG.md` are not used to track system development progress — they represent the initial delivered state that project users inherit and evolve. System development progress lives only in this section.*
 *Detailed context for each active item below lives in `backlog/`; remove its file when the item is complete. Move any durable user-facing guidance to the appropriate system documentation before removal.*
 
-**Phase 3 — New Features** (independent of Phase 2)
-- Package-manager security tooling — backlog/10-package-manager-security-tooling.md
-
-**Phase 4 — Toolbox-wide Optimization Sweep** (after Phases 1-3 land)
+**Toolbox-wide Optimization Sweep**
 - Apply the token-conservation and simplest-output rules retroactively across every existing `.ai-toolbox` file, including everything added above, while preserving the information required for the system's purpose and capabilities. Continue applying both rules to every new context addition during project growth — no dedicated backlog file
 
 ### Optional Enhancements

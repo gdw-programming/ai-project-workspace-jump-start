@@ -5,6 +5,7 @@ Tool contexts tell AI agents how your team uses specific development tools — t
 ## Available Tools
 
 - [**git.md**](git.md) — Version control context and conventions
+- [**package-managers/**](package-managers/README.md) — Package-manager security audit and remediation patterns
 
 *Add new tool contexts as your project needs them. See [docs/Tools.md](../docs/Tools.md) for how to add a tool context.*
 

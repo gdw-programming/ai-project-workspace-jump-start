@@ -17,6 +17,7 @@ One command per file. Command definitions are authoritative for display names an
 - **[Initialize Project](initialize-project.md)** — alias: `initialize-project` — Set up basic project structure
 - **[Organize Structure](organize-structure.md)** — alias: `organize-structure` — Create logical directory organization
 - **[Setup Quality Gates](setup-quality-gates.md)** — alias: `setup-quality-gates` — Establish basic quality controls
+- **[Fix Security Advisories](fix-security-advisories.md)** — alias: `fix-security-advisories` — Apply non-breaking security fixes through the project's package manager
 - **[Document Project](document-project.md)** — alias: `document-project` — Create appropriate documentation
 - **[Review Change Set](review-change-set.md)** — alias: `review-change-set` — Verify a change set is consistent and ready to record
 - **[Describe Change Set](describe-change-set.md)** — alias: `describe-change-set` — Generate a change set summary for recording
