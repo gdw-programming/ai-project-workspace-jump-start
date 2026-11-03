@@ -68,7 +68,7 @@
 - **Backlog Auto-Management**: If using built-in BACKLOG.md and CHANGELOG.md: mirror completed items to CHANGELOG.md; age out Recently Completed entries in BACKLOG.md per criteria. Recently Completed tracks deliverables and features only — context system maintenance is not recorded; "completed" means verified working and user-confirmed.
 - **Contributor Attribution**: When recording completed items in project tracking files: use Contributor Name from context.local.md User Preferences. If not set, prompt user.
 - **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status.
-- **File Reference Standards**: Never use Markdown links to uncommitted files — use plain text references.
+- **File Reference Standards**: Write for the reader. Use Markdown links for documentation files readers are likely to follow; name source, config, script, and test files by repository-relative plain-text path. Link only to targets already committed or included in the same staged change set and not being deleted. Use plain text for untracked, gitignored, planned-but-not-yet-created, or deleted targets.
 - **Path Validation**: Ensure all context file paths work for end users.
 - **Agent Agnostic**: No agent/user references in context files except context.local.md.
 - **Passive Updates**: All context file and documentation updates automatically synchronized by processing agents.
@@ -76,7 +76,7 @@
 ### Documentation Standards
 - **Documentation Separation**: Root README = project content, .ai-toolbox/README.md = context system documentation.
 - **Context Framing**: tools/, domains/, patterns/ use team/project framing; context.local.md uses personal framing.
-- **Markdown Links**: All file references in documentation (README files, docs/) must use proper Markdown link syntax with URL-encoded spaces: `[Display Text](path/to/file.md)`. Bare paths do not create links.
+- **Markdown Links**: Where File Reference Standards call for a link, use Markdown link syntax with URL-encoded spaces: `[Display Text](path/to/file.md)`. Bare paths do not create links.
 - **Auto-Sync Documentation**: Update ../README.md project status section from STATUS.md.
 - **Project State Language**: Use "ready to initialize project" or current project state, not development language.
 - **Technical Terms Exception**: Allow specific technical terms (e.g. GitHub "Use this template" button, API names) with established meanings.

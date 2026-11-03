@@ -21,3 +21,18 @@ Before implementing this plan, use Git to create a dedicated branch for the work
 - Commit, PR, and changelog terminology uses `fix` / Fixed only for defects that predate the current work in the project's baseline.
 - Corrections made while implementing unmerged work are described as part of the feature or change.
 - Guidance works with differing default-branch names and project release practices.
+
+## Plan Completion Workflow
+
+1. Execute plan — Agent
+2. Test (if applicable) — Agent
+3. Verify plan execution — Developer
+4. Remove plan files — Agent
+5. Remove plan from `context.development.md` — Agent
+6. Update references — Agent
+7. Validate plan completion — Developer
+8. Run Review Change Set — Developer
+9. Run Describe Change Set — Developer
+10. Record and submit the change — Developer
+
+The agent stops after step 2 and continues with step 4 only after the developer confirms step 3.

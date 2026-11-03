@@ -20,3 +20,18 @@ Before implementing this plan, use Git to create a dedicated branch for the work
 
 - Current-state documentation and comments do not explain behavior by recounting discarded, uncommitted approaches.
 - Verified platform facts remain eligible for relevant context when phrased as current facts rather than experiment history.
+
+## Plan Completion Workflow
+
+1. Execute plan — Agent
+2. Test (if applicable) — Agent
+3. Verify plan execution — Developer
+4. Remove plan files — Agent
+5. Remove plan from `context.development.md` — Agent
+6. Update references — Agent
+7. Validate plan completion — Developer
+8. Run Review Change Set — Developer
+9. Run Describe Change Set — Developer
+10. Record and submit the change — Developer
+
+The agent stops after step 2 and continues with step 4 only after the developer confirms step 3.

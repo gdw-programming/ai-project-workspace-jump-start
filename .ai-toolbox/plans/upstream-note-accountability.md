@@ -22,3 +22,18 @@ Before implementing this plan, use Git to create a dedicated branch for the work
 
 - Planning identifies relevant upstream findings and records their capture or revision as explicit plan items.
 - Review checks that findings are captured and that revised sent findings have the required metadata.
+
+## Plan Completion Workflow
+
+1. Execute plan — Agent
+2. Test (if applicable) — Agent
+3. Verify plan execution — Developer
+4. Remove plan files — Agent
+5. Remove plan from `context.development.md` — Agent
+6. Update references — Agent
+7. Validate plan completion — Developer
+8. Run Review Change Set — Developer
+9. Run Describe Change Set — Developer
+10. Record and submit the change — Developer
+
+The agent stops after step 2 and continues with step 4 only after the developer confirms step 3.
