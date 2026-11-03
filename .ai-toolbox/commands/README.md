@@ -12,6 +12,7 @@ One command per file. Command definitions are authoritative for display names an
 - **[Compact Context](compact-context.md)** — alias: `compact-context` — Reduce natural-language context while preserving meaning and capability
 - **[Update Work Context](update-work-context.md)** — alias: `update-work-context` — Update work tracking and backlog
 - **[Add Domain Context](add-domain-context.md)** — alias: `add-domain-context` — Create new domain-specific context
+- **[Process Upstream Notes](process-upstream-notes.md)** — alias: `process-upstream-notes` — Assess a downstream intake and maintain prioritized, one-to-one plans
 
 ## Development Workflow
 - **[Initialize Project](initialize-project.md)** — alias: `initialize-project` — Set up basic project structure

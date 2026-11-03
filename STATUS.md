@@ -25,15 +25,17 @@ Context system operational
 ```
 ai-project-workspace/            # Project root
 ├── .ai-toolbox/                 # AI context management system
-│   ├── context.development.md  # System development context (deleted at initialization)
+│   ├── context.development.md  # System development context (removal offered at initialization)
 │   ├── context.global.md        # Central routing and maintenance rules
 │   ├── context.steering.md      # On-demand keyword and topic routing index
 │   ├── upstream-notes/          # Findings to send back to the upstream system project (findings gitignored)
 │   │   └── README.md             # Finding naming and frontmatter guide (tracked)
+│   ├── plans/                   # System development plans, one per Upcoming Work item (removal offered at initialization)
 │   ├── commands/                # Available operations — one file per command
 │   │   ├── README.md           # Commands directory guide and index
 │   │   ├── initialization.md   # Project initialization (auto-triggered)
 │   │   ├── list-commands.md    # List all available commands
+│   │   ├── process-upstream-notes.md # Assess intake and maintain prioritized plans
 │   │   ├── fix-security-advisories.md # Apply non-breaking package-manager security fixes
 │   │   ├── load-context-chain.md # Load contexts following hierarchy
 │   │   ├── validate-context-chain.md # Check context references

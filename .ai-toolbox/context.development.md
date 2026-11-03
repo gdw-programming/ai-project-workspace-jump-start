@@ -1,6 +1,6 @@
 # AI Project Workspace - System Development Context
 
-**SYSTEM DEVELOPMENT ROOT CONTEXT**: Entry point for AI agents when improving this workspace system. Removed during project initialization.
+**SYSTEM DEVELOPMENT ROOT CONTEXT**: Entry point for AI agents when improving this workspace system. Project initialization offers its removal; keeping it is the user's choice.
 
 ## System Development Mode
 - **Purpose**: Working ON this workspace system, not USING it for a project
@@ -14,7 +14,7 @@
 ## Context
 Two distinct contexts:
 1. **System Development Context**: Entry point override in front of `context.global.md`. Developing workspace system for users.
-2. **User Project Context**: User uses `context.global.md` as primary entry point. Initialization command deletes this file.
+2. **User Project Context**: User uses `context.global.md` as primary entry point. Initialization command offers to delete this file, `plans/`, and the `process-upstream-notes` command.
 
 ## System Development Language Rules
 
@@ -45,7 +45,12 @@ Items supporting only system development process do not qualify.
 ## Upcoming Work
 *Forward-looking only. Remove items when complete — do not mark or annotate.*
 
-*(no active work scheduled)*
+**Top to bottom is priority order; prerequisites precede dependent work. Each item maps to one plan file.**
+
+- **Resolve documentation reference rules** — distinguish documentation links from code-path references and allow links to documentation staged with the change while excluding unavailable targets. Plan: `.ai-toolbox/plans/change-set-accuracy.md`. **Paste:** `Update context.global.md and commands/review-change-set.md to apply the Documentation Reference Policy plan in .ai-toolbox/plans/change-set-accuracy.md. Before implementation, create a dedicated Git branch and track changes as required by the plan.`
+- **Make upstream-note planning and review actionable** — ensure relevant notes are explicit plan items and verify new or revised findings, including resend metadata. Plan: `.ai-toolbox/plans/upstream-note-accountability.md`. **Paste:** `Update context.global.md and commands/review-change-set.md to apply the Upstream-Note Accountability plan in .ai-toolbox/plans/upstream-note-accountability.md. Before implementation, create a dedicated Git branch and track changes as required by the plan.`
+- **Align fix terminology with the project baseline** — distinguish pre-existing defects from issues corrected during unmerged work, without assuming a branch name. Plan: `.ai-toolbox/plans/fix-classification.md`. **Paste:** `Apply the Fix Classification plan in .ai-toolbox/plans/fix-classification.md to tools/git.md and the relevant change-description or changelog guidance. Before implementation, create a dedicated Git branch and track changes as required by the plan.`
+- **Exclude dropped approaches from current-state documentation** — clarify Present-Tense Voice for experiments that were never committed. Plan: `.ai-toolbox/plans/current-state-documentation.md`. **Paste:** `Apply the Current-State Documentation plan in .ai-toolbox/plans/current-state-documentation.md to the Present-Tense Voice rule in context.global.md. Before implementation, create a dedicated Git branch and track changes as required by the plan.`
 
 ### Optional Enhancements
 *(no optional enhancements pending)*
@@ -55,7 +60,7 @@ When working on system features:
 → context.development.md (entry) → context.global.md → domains/ and tools/ as needed
 
 ## System Development Lifecycle Management
-Deleted during project initialization to ensure clean user experience with context.global.md as primary entry point.
+Project initialization offers to delete this file, `plans/`, and `commands/process-upstream-notes.md` so `context.global.md` is the primary entry point. Removal is never automatic; projects relaying upstream notes onward keep them.
 
 ---
 

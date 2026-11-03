@@ -14,6 +14,8 @@ The `commands/` directory provides operation patterns for common tasks. Command 
 
 > "Run the `review-change-set` command."
 
+> "Process Upstream Notes"
+
 Command names and aliases are matched exactly after normalizing case and surrounding whitespace. The agent loads the matching command definition and follows every step in it. A related command is never substituted.
 
 When no exact match exists, the agent does not execute a command. It may offer a short list of near matches based on meaningful shared words from registered names and aliases. Select a suggestion by naming the exact command or alias. When multiple candidates remain, choose one explicitly. Use `list-commands` to view the complete registry.
@@ -42,6 +44,7 @@ Key commands:
 | [describe-change-set.md](../commands/describe-change-set.md) | Generate a change set summary for recording |
 | [update-work-context.md](../commands/update-work-context.md) | Update work tracking and backlog |
 | [list-commands.md](../commands/list-commands.md) | List all available commands |
+| [process-upstream-notes.md](../commands/process-upstream-notes.md) | Assess an upstream-notes intake and maintain prioritized plans |
 
 Commands provide patterns, not prescriptions. Adapt them to your project's workflow.
 
