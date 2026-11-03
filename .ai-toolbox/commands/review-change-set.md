@@ -9,8 +9,9 @@
 - **Stateless execution**: re-read git/workspace state at command start every run; do not reuse turn results.
 - **User manual actions included**: reflect file edits, staged/unstaged changes, branch changes discovered since previous run.
 - **Unstaged-file dependency check**: check if unstaged edited files are required by staged files; ask user if exclusion is intentional.
-- **Logical consistency & rule compliance**: no rule conflicts across contexts; enforce DRY, Minimal Context, Workflow Agnostic, Reference Validation, Language Standards, Markdown Links, Context Framing.
+- **Logical consistency & rule compliance**: no rule conflicts across contexts; enforce DRY, Minimal Context, Workflow Agnostic, Reference Validation, Language Standards, Markdown Links, File Reference Standards, Context Framing.
 - **Reference validation**: all file references and links point to existing files.
+- **Reference type & target availability**: documentation files are linked; source, config, script, and test files use repository-relative plain-text paths; linked targets are committed or in the same staged change set and not being deleted (no links to untracked, gitignored, planned, or deleted files).
 - **Workspace tree sync**: update tree/directory listings in `STATUS.md`, `README` files to reflect change set files.
 - **Backlog & Changelog sync**: `BACKLOG.md` and `CHANGELOG.md` current (if using built-in tracking); record completed deliverables with contributor name and date; apply age-out criteria.
 - **Auto-sync target consistency**: sync root `README.md` (always), `STATUS.md`, `BACKLOG.md`, `CHANGELOG.md` (if used) as dependencies.
