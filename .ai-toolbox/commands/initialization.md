@@ -27,9 +27,9 @@ Run full sequence below.
 - Use existing docs to suggest metadata; confirm before populating `project/overview.md` or `project/standards.md`. Leave placeholders for unconfirmed info.
 - If owner cannot confirm project state, stop before destructive steps and ask clarification.
 
-**Returning contributor** — `context.development.md` deleted and project files populated:
+**Returning contributor** — project files populated (`context.development.md` deleted, or retained by the project's choice):
 - Run: Environment Detection, personal items in User Preference Collection, Local Context Creation, Validation & Handoff, AI Agent Setup.
-- Skip: project-wide User Preference Collection, Project Customization, Version Control (except personal Git settings), shared Completion steps (Remove System Dev Context, Reset Changelog, Update Root README).
+- Skip: project-wide User Preference Collection, Project Customization, Version Control (except personal Git settings), shared Completion steps (System Development Files, Reset Changelog, Update Root README).
 - Before personal preferences, read `project/overview.md`, `project/standards.md`, relevant `tools/` contexts.
 
 ### Environment Detection
@@ -123,7 +123,7 @@ Run full sequence below.
 
 **Completion**:
 - Report initialization summary.
-- **Remove System Dev Context**: Delete `.ai-toolbox/context.development.md`.
+- **System Development Files (user choice)**: Ask whether to remove the system development files: `.ai-toolbox/context.development.md`, `.ai-toolbox/plans/`, and `.ai-toolbox/commands/process-upstream-notes.md`. Never remove automatically. Projects that relay upstream notes onward (for example, a module template that forwards notes from its downstream modules) keep them. If removed, also remove the `process-upstream-notes` entries from `.ai-toolbox/commands/README.md`, `.ai-toolbox/docs/Commands.md`, and the `STATUS.md` workspace tree. If kept, leave all files and entries in place.
 - **Reset Changelog (new project)**: Replace deliverables table in CHANGELOG.md with single initialization entry ("Initialized from AI Project Workspace Jump-Starter", contributor name, date).
 - **Preserve Changelog (existing retrofit)**: Keep existing CHANGELOG history.
 - **Update Root README (new project)**: Replace pre-initialization `### Getting Started` block in README.md with neutral placeholder (`*Add your project's getting started instructions here*`).
