@@ -1,19 +1,19 @@
 # Fix Classification Plan
 
 **Status**: Planned
-**Scope**: Define `fix` / Fixed consistently across Git and change-set descriptions without assuming a branch name, default branch, or release workflow.
+**Scope**: Define `fix` / Fixed consistently across Git and change-set descriptions using the project's pre-change committed baseline, without assuming a branch name, default branch, or release workflow.
 
 ## Intake Assessment
 
 | Intake finding | Applicability and current state | Disposition |
 |---|---|---|
-| Fix classification | The intake's distinction applies generally. `commands/describe-change-set.md` already separates feature-driven updates from independent defects, but `tools/git.md` has no shared baseline convention. | Add the convention to Git guidance and reference it from existing change-set guidance. Use the project's pre-change committed baseline, not a hard-coded `main` branch. |
-| Change-set categories | The current `Updated` and `Fixed` definitions already cover the proposed file-classification test. | Preserve and align those definitions; do not duplicate them as a competing rule. |
+| `ai-toolbox--fix-classification.md` | The distinction applies generally. `commands/describe-change-set.md` already places feature-driven synchronization in `Updated` and defines `Fixed` for independent defects, but `tools/git.md` has no shared baseline convention. The intake assumes `main` is the authoritative branch. | Add the convention to Git guidance and reference it from existing change-set guidance. Use the project's pre-change committed baseline, not a hard-coded branch or release definition. |
+| `ai-toolbox--change-set-categories.md` | The current `Updated` and `Fixed` definitions already give the file-level test: would the file need changing without the feature or workflow action? | Preserve and align that test with the shared baseline convention; do not duplicate or weaken the category definitions. |
 
 ## Planned Work
 
 1. Add a concise Team Convention to `tools/git.md`: use `fix` / Fixed only for a defect present in the project's pre-change committed baseline; corrections to unmerged work are part of that feature or change. Do not prescribe a branch name, default branch, or release process.
-2. Align `commands/describe-change-set.md` and any existing changelog guidance with that shared definition by reference, retaining the file-level test for deciding between `Updated` and `Fixed` rather than duplicating or weakening the rule.
+2. Align `commands/describe-change-set.md` and any existing changelog classification guidance with that shared definition by reference. Retain its file-level test for deciding between `Updated` and `Fixed` rather than duplicating or weakening the rule.
 
 ## Implementation Workflow
 
@@ -21,7 +21,7 @@ Before implementing this plan, use Git to create a dedicated branch for the work
 
 ## Completion Criteria
 
-- Git, change-set, and any existing changelog guidance use `fix` / Fixed only for defects present in the pre-change committed baseline.
+- Git, change-set, and any existing changelog classification guidance use `fix` / Fixed only for defects present in the pre-change committed baseline.
 - Corrections made while implementing unmerged work are described as part of that feature or change.
 - Guidance works without assuming a particular default-branch name or release workflow and does not duplicate the file-level category definitions.
 

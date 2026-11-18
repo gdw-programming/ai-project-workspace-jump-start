@@ -1,20 +1,19 @@
 # Current-State Documentation and Compatibility Notes Plan
 
 **Status**: Planned
-**Scope**: Keep comments and documentation focused on current behavior while allowing actionable compatibility guidance for existing objects and data.
+**Scope**: Keep comments and documentation focused on committed current behavior while allowing actionable compatibility guidance for objects and data created by earlier versions.
 
 ## Intake Assessment
 
 | Intake finding | Applicability and current state | Disposition |
 |---|---|---|
-| Dropped approaches are undocumented | The Present-Tense Voice rule in `context.global.md` limits change-referencing language but does not explicitly exclude approaches tried and dropped before commitment. Readers of current state need the resulting behavior, not uncommitted experiment history. | Add a clear rule against documenting dropped approaches; allow verified platform facts to be recorded as current facts in the relevant domain context. |
-| Compatibility notes for earlier-version objects | The current rule has no exception for actionable guidance about objects or data created under earlier versions. This need is common across project types. | Add a narrow exception for describing current effects and necessary user actions, not the history of the change. |
+| `ai-toolbox--dropped-approaches-undocumented.md` | The Present-Tense Voice rule limits change-referencing language but does not explicitly exclude approaches tried and dropped before commitment. Readers of current state need the resulting behavior, not uncommitted experiment history. | Add a rule against documenting dropped approaches in comments, documentation, or changelogs. Keep verified platform facts as current facts in relevant domain context; do not remove the existing historical-context exception for its defined monitoring purpose. |
+| `ai-toolbox--compatibility-notes.md` | The current rule has no exception for actionable guidance about objects or data created under earlier versions. This need is common across project types. | Add a narrow exception for stating current effects and necessary user actions, not the history of the change. |
 
 ## Planned Work
 
-1. Extend Present-Tense Voice in `context.global.md` to prohibit documenting approaches tried and dropped before commitment in code comments, documentation, or changelogs.
-2. Preserve the narrow platform-fact exception: record a verified fact in the relevant domain context as a current-state fact, not as experiment history.
-3. Add a compatibility exception allowing comments and documentation to explain how the current version affects earlier-version objects or data and what action is needed, when that guidance helps a user or developer act on existing objects.
+1. Extend Present-Tense Voice in `context.global.md` to prohibit documenting approaches tried and dropped before commitment in code comments, documentation, or changelogs. This does not prohibit recording a verified platform fact as a current fact in the relevant domain context or remove the existing historical-context exception.
+2. Add a narrow compatibility exception allowing comments and documentation to explain how the current version affects earlier-version objects or data and what action is needed, when that guidance helps a user or developer act on existing objects.
 
 ## Implementation Workflow
 
@@ -22,7 +21,7 @@ Before implementing this plan, use Git to create a dedicated branch for the work
 
 ## Completion Criteria
 
-- Comments, documentation, and changelogs do not recount approaches tried and dropped before commitment.
+- Comments, documentation, and changelogs do not recount approaches tried and dropped before commitment; the existing monitoring-related historical-context exception remains intact.
 - Relevant domain contexts may state verified platform facts as current facts, without experiment history.
 - Compatibility guidance may describe current effects on earlier-version objects or data and the action needed, without narrating the change's history.
 
