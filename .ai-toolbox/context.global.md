@@ -82,6 +82,9 @@
 - **Technical Terms Exception**: Allow specific technical terms (e.g. GitHub "Use this template" button, API names) with established meanings.
 - **Documentation Location Map**: Four audiences: (1) **AI agents**: `.ai-toolbox/` (excluding `docs/`) — AI-structured context; (2) **Project tracking**: `STATUS.md`, `BACKLOG.md`, `CHANGELOG.md` at root; (3) **Developers**: `README.md` (entry point), `/docs/` (project docs), `.ai-toolbox/docs/` (AI context system guide); (4) **End-users**: developer's choice.
 - **Present-Tense Voice**: All documentation describes current state — no change-referencing language ("fixed", "improved", "added") outside changelogs.
+  - **Historical context**: A labeled `**Historical context:**` note may describe past events when tied to a monitoring obligation.
+  - **Compatibility**: Documentation and code comments may state current effects on objects or data created with earlier versions and necessary actions when users or developers need to act on existing objects. State the effect and action, not the history of the change.
+  - **Dropped approaches**: Do not document approaches tried and dropped before commitment in code comments, documentation, or changelogs. Record resulting behavior; verified platform facts may be stated as current facts in the relevant domain context.
 - **Progressive Disclosure**: Structure documents in reader-need order: (1) one-sentence summary, (2) direct steps/command, (3) necessary usage details, (4) reference/background. Restructure instead of adding TL;DR.
 - **Token Conservation**: Keep `.ai-toolbox` content terse and non-redundant without removing required information; remove filler while preserving exact code, commands, file paths, rule names, and error messages verbatim.
 
