@@ -33,7 +33,7 @@ Two distinct contexts:
 - **Minimal Context Enforcement**: Ensure context.local.md remains minimal
 - **docs/ Scope**: `.ai-toolbox/docs/` describes current system features, setup, architecture, usage; no past-iteration references
 - **AI Toolbox Docs Format**: Each guide in `.ai-toolbox/docs/` follows: common prompts first, what-belongs table, worked example with link, how-to for adding new items
-- **Contributor Scope**: `CONTRIBUTING.md` covers contributing to system (fork → change → PR)
+- **Contributor Scope**: Cover contributing to the system (fork → change → PR)
 
 ## System Content Eligibility Rules
 Items added to workspace system must satisfy at least one criterion:
@@ -46,8 +46,6 @@ Items supporting only system development process do not qualify.
 *Forward-looking only. Remove items when complete — do not mark or annotate.*
 
 **Top to bottom is priority order; prerequisites precede dependent work. Each item maps to one plan file.**
-
-- **Align fix terminology with the project baseline** — distinguish pre-existing defects from corrections to unmerged work without assuming a branch name or release process. Plan: `.ai-toolbox/plans/fix-classification.md`. **Paste:** `Apply the Fix Classification plan in .ai-toolbox/plans/fix-classification.md to tools/git.md, commands/describe-change-set.md, and any existing changelog classification guidance. Use the project's pre-change committed baseline without assuming a default branch or release workflow; preserve the existing Updated-versus-Fixed file-level test. Before implementation, create a dedicated Git branch and track changes as required by the plan, then follow its Plan Completion Workflow.`
 
 ### Optional Enhancements
 *(no optional enhancements pending)*
