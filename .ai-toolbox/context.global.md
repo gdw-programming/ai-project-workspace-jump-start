@@ -100,7 +100,7 @@
 - **Command Discovery and Execution**: Match top-level user commands against `commands/` names/aliases. For exact match, read definition and execute every step as written. If no exact match, suggest near matches or direct to `list-commands`. Selected suggestions require explicit exact request before execution.
 - **Knowledge Capture**: Capture non-obvious framework, tool, or environment behavior in `domains/`, `tools/`, or `patterns/` before session ends.
 - **External Memory Scope**: `.ai-toolbox` is persistent project memory. All project findings belong here, not in external agent memory systems.
-- **Upstream Notes**: Scan `.ai-toolbox/upstream-notes/` during planning. If a finding is project-agnostic, record in `upstream-notes/` and list in plan. Upstream notes are required deliverables.
+- **Upstream Notes**: Scan `.ai-toolbox/upstream-notes/` during planning and assess existing notes against the proposed work. If a finding is project-agnostic, or the work revises an existing note, name each note creation or revision as an explicit plan item. Upstream notes are required deliverables.
 - **Learn Before Acting**: Do not guess undocumented external APIs/environments. Sequence: consult context → if undocumented, ask user → validate → act → capture.
 - **Minimal Context**: Create only necessary contexts; avoid complexity.
 - **Minimal Loading**: Load only required contexts.

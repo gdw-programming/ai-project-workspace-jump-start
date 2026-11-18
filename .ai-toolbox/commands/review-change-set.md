@@ -18,5 +18,5 @@
 - **Staged/unstaged cross-check**: references in staged files to other files must resolve against staged content.
 - **Dependent context files updated**: update context files referencing deleted/renamed code, APIs, or paths.
 - **Knowledge capture**: verify framework behaviors, fragile patterns, tool internals are recorded in context files.
-- **Upstream notes**: verify template-agnostic findings are captured in `.ai-toolbox/upstream-notes/`; set `date-updated` and `status: needs-resend` for revised findings.
+- **Upstream notes**: state an explicit upstream-note disposition for every change set (captured, revised, or none applicable, with reason); verify applicable template-agnostic findings are captured in `.ai-toolbox/upstream-notes/`; for each revised previously sent finding, confirm `date-updated` is set and `status: needs-resend`.
 - **No non-productive content**: remove files/sections serving no ongoing operational purpose.
