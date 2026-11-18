@@ -18,6 +18,7 @@ Essential quality guidelines across project types.
 - **README.md**: Purpose, usage, setup instructions
 - **Code Comments**: Explain why, not what
 - **Decision Records**: Document choices and rationale
+- **Continuous Improvement**: When work or reviewer, stakeholder, or user feedback reveals relevant project documentation is wrong, unclear, or incomplete, correct it in the same change set when practical
 
 ## Version Control
 - Use Git with descriptive commit messages
