@@ -68,7 +68,9 @@
 - **Backlog Auto-Management**: If using built-in BACKLOG.md and CHANGELOG.md: mirror completed items to CHANGELOG.md; age out Recently Completed entries in BACKLOG.md per criteria. Recently Completed tracks deliverables and features only — context system maintenance is not recorded; "completed" means verified working and user-confirmed.
 - **Contributor Attribution**: When recording completed items in project tracking files: use Contributor Name from context.local.md User Preferences. If not set, prompt user.
 - **Documentation Sync**: Auto-sync between ../README.md and ./README.md when changing linked contexts or project status.
-- **File Reference Standards**: Write for the reader. Use Markdown links for documentation files readers are likely to follow; name source, config, script, and test files by repository-relative plain-text path. Link only to targets already committed or included in the same staged change set and not being deleted. Use plain text for untracked, gitignored, planned-but-not-yet-created, or deleted targets.
+- **File Reference Standards**: Write for the reader. Use Markdown links for documentation files readers are likely to follow; name source, config, script, and test files by repository-relative plain-text path. Link only to targets already committed or included in the same staged change set and not being deleted. Use plain text for untracked, gitignored, planned-but-not-yet-created, or deleted targets, subject to Shared File Dependencies and Shared Plan References.
+- **Shared File Dependencies**: Version-controlled content must not depend on a contributor's gitignored files as shared project sources. Local configuration, generated files, and user-provided inputs may be referenced when their setup or supply and missing-file behavior are clear. A tracked file is not gitignored even if an ignore pattern matches it.
+- **Shared Plan References**: Plans intended for version control must not reference concrete gitignored files or directories, whether linked or plain text. Carry forward the relevant findings or requirements without their local paths. A tracked file is not gitignored even if an ignore pattern matches it; non-ignored planned paths may be named before they exist.
 - **Path Validation**: Ensure all context file paths work for end users.
 - **Agent Agnostic**: No agent/user references in context files except context.local.md.
 - **Passive Updates**: All context file and documentation updates automatically synchronized by processing agents.
@@ -108,7 +110,7 @@
 - **Minimal Context**: Create only necessary contexts; avoid complexity.
 - **Minimal Loading**: Load only required contexts.
 - **Gitignored and Untracked File Editing**: Context system files (e.g., context.local.md) may be edited automatically. All other gitignored/untracked files are read-only unless user explicitly instructs edit.
-- **Gitignore Awareness**: Respect .gitignore patterns, but reference ignored files when relevant.
+- **Gitignore Awareness**: Respect .gitignore patterns. Ignored files may be consulted; apply Shared File Dependencies and Shared Plan References when referencing them in version-controlled content.
 
 ## Version Control Integration
 - **User Exclusions**: `context.local.md` (`*.local.*` in .gitignore), `.sandbox/`, `temp/` excluded via .gitignore.

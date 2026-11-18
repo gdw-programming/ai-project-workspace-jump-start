@@ -54,6 +54,8 @@ Commands provide patterns, not prescriptions. Adapt them to your project's workf
 
 [commands/review-change-set.md](../commands/review-change-set.md) shows the structure. It defines purpose, approach, required context, and a checklist — all workflow-agnostic so it applies regardless of language or toolchain.
 
+The review checks linked and plain-text paths for dependencies on ignored local files. Shared content can describe local setup or user-provided inputs without assuming another contributor's files exist; shared plans retain findings without ignored paths.
+
 ---
 
 ## Adding a New Command Pattern
